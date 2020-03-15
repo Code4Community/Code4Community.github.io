@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title and favicon -->
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png?" />
+
+    <!-- UIKit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/page.css" />
+</head>
+
+<body>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="/">{{ site.title }}</a>
+            <ul class="uk-navbar-nav">
+                <li><a href="/school-outreach">School Outreach</a></li>
+                <li><a href="/mind-up">Mind Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="uk-container">
+        {{ content }}
+    </div>
+</body>
+
+</html>
