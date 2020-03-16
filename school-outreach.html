@@ -4,4 +4,39 @@ title: School Outreach
 permalink: /school-outreach
 ---
 
-School Outreach page content goes here.
+<style>
+    #slideshow-container{
+        height: 400px;
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<h1>The School Outreach Project</h1>
+&nbsp;
+&nbsp;
+<div id="slideshow-container">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: slide">
+        <ul class="uk-slideshow-items">
+            <li>
+                <img class = "center" data-src="./favicon.png"  alt="test"
+                    uk-img="target: !ul > :last-child, !* +*">
+            </li>
+            <li>
+                <img class = "center" data-src="./favicon.png" width="300" height="200" alt="test" uk-img="target: !* -*, !* +*">
+            </li>
+            <li>
+                <img class = "center" data-src="./favicon.png" width="300" height="200" alt="test" uk-img="target: !* -*, !* +*">
+            </li>
+            <li>
+                <img class = "center" data-src="./favicon.png" width="300" height="100" alt="test"
+                    uk-img="target: !* -*, !ul > :first-child">
+            </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+    </div>
+</div>
