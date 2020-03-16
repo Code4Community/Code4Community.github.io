@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function subscribe() {
-    var email = document.getElementById('email-form').innerHTML;
+    var email = document.getElementById('email-form').value;
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
