@@ -9,12 +9,9 @@ layout: page
         margin: 0 auto;
     }
 
-    #form {
-        display: inline-block;
-        margin: 20px 0px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0%);
+    #form-container {
+        display: inline;
+        text-align: center;
     }
 
     #email {
@@ -28,7 +25,70 @@ layout: page
 <h2 class="text-center">Room 230</h2>
 <h2 class="text-center">7:30 - 9:00</h2>
 
-<form id="form" action="https://listsprd.osu.edu/mailman/subscribe/code4community">
-    <input id="email" name="email" class="uk-input uk-form-large" type="email" placeholder="Mailing List">
-    <button id="submit" type="submit" class="uk-button uk-button-primary uk-button-large">Sign Up</button>
-</form>
+<div id="form-container">
+    <form target="_blank" action="https://listsprd.osu.edu/mailman/subscribe/code4community">
+        <input id="email" name="email" class="uk-input uk-form-large" type="email" placeholder="Mailing List">
+        <button id="submit" type="submit" class="uk-button uk-button-primary uk-button-large">Sign Up</button>
+    </form>
+</div>
+
+<br>
+<br>
+
+<div class="uk-child-width-expand@s" uk-grid>
+    <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Our Mission</h2>
+            <p>
+                At Code 4 Community, our mission is to help our community through computer science. This can include
+                teaching computer science to grade school students, working with researchers to develop applications to
+                help those with mental illness, and much more! If you are interested in helping others through code,
+                then we are the club for you!
+            </p>
+        </div>
+    </div>
+
+    <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">FAQ</h2>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">Do I need to know how to code?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            The short answer is <strong>no</strong>. Though it helps to know a programming language or
+                            two (because it helps you to learn new programming languages faster), you do not need to
+                            know how to code. Through the programming tutorials we go through at the begginning of the
+                            fall semester, self study, and learning by doing, you will be able to contribute to the
+                            projects.
+                            <br>
+                            <br>
+                            Everyone, if they know how to code or not, will learn something new through Code 4
+                            Community, so come join us to learn something new and help others!
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="uk-accordion-title" href="#">How much of a time commitment is Code 4 Community?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            We have one 1.5 hour meeting per week. Moreover, if you participate in school outreach, we
+                            have occasional outreach events that are generally about two hours long.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="uk-accordion-title" href="#">I have more questions! Where do I ask them?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            You can email us at <a href="mailto://c4cosu@gmail.com">c4cosu@gmail.com</a> to ask any
+                            questions you may have.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
