@@ -6,16 +6,36 @@ layout: page
     #logo {
         width: 300px;
         display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        display: block;
         margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
-    #form-container {
-        display: inline;
-        text-align: center;
+    form label.uk-form-label {
+        display: block;
+        font-size: 1.5rem;
     }
 
+    /* #email and #submit width add to 98% to leave room for borders */
     #email {
-        width: 300px;
+        display: inline-block;
+        width: 60%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #submit {
+        display: inline-block;
+        width: 37%;
+        padding: 0;
+        margin: 0 0 0 1%;
     }
 </style>
 
@@ -27,13 +47,11 @@ layout: page
 
 <div id="form-container">
     <form target="_blank" action="https://listsprd.osu.edu/mailman/subscribe/code4community">
-        <input id="email" name="email" class="uk-input uk-form-large" type="email" placeholder="Mailing List">
-        <button id="submit" type="submit" class="uk-button uk-button-primary uk-button-large">Sign Up</button>
+        <label class="uk-form-label" for="email">Join our mailing list</label>
+        <input id="email" name="email" class="uk-input" type="email" placeholder="Email address">
+        <button id="submit" type="submit" class="uk-button uk-button-primary">Sign Up</button>
     </form>
 </div>
-
-<br>
-<br>
 
 <div class="uk-child-width-expand@s" uk-grid>
     <div class="uk-width-1-2@m">
