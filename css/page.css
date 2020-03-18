@@ -1,8 +1,8 @@
-body, body h1, body h2, body h3, body h4, nav.uk-navbar-container a {
+body, h1, h2, h3, h4, h5, h6, nav.uk-navbar-container a {
     font-family: 'Oxanium', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
