@@ -1,0 +1,35 @@
+---
+layout: page
+title: Tutorials
+permalink: /tutorials
+---
+
+<style>
+    table {
+        margin: auto;
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+</style>
+
+<h1>Tutorials</h1>
+
+<br>
+
+<table class="uk-table">
+    <thead>
+        <th class="header">Tutorial</th>
+        <th class="header">Description</th>
+    </thead>
+    <tbody>
+        {% for tutorial in site.data.tutorials %}
+            <tr>
+                <td><a href="{{tutorial.link}}">{{tutorial.name}}</a></a></td>
+                <td>{{tutorial.description}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

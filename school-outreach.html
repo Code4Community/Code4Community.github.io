@@ -33,7 +33,26 @@ permalink: /school-outreach
 
 <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
     <ul class="uk-slideshow-items">
-        <li>
+        {% for image in site.data.school_outreach_images %}
+            {% if forloop.first == true %}
+                <li>
+                    <img class="center" data-src={{image}} height="300" alt="test"
+                        uk-img="target: !ul > :last-child, !* +*">
+                </li>
+            {% elsif forloop.last == true %}
+                <li>
+                    <img class="center" data-src={{image}} height="300" alt="test"
+                        uk-img="target: !* -*, !ul > :first-child">
+                </li>
+            {% else %}
+                <li>
+                    <img class="center" data-src={{image}} height="300" alt="test"
+                        uk-img="target: !* -*, !* +*">
+                </li>
+            {% endif %}
+        {% endfor %}
+        
+        <!-- <li>
             <img class="center" data-src="./images/elites_academy_2019-2020.jpeg" height="300" alt="test"
                 uk-img="target: !ul > :last-child, !* +*">
         </li>
@@ -48,7 +67,7 @@ permalink: /school-outreach
         <li>
             <img class="center" data-src="./images/unknown_2018-2019_1.jpg" height="300" alt="test"
                 uk-img="target: !* -*, !ul > :first-child">
-        </li>
+        </li> -->
     </ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
         uk-slideshow-item="previous"></a>
@@ -56,7 +75,7 @@ permalink: /school-outreach
         uk-slideshow-item="next"></a>
 </div>
 
-<div class="uk-child-width-expand@" uk-grid>
+<div class="uk-child-width-expand@s uk-grid-match" uk-grid>
     <div class="uk-width-1-1@m">
         <div class="uk-card uk-card-default uk-card-body">
             <h2 class="uk-card-title">Project Overview</h2>
@@ -75,7 +94,7 @@ permalink: /school-outreach
             <h2 class="uk-card-title">Past Projects</h2>
             <ul>
                 <li>
-                    <a href="https://repl.it/@adambricelis/C4CWHG">The World's Hardest Game</a>
+                    <a target="_blank" href="https://repl.it/@adambricelis/C4CWHG">The World's Hardest Game</a>
                     <br>
                     <p>
                         With this module, the end goal was to modify the code to win the last level.
@@ -93,30 +112,6 @@ permalink: /school-outreach
         </div>
     </div>
 
-    <div class="uk-width-1-1@m">
-        <div class="uk-card uk-card-default uk-card-body">
-            <h2 class="uk-card-title">Leadership</h2>
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div class="leader uk-text-center uk-width-2-1@m">
-                    <img src="images/max_gruber.jpg"/>
-                    <h3>Max Gruber</h3>
-                    <h4>Outreach Lead</h4>
-                    <h5><a href="mailto://gruber.173@osu.edu">gruber.173@osu.edu</a></h5>
-                </div>
+    {% include leaders.html content=site.data.school_outreach_leaders %}
 
-                <div class="leader uk-text-center uk-width-2-1@m">
-                    <img src="images/max_herz.jpeg"/>
-                    <h3>Max Herz</h3>
-                    <h4>Outreach Coordinator</h4>
-                    <h5><a href="mailto://herz.9@osu.edu">herz.9@osu.edu</a></h5>
-                </div>
-
-                <div class="leader uk-text-center uk-width-2-1@m">
-                    <img src="favicon.png"/>
-                    <h3>???</h3>
-                    <h4>???</h4>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

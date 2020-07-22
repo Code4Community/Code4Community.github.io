@@ -1,0 +1,20 @@
+[
+    {
+        "img": "leaders/max_gruber.jpg",
+        "name": "Max Gruber",
+        "role": "President",
+        "email": "gruber.173@osu.edu"
+    },
+    {
+        "img": "leaders/adam_lis.jpg",
+        "name": "Adam Lis",
+        "role": "Vice President",
+        "email": "lis.22@osu.edu"
+    },
+    {
+        "img": "leaders/andrew_haberlandt.jpg",
+        "name": "Andrew Haberlandt",
+        "role": "Treasurer",
+        "email": "haberlandt.3@osu.edu"
+    }
+]
