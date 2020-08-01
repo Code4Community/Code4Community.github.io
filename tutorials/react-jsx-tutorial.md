@@ -85,6 +85,34 @@ render() {
 }
 ```
 
+## Set Up And Run A React Application
+
+### Set Up A Baseplate React Application
+
+Setting up a baseplate react application that you can use to figure out how React works, and just tinker with it, is very easy.
+
+Just execute the following line of code in a terminal:
+
+```bash
+npx create-react-app <name of project>
+```
+
+This line uses npx (a part of npm that runs commands) to run `create-react-app`, which creates a directory with the name of your project and populates that directory with the baseplate react application itself. 
+
+### Run A React Application
+
+To run the application, ensure you are in the application's base directory. For example, if you ran `npx create-react-app sample-project`, ensure you are in the `sample-project` directory. 
+
+Then, run the following line in the terminal: 
+
+```bash
+npm run start
+```
+
+What the command `npm run <command>` does is go to the `package.json` file, go to the `scripts` section, and runs whatever corresponds to the command there. In our case, it just starts up React's development server and opens your browser to the page that it is running on. You will generally always want to run `npm run start` from the directory that your `package.json` is in accordingly. 
+
+In context to Mindup, to run the front-end development server, you will run `npm run start` from the `frontend` directory.
+
 Feedback
 ====
 
