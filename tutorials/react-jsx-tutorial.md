@@ -31,9 +31,11 @@ To use React, you will need:
 
 - [Part X: React Components]()
 - [Part X: React Templating For The Front-End]()
+- [Part X: JSX Bits and Pieces]()
 
-- [Part X: The Parts I Don't Feel Qualified Enough To Teach]()
-- [Part X: Redux (To Be Written At A Later Date)]()
+- [Part X: Mindup-Specific React Details]()
+
+- [Part X: Optional Topics to Learn]()
 
 <!--
 - [Part 1: Getting A Basic React App Working](#part-1-about-git)
