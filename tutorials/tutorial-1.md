@@ -4,7 +4,7 @@ title: Git Tutorial
 permalink: /tutorial-1
 content_style: github_markdown
 ---
-# Tutorial 1: Git and Visual Studio
+# Tutorial 1: Git and Visual Studio Code
 
 By: Andrew Haberlandt
 
