@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML Tutorial
-permalink: /html-tutorial
+permalink: /tutorial-2
 ---
 # HTML Tutorial
 

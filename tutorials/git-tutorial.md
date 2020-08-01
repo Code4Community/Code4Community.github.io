@@ -161,6 +161,16 @@ Add your lines in index.html directly below the last person's similar-looking pi
 
 We will be covering HTML and CSS next week, so don't worry about the details too much right now.
 
+Optional: Make it your own
+------
+
+If you're feeling creative, feel free to modify your own animation (see main.css to see how we did it). Feel free to google something or ask if you're not sure how. (Note: we'll be covering HTML/CSS in more detail next week, so you're not expected to know how to do any of this)
+
+Ideas:
+- Rotate or resize your image as part of the animation
+- Adjust the animation speed
+- Implement collisions between images (note: this is difficult using CSS animations. you'll need some fancy javascript)
+
 # Part 4: Commit and push your changes
 
 ![](images/tutorial-1/screenshot7.png)
