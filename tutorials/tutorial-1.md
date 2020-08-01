@@ -15,6 +15,14 @@ Reviewed by:
 * Download [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}
 * You need a Github Account. Fill out the survey on our homepage with your Github username, so we can add you to our Github organization.
 
+## Overview
+- [Part 1: About Git](#part-1-about-git)
+- [Part 2: Cloning a Repository](#part-2-cloning-a-repository)
+- [Part 3: Making Modifications](#part-3-making-modifications)
+- [Part 4: Commit and Push Your Changes](#part-4-commit-and-push-your-changes)
+- [Part 5: Pull Request](#part-5-pull-request)
+
+
 
 # Part 1: About Git
 
@@ -198,7 +206,7 @@ Step 3: Push your changes
 
 - Press on the button pictured above in the bottom bar. It will automatically push and pull from the remote repository.
 
-Part 4: Pull Request
+Part 5: Pull Request
 =======
 
 Step 1: Create the pull request
