@@ -23,7 +23,6 @@ Reviewed by:
 - [Part 5: Pull Request](#part-5-pull-request)
 
 
-
 # Part 1: About Git
 
 A 'repository' consists of two parts:
@@ -105,13 +104,15 @@ You should see the files for the repository, as shown in the below screenshot:
 
 Congratulations! You succesfully cloned our repository!
 
-Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following:
+You can also view the repository for this tutorial on Github [here](https://github.com/Code4Community/git-tutorial). All of our repositories are available on our [organization Github page](https://github.com/Code4Community).
+
+Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
 ![](images/tutorial-1/screenshot5.png)
 
 # Part 3: Making modifications
 
-Goal: Add yourself to our display of bouncing heads
+Goal: Add yourself to our [display of bouncing heads](https://code4community.github.io/git-tutorial/)
 
 Step 0: Check out a new branch
 ------
@@ -137,6 +138,8 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 Step 1: Add your image
 -----
 Add an image to the `images/` directory. You can drag-and-drop from the file explorer on your operating system directly into VS Code.
+
+Note: Your image does not have you be an actual picture of yourself, although it might help us learn eachother's names.
 
 ![](images/tutorial-1/screenshot6.png)
 
@@ -209,10 +212,12 @@ Step 3: Push your changes
 Part 5: Pull Request
 =======
 
+[Example Pull Request](https://github.com/Code4Community/git-tutorial/pull/1)
+
 Step 1: Create the pull request
 -----
 
-If you pull up the [repository](https://github.com/Code4Community/git-tutorial) in a browser, you might see the following:
+If you pull up the [repository](https://github.com/Code4Community/git-tutorial) in a browser, you might see the following (with your branch name):
 
 ![](images/tutorial-1/screenshot17.png)
 
@@ -233,6 +238,7 @@ You'll see something like this:
 So,
 
 - All you should have to do is change the 'compare' branch to your branch, and click 'Create pull request'.
+    - If you can't find your branch, that means you didn't successfully push your changes in the previous part. Let us know and we can try to help you.
 - Give your pull request a title and leave a comment with any issues you had
 - Click 'Create pull request' (again)
 
@@ -260,7 +266,7 @@ Once you have the required approvals, your pull request will show this and you'l
 That's it!
 ===
 
-You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on https://code4community.github.io/git-tutorial/ once your changes get merged into master.
+You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/) once your changes get merged into master.
 
 
 Feedback
