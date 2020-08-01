@@ -158,9 +158,74 @@ This function will look the exact same as the normal component version.
 
 What can make components very powerful is the ability we have to essentially copy-paste components multiple times across different sections, but only have to edit them in one place (i.e. templating). For example, we only define the Navbar component in one place, but we use it across every single one of our pages, so it saves us a lot of work whenever we need to change it. 
 
-The following file shows how you go about using components: 
+The following files illustrate how you'd go about using components to replicate a Navbar across several pages, while only having one Navbar component:
 
-TODO: Show example.
+
+**File: Navbar.js**
+
+Just act like appropriate CSS is applied to make this actually look like a Navbar. 
+
+```javascript
+import React from "react"
+function Navbar() {
+    return (
+        <ul>
+            <li><a href="">Page 1</a></li>
+            <li><a href="">Page 2</a></li>
+            <li><a href="">Page 3</a></li>
+            <li><a href="">Page 4</a></li>
+        </ul>
+    )
+}
+export default Navbar
+```
+
+**File: Page1.js**
+```javascript
+import React from "react"
+import Navbar from "./Navbar"
+function Page1() {
+    return (
+        <div>
+            <Navbar />
+            <h1>Page 1</h1>
+        </div>
+    )
+}
+export default Page1
+```
+
+**File: Page2.js**
+```javascript
+import React from "react"
+import Navbar from "./Navbar"
+function Page1() {
+    return (
+        <div>
+            <Navbar />
+            <h1>Page 2</h1>
+        </div>
+    )
+}
+export default Page1
+```
+
+**File: Page3.js** 
+```javascript
+import React from "react"
+import Navbar from "./Navbar"
+function Page1() {
+    return (
+        <div>
+            <Navbar />
+            <h1>Page 3</h1>
+        </div>
+    )
+}
+export default Page1
+```
+
+You can see how, despite being a basic concept, this allows a ton of templating possibilities, and ensures way better Single Point of Control throughout the entire codebase.
 
 ### Props 
 
@@ -210,6 +275,22 @@ export default Subteam
 ```
 
 As you can see, this allows us to still share the same component, but change up some text in each instance of the component.
+
+### Applying CSS to a Component
+
+Applying CSS to a component is fairly simple. Instead of doing a `<link rel="...">` like you'd do in normal HTML, you can simply import it like you'd import a component: 
+
+```javascript
+import React from "react"
+import "styles.css"
+function componentExample() {
+    return (
+        <div>Sample Text</div>
+    )
+}
+```
+
+As long as you have your selectors right, that css will only apply to this <div> tag and anything inside of it, similar to a <body> on a normal HTML page.
 
 Feedback
 ====
