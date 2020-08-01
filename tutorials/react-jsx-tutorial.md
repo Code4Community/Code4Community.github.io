@@ -32,7 +32,6 @@ To use React, you will need:
 - [Part X: React Components]()
 - [Part X: React Templating For The Front-End]()
 - [Part X: JSX Bits and Pieces]()
-
 - [Part X: Mindup-Specific React Details]()
 
 - [Part X: Optional Topics to Learn]()
@@ -114,6 +113,60 @@ npm run start
 What the command `npm run <command>` does is go to the `package.json` file, go to the `scripts` section, and runs whatever corresponds to the command there. In our case, it just starts up React's development server and opens your browser to the page that it is running on. You will generally always want to run `npm run start` from the directory that your `package.json` is in accordingly. 
 
 In context to Mindup, to run the front-end development server, you will run `npm run start` from the `frontend` directory.
+
+
+## React Components
+
+React offers templating - The ability to duplicate the same bit of code across multiple sections while being able to edit it all in one place - and a whole lot of other stuff via **components**. 
+
+There are two types of components - Regular components, and stateless functional components.
+
+### Regular Components
+
+A "regular" component is React's "base" component. This allows you to hold state (variable values, etc.) and should be used wherever we need to any sort of user authentication or track the state of something (i.e. buttons being pressed, etc.) 
+
+A regular component `.js` file looks like the following: 
+
+```javascript
+import React from "react"
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, Mindup Contributor!</h1>;
+  }
+}
+```
+
+### Stateless Functional Components
+
+A "stateless functional" component is similar to a regular component, but cannot hold state. These are frequently used whenever you just need the front-end part of something, which is frequently the case for us. However, as we shift over to Redux and keeping track of login state, we will likely start 
+
+The only actual improvement stateless functional components have over regular components is that they are faster to render. A regular component can do everything a stateless functional component can, but has more functionality (and therefore takes a bit longer to render and has a little more overhead). 
+
+A stateless functional component's `.js` file looks like the following: 
+
+```javascript
+import React from "react"
+function Welcome(props) {
+  return <h1>Hello, Mindup Contributor!</h1>;
+}
+export default Welcome
+```
+
+This function will look the exact same as the normal component version. 
+
+### Using Components in Other Classes
+
+What can make components very powerful is the ability we have to essentially copy-paste components multiple times across different sections, but only have to edit them in one place (i.e. templating). For example, we only define the Navbar component in one place, but we use it across every single one of our pages, so it saves us a lot of work whenever we need to change it. 
+
+The following file shows how you go about using components: 
+
+TODO: Show example.
+
+### Props 
+
+In order to pass data in between components, you use something called `props`. Both types of components can use props; It's not just a regular component thing. 
+
+TODO: Show example.
 
 Feedback
 ====
