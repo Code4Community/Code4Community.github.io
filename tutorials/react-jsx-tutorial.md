@@ -166,7 +166,50 @@ TODO: Show example.
 
 In order to pass data in between components, you use something called `props`. Both types of components can use props; It's not just a regular component thing. 
 
-TODO: Show example.
+For example, say we want a component that lists the name of a specific part of the Mindup! team and reasons for working with that part of the team. We could define the component like so, to use a prop that was passed into the component:
+
+```javascript
+import React from "react"
+function Subteam(props) {
+  return (
+      <div>
+        <h1>Hello, {props.name}!</h1>
+        <ul>
+            {props.languagesUsed.map(element => {
+                return (
+                    <li>{element}</li>
+                )
+            })}
+        </ul>
+      </div>
+  )
+}
+export default Subteam
+```
+
+If you haven't seen `map()` before, it just iterates over an array, and in our case, we get a <li> element for each array element.
+
+And then we'd call it from another component like so (assuming the component file is in the same level; If it's different, you just need to change the file path in the import): 
+
+```javascript
+import React from "react"
+import Subteam from "./Subteam"
+function SubteamsList(props) {
+    let subteam1Name = "Front-End"
+    let subteam1LanguagesUsed = ["HTML", "CSS", "React"]
+    let subteam2Name = "Back-End"
+    let subteam2LanguagesUsed = ["Node.js", "Express", "MongoDB", "Mongoose"]
+    return (
+      <div>
+        <Subteam name={subteam1Name} languagesUsed={subteam1LanguagesUsed}>
+        <Subteam name={subteam2Name} languagesUsed={subteam2LanguagesUsed}>
+      </div>
+  )
+}
+export default Subteam
+```
+
+As you can see, this allows us to still share the same component, but change up some text in each instance of the component.
 
 Feedback
 ====
