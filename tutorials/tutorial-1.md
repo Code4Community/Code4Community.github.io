@@ -3,9 +3,11 @@ layout: page
 title: Git Tutorial
 permalink: /tutorial-1
 ---
+<div class="markdown-body">
 # Tutorial 1: Git and Visual Studio
 
 By: Andrew Haberlandt
+
 Reviewed by: 
 
 ## Before we get started
@@ -234,17 +236,17 @@ For this repository, you need **at least two approvals** before you'll be able t
 - One of the approvals must be @ndrewh, @maxdg99, or @adambricelis. Actual projects may or may not require reviews like this.
 - Request your reviews
     
-    ![](images/tutorial-1/screenshot20.png)
+    ![](images/tutorial-1/screenshot20.png){:style="height: 50vh;"}
 
 
 Until you have the required reviews, you'll see this:
 
-![](images/tutorial-1/screenshot21.png)
+![](images/tutorial-1/screenshot21.png){:style="width: 50vw;"}
 
 
 Once you have the required approvals, your pull request will show this and you'll be able to merge it into master with one click :)
 
-![](images/tutorial-1/screenshot19.png)
+![](images/tutorial-1/screenshot19.png){:style="width: 50vw;"}
 
 
 That's it!
@@ -257,3 +259,5 @@ Feedback
 ====
 
 If you have any feedback on this tutorial, feel free to create an issue on the Github repo, or let one of the exec board members (@maxdg99, @adambricelis, @ndrewh) know.
+
+</div>
