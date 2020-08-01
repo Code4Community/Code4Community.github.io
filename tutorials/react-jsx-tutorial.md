@@ -43,6 +43,48 @@ To use React, you will need:
 - [Part 5: Pull Request](#part-5-pull-request)
 -->
 
+## What Are React And JSX?
+
+### React 
+
+[React](https://reactjs.org/) is a JavaScript framework developed and maintained by Facebook and a group of open-source developers. It is generally regarded as the most popular web development framework, but is rivaled by Angular and Vue. There is great reading out there about the differences between them and the advantages of each, but that is beyond the scope of this tutorial. 
+
+Here is a "Hello, World" React page: 
+
+```javascript
+import React from 'react'
+class HelloWorld extends React.Component {
+    render() {
+        return <h1>Hello, Mindup Contributor!</h1>
+    }
+}
+```
+
+### JSX 
+
+JSX is cool, but isn't anything to be afraid of. JSX is essentially version of HTML used by React that lets you do a lot of JavaScript stuff right in the middle of it. It is big enough that it is mentioned separately in this tutorial, but much smaller in scale and importance than React overall. 
+
+For example, the following `render` function shows how you can pull values from JavaScript and display them right on the page without needing any DOM Manipulation, which you'd need to do if you weren't using React:
+
+```javascript
+render() {
+    let listElementsToShow = ["Element 1", "Element 2", "Element 3"]
+    let pageTitle = "Mindup!"
+    return (
+        <div>
+            <h1>{pageTitle}</h1>
+            <ul>
+                {listElementsToShow.map(element => {
+                    return (
+                        <li>{element}</li>
+                    )
+                })}
+            </ul>
+        </div>
+    )
+}
+```
+
 Feedback
 ====
 
