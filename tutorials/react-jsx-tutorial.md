@@ -131,7 +131,7 @@ A regular component `.js` file looks like the following:
 import React from "react"
 class Welcome extends React.Component {
   render() {
-    return <h1>Hello, Mindup Contributor!</h1>;
+    return <h1>Hello, Mindup Contributor!</h1>
   }
 }
 ```
@@ -153,6 +153,30 @@ export default Welcome
 ```
 
 This function will look the exact same as the normal component version. 
+
+An important note - Inside the return statement of either the function (if stateless functional) or the render function (if regular), you need to have one div (doesn't have to be a div tag) that everything is in. You can't do something like the following: 
+
+```javascript
+function render() {
+    return (
+        <h1>Page Name</h1>
+        <p>Page Text</p>
+    )
+}
+```
+
+This is invalid because there is not one root tag. You could do the following, though: 
+
+```javascript
+function render() {
+    return (
+        <div>
+            <h1>Page Name</h1>
+            <p>Page Text</p>
+        </div>        
+    )
+}
+```
 
 ### Using Components in Other Classes
 
@@ -252,7 +276,7 @@ function Subteam(props) {
 export default Subteam
 ```
 
-If you haven't seen `map()` before, it just iterates over an array, and in our case, we get a <li> element for each array element.
+If you haven't seen `map()` before, it just iterates over an array, and in our case, we get a `<li>` element for each array element.
 
 And then we'd call it from another component like so (assuming the component file is in the same level; If it's different, you just need to change the file path in the import): 
 
@@ -266,8 +290,8 @@ function SubteamsList(props) {
     let subteam2LanguagesUsed = ["Node.js", "Express", "MongoDB", "Mongoose"]
     return (
       <div>
-        <Subteam name={subteam1Name} languagesUsed={subteam1LanguagesUsed}>
-        <Subteam name={subteam2Name} languagesUsed={subteam2LanguagesUsed}>
+        <Subteam name={subteam1Name} languagesUsed={subteam1LanguagesUsed} />
+        <Subteam name={subteam2Name} languagesUsed={subteam2LanguagesUsed} />
       </div>
   )
 }
