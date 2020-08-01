@@ -8,5 +8,10 @@
         "name": "Git Tutorial",
         "link": "/tutorial-1",
         "description": "Git tutorial"
+    }, 
+    {
+        "name": "React/JSX Tutorial", 
+        "link": "/react-jsx-tutorial", 
+        "description": "React/JSX Tutorial"
     }
 ]
