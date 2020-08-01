@@ -28,6 +28,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://code4community.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Code4Community
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      content_style: "uikit"
 # Build settings
 # theme: minima
 

@@ -34,7 +34,11 @@
             </ul>
         </div>
     </nav>
+    {% if page.content_style == "github_markdown" %}
+    <div class="uk-container markdown-body">
+    {% else %}
     <div class="uk-container">
+    {% endif %}
         {{ content }}
     </div>
     <footer>&copy; <script>document.write(new Date().getFullYear())</script> Code 4 Community</footer>
