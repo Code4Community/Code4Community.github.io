@@ -1,7 +1,44 @@
 ---
 layout: page
-title: Mind Up
+title: MindUp!
 permalink: /mind-up
 ---
 
-Mind Up page content goes here.
+<style>
+    #logo {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<h1>MindUp! Project</h1>
+
+<br>
+
+<img id="logo" src="\images\mindup\logo.png" />
+
+<br>
+
+<div class="uk-child-width-expand@s uk-grid-match" uk-grid>
+    <div class="uk-width-1-1@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Project Overview</h2>
+            <p>
+                Stuff.
+            </p>
+        </div>
+    </div>
+
+    <div class="uk-width-1-1@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Current State of the Project</h2>
+            <p>
+                Stuff.
+            </p>
+        </div>
+    </div>
+    
+    {% include leaders.html content=site.data.mindup_leaders %}
+
+</div>
