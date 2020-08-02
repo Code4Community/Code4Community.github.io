@@ -1,3 +1,12 @@
 [
-    
+    {
+        "name": "Tutorial 1: Git and Visual Studio",
+        "link": "/tutorial-1",
+        "description": "This is our first tutorial of the semester! We will be introducing Git and Visual Studio by creating an <a href=\"https://code4community.github.io/git-tutorial/\">animated display</a> of club members."
+    },
+    {
+        "name": "Tutorial 2: An Introduction to HTML, CSS, and Javascript",
+        "link": "/tutorial-2",
+        "description": "This tutorial walks you through how to create a basic static HTML website."
+    }
 ]
