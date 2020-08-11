@@ -30,7 +30,6 @@ To use React, you will need:
 - [Part X: Set Up And Run A React Application]()
 
 - [Part X: React Components]()
-- [Part X: React Templating For The Front-End]()
 - [Part X: JSX Bits and Pieces]()
 - [Part X: Mindup-Specific React Details]()
 
@@ -44,7 +43,7 @@ To use React, you will need:
 - [Part 5: Pull Request](#part-5-pull-request)
 -->
 
-## What Are React And JSX?
+## Part 1: What Are React And JSX?
 
 ### React 
 
@@ -86,7 +85,7 @@ render() {
 }
 ```
 
-## Set Up And Run A React Application
+## Part 2: Set Up And Run A React Application
 
 ### Set Up A Baseplate React Application
 
@@ -115,7 +114,7 @@ What the command `npm run <command>` does is go to the `package.json` file, go t
 In context to Mindup, to run the front-end development server, you will run `npm run start` from the `frontend` directory.
 
 
-## React Components
+## Part 3: React Components
 
 React offers templating - The ability to duplicate the same bit of code across multiple sections while being able to edit it all in one place - and a whole lot of other stuff via **components**. 
 
@@ -251,6 +250,8 @@ export default Page1
 
 You can see how, despite being a basic concept, this allows a ton of templating possibilities, and ensures way better Single Point of Control throughout the entire codebase.
 
+In fact, this is how the MindUp page works.
+
 ### Props 
 
 In order to pass data in between components, you use something called `props`. Both types of components can use props; It's not just a regular component thing. 
@@ -315,6 +316,125 @@ function componentExample() {
 ```
 
 As long as you have your selectors right, that css will only apply to this <div> tag and anything inside of it, similar to a <body> on a normal HTML page.
+
+
+## Part 4: JSX Bits and Pieces
+
+JSX, as a refresher, is the same as normal HTML, except it allows some JavaScript in it. This section will go a little more in-depth as to how this actually works. 
+
+You usually only use JSX either inside the return statement of a `render()` function of a normal React component, or in the return statement of the only function in inside a stateless functional component. I'm not sure it's even legal to use elsewhere, but I've not researched it so I won't state that as a hard rule.
+
+JSX is super intuitive and shouldn't take long to get used to, so this section won't be super long. 
+
+### The Basics
+
+The most basic thing you might use JSX for is if you want the text of an HTML tag to be the value inside a JavaScript variable:
+
+```javascript
+function component() {
+    var textToDisplay = "Hello, World!"
+    return (
+        <div>{textToDisplay}</div>
+    )
+}
+
+```
+
+Essentially, whenever you want to be typing out any JavaScript variables (or JavaScript in general) inside JSX, you put it inside curly brackets. *The page will automatically update the HTML if the value of that JavaScript variable changes*. That is, for those who have worked with the HTML DOM before, updating that is all done automatically by React. 
+
+**Please note that the parenthesis after the return HAS to be on the same line as the return statement.** Otherwise, as JavaScript does automatic semicolon insertion, it will automatically place a semicolon right after the return statement, meaning we return nothing and entirely ignore the actual JSX.
+
+Also, commenting is weird with JSX. You have to either wrap a block comment (`/* */`) inside curly brackets, or put your comments before the return statement. Generally, we work with small enough components and the code is organized enough that it's usually more readable to put any important comments before the return statement, but with bigger, more complicated components, the other approach may be more maintainable. We don't enforce one way or another, just something to keep in mind. 
+
+A slightly more complicated use case might be if you want to display an array:
+
+```javascript
+function component() {
+    var listOfElements = ["Element 1", "Element 2", "Element 3", "Element 4"]
+    return (
+        <ul>
+            {listOfElements.map(element => {
+                return (
+                    <li>{element}</li>
+                )
+            })}
+        </ul>
+    )
+}
+```
+
+For this, we use JavaScript's `Array.map()` function, which takes every element of an array and essentially calls a function with it as the argument. You can return JSX from that function, so you essentially return a list element of actual HTML for every list element inside our JavaScript array. 
+
+Also of note here is that we are using an arrow function (`(param1, param2, ...) => {}`). Arrow functions are essentially interchangeable from what I remember with React, but there's some cases where one is better than the other for JavaScript in general. I believe was discussed in the previous JavaScript tutorial, though it's easy to look up "JavaScript difference between arrow and regular functions".
+
+That's honestly about as complicated as JSX gets in context to our project. There may be some small changes to make when it comes to displaying the state of a component (i.e. `this.state.variable` or however it goes), but those two use cases should really be all we need. 
+
+
+## Part 5: Mindup-Specific React Details
+
+This section contains anything you need to know about the Mindup! project's React configuration.
+
+### Running our App
+
+Just run `npm run start` (or `yarn start` if using yarn) in the `frontend` directory to run the application. This will start up the react server. The pages will automatically change when you make changes to the codebase and save it. 
+
+### Folder Setup
+
+Our project setup isn't that different from the base `create-react-app`. All our code is inside `src`. Each page on the website is a react component, and is placed in the `pages` directory. The rest of the components follow the same general structure; Just look around the folder structure and it should be pretty apparent. 
+
+### CSS Structure
+
+Each component has its own css file, for styling we want to only be applied to that specific page, and we also have a universal css file that applies to every page (for things like color schemes or other universal styles we want to use). You should edit the component-specific CSS file unless you are making a design change that is across several different components or something, in which case you should either make a new css file for those few, or if it's big enough just do it in the universal file. 
+
+### SCSS
+
+SCSS (Pronounced "sass") is a css framework we use. It is a language that compiles into CSS, but if we write in SCSS, we are able to do cool stuff like nest selectors inside of each other, and the SCSS compiler takes care of translating those into actual CSS that the browser can read. 
+
+SCSS barely adds anything onto the base project, so it's not worth a big section. A few things you should know, though. 
+
+You will want an automatic compiler for this that turns the .scss files you change into .css files. From vscode, search up the extension "Live Sass Compiler" (by Ritwick Dey, incase there's multiple) and install it. At the beginning of each development session, to enable transpiling from .scss to .css, just hitt he button "Watch Sass" in the bottom right of your screen and it will automatically compile everything when it sees changes.
+
+The only real tutorial section we need is a quick demonstration. Say we have this .scss:
+
+```scss
+#pageBase {
+    margin: 10px;
+    padding: 10px;
+    .subsection {
+        margin: 20px;
+        padding: 5px;
+    }
+}
+```
+
+This would be compiled into something like the following (pure CSS the browser understands):
+
+```css
+#pageBase {
+    margin: 10px;
+    padding: 10px;
+}
+
+#pageBase > .subsection {
+    margin: 20px;
+    padding: 5px;
+}
+```
+
+In this case, SCSS just "un-nests" everything while keeping all the selectors. The inner code has higher specificity in either case. The two above samples of code are entirely equivalent, though the browser itself can only understand the bottom one. 
+
+The compiler also generates a .map file. All this does is allows the browser to translate the line in the generated CSS file to a line in your SCSS file. So, if you want to look in your developer tools for the line of SCSS that is causing a change, this allows you to do that, instead of having to look at that line in the CSS and manually find where that was generated from in the SCSS. 
+
+We also do CSS variables easier with SCSS (for things like colors). We will implement this at the beginning of the year; It's easy enough to understand when you see it. Other than that and the nesting syntax, that's about all we use SCSS for. 
+
+## Part 6: Optional Topics to Learn
+
+This section is intended to list the things that you don't need to learn to contribute to the core of the project, but we will likely end up using. These are all well-used in the industry so you would be well-suited to figure out how they work regardless. 
+
+The following fit the above description:
+- **Redux** is something we plan to build in near the beginning of the year to handle state (e.g. being logged in)
+- **Jest / React testing** is something we will start working with this near the beginning of the year. 
+- **React Lifecycle Hooks**, to my understanding are a cleaner way to do a lot of stuff with React. We will probably end up working with them eventually. 
 
 Feedback
 ====
