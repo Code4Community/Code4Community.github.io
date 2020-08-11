@@ -4,7 +4,7 @@ title: Git Tutorial
 permalink: /tutorial-1
 content_style: github_markdown
 ---
-# Tutorial XYZ: React and JSX
+# Tutorial: React and JSX
 
 By: Anden Acitelli
 
@@ -13,7 +13,7 @@ Reviewed by:
 ## Prerequisite Knowledge
 
 **Required Knowledge**
-- JavaScript: React is written in JavaScript. You will have to at least have the syntax down to understand React. I also recommend you know HTTP Requests and the array functions JavaScript offers (especially `map`) which are used very frequently throughout JSX. 
+- JavaScript: React is written in JavaScript. You will have to at least have the syntax down to understand React. I also recommend you know HTTP Requests and the array functions JavaScript offers (especially `map`) which are used very frequently throughout JSX, though they are not *necessary*.
 
 **Recommended Knowledge** 
 - HTML/CSS: While not really a prerequisite to actually work with React, especially the parts where we interface with the backend, you will want to understand how to do Front-End Design with HTML/CSS, otherwise much of the templating and front-end specific stuff will be much more challenging. 
