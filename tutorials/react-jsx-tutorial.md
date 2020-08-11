@@ -26,22 +26,15 @@ To use React, you will need:
 
 ## Overview
 
-- [Part X: What Are React and JSX?]()
-- [Part X: Set Up And Run A React Application]()
+- [Part 1: What Are React and JSX?](#part-1-what-are-react-and-jsx)
+- [Part 2: Set Up And Run A React Application](#part-2-set-up-and-run-a-react-application)
 
-- [Part X: React Components]()
-- [Part X: JSX Bits and Pieces]()
-- [Part X: Mindup-Specific React Details]()
+- [Part 3: React Components](#part-3-react-components)
+- [Part 4: JSX Bits and Pieces](#part-4-jsx-bits-and-pieces)
+- [Part 5: Mindup-Specific React Details](#part-5-mindup-specific-react-details)
 
-- [Part X: Optional Topics to Learn]()
-
-<!--
-- [Part 1: Getting A Basic React App Working](#part-1-about-git)
-- [Part 2: Cloning a Repository](#part-2-cloning-a-repository)
-- [Part 3: Making Modifications](#part-3-making-modifications)
-- [Part 4: Commit and Push Your Changes](#part-4-commit-and-push-your-changes)
-- [Part 5: Pull Request](#part-5-pull-request)
--->
+- [Part 6: Optional Topics to Learn](#part-6-optional-topics-to-learn)
+- [Part 7: Other Resources](#part-7-other-resources)
 
 ## Part 1: What Are React And JSX?
 
@@ -435,6 +428,13 @@ The following fit the above description:
 - **Redux** is something we plan to build in near the beginning of the year to handle state (e.g. being logged in)
 - **Jest / React testing** is something we will start working with this near the beginning of the year. 
 - **React Lifecycle Hooks**, to my understanding are a cleaner way to do a lot of stuff with React. We will probably end up working with them eventually. 
+
+## Part 7: Other Resources
+
+Odds are, if you've done any programming before, you should be well versed in doing a lot of googling, so I doubt this section will be very useful, but here's some resources I'd recommend if you need clarification on anything:
+
+- **The Mozilla MDN Docs** are really good. If they have a page on the topic I almost always look at that first.
+- **React's official documentation** is also very good.
 
 Feedback
 ====
