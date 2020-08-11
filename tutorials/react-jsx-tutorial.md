@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Git Tutorial
-permalink: /tutorial-1
+title: React / JSX Tutorial
+permalink: /react-jsx-tutorial
 content_style: github_markdown
 ---
 # Tutorial: React and JSX

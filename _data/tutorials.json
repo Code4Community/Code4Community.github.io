@@ -12,6 +12,6 @@
     {
         "name": "React/JSX Tutorial", 
         "link": "/react-jsx-tutorial", 
-        "description": "React/JSX Tutorial"
+        "description": "This tutorial walks you through how React/JSX work, and then how they are used in context to our system."
     }
 ]
