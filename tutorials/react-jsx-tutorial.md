@@ -420,6 +420,34 @@ The compiler also generates a .map file. All this does is allows the browser to 
 
 We also do CSS variables easier with SCSS (for things like colors). We will implement this at the beginning of the year; It's easy enough to understand when you see it. Other than that and the nesting syntax, that's about all we use SCSS for. 
 
+### Network Requests
+
+To send HTTP requests to the backend, we use `fetch()`. We primarily use this to send `GET` and `POST` requests. 
+
+The basic syntax for a `GET` request is the following: 
+
+```javascript
+fetch("/api/details")
+.then(response => response.json())
+.then(data => { console.log(data) })
+```
+
+The basic syntax for a `POST` request is similar, but we need to supply a body:
+
+```javascript
+let body = { data1: "Hello", data2: "World!" }
+fetch("/api/details", {
+    method: 'POST', 
+    body: JSON.stringify(body)
+})
+.then(response => response.json())
+.then(data => { console.log(data) })
+```
+
+You may possible have to change some other options, though the URL, method, and body are the three "necessary" ones. You can view a better description of all this at the [MDN Docs Page](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+
+You can also check out our login/signup/passwordreset form on the MindUp Repository [here](https://github.com/Code4Community/Mindup/blob/frontend/frontend/src/pages/loginSignup/LogInSignUp.js) (scroll to the bottom). This component is unique because we essentially template all three of those pages off of one signup, and pass in a bunch of props, but in terms of network requests, it isn't anything special.
+
 ## Part 6: Optional Topics to Learn
 
 This section is intended to list the things that you don't need to learn to contribute to the core of the project, but we will likely end up using. These are all well-used in the industry so you would be well-suited to figure out how they work regardless. 
