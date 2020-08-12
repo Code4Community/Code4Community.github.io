@@ -8,5 +8,10 @@
         "name": "Tutorial 2: HTML and CSS",
         "link": "/tutorial-2",
         "description": "This tutorial introduces the languages used in sites across the web. It walks through the creation of a static webpage from scratch."
+    },
+    {
+        "name": "Tutorial 3: Javascript",
+        "link": "/tutorial-3",
+        "description": "Our third tutorial introduced you to the scripting language of the web. It walks through the creation of a dynamic webpage."
     }
 ]
