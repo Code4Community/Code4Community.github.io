@@ -4,6 +4,12 @@ title: HTML & CSS Tutorial
 permalink: /tutorial-2
 content_style: github_markdown
 ---
+<style>
+    img {
+        box-shadow: 0 5px 15px grey;
+    }
+</style>
+
 # HTML & CSS Tutorial
 
 By: [Adam Lis](https://github.com/adambricelis)
