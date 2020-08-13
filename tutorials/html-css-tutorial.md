@@ -68,7 +68,7 @@ Every HTML page should look something like this. The `<!DOCTYPE html>` tag tells
 
 Checkpoint 1:
 
-![](images/tutorial-2/screenshot1.png)
+![](images/html-css-tutorial/screenshot1.png)
 
 Congrats! You have a webpage! Although...it's pretty boring. Let's change that by adding some content.
 
@@ -79,25 +79,25 @@ Let's start with a paragraph. Put a `<p></p>` tag inside of the `<body></body>` 
 
 Checkpoint 2:
 
-![](images/tutorial-2/screenshot2.png)
+![](images/html-css-tutorial/screenshot2.png)
 
 At the end of that paragraph from Wikipedia, there's a list of regional campuses. Let's take that sentence out of our paragraph and move it into a list of campuses. HTML has two types of lists: ordered `<ol></ol>` and unordered `<ul></ul>`. Since there isn't any particular order to the campuses, we'll use an unordered list. Put it inside of the body tag but after the paragraph tag. Then, put each campus in a list item tag (`<li></li>`) between the opening (`<ul>`) and closing (`</ul>`) list tags. Don't forget to add Columbus to the list!
 
 Checkpoint 3:
 
-![](images/tutorial-2/screenshot3.png)
+![](images/html-css-tutorial/screenshot3.png)
 
 Since this webpage is taking on an Ohio State theme, we should probably update the title and add a header. Change the contents of the title tag from "Hello World!" to "Ohio State". There are six header tags in HTML, `<h1></h1>`...`<h6></h6>` with h1 tags being the largest headers and h6 tags being the smallest headers. Let's add an h1 tag to top of our webpage with the text "THE Ohio State University". Make sure to put it inside of the body tag but before the paragraph tag.
 
 Checkpoint 4:
 
-![](images/tutorial-2/screenshot4.png)
+![](images/html-css-tutorial/screenshot4.png)
 
 Since we're making a website about Ohio State, we *have* to mention the marching band. Let's add a paragraph at the bottom of the page that says "Ohio State's marching band is known as the best damn band in the land." While we're at it, we should add a couple headers: one for our list of campus and one for the marching band. Put an h3 tag that says "Campuses" before the list of campuses, and put an h3 tag that says "Marching Band" before the paragraph about the marching band. Make sure not to put those inside of any tags other than the body tag.
 
 Checkpoint 5:
 
-![](images/tutorial-2/screenshot5.png)
+![](images/html-css-tutorial/screenshot5.png)
 
 Lastly, we're going to add an image (`<img>`) and a link (`<a></a>`) to our page. Thus far, we've only dealt with tags that have text inside. However, these last two tags are a little bit different. The anchor (link) tag has opening and closing tags, but the image tag doesn't. And both of them require you to set attributes to make them useful. Here's the syntax for setting a tag attribute in HTML: `<tag attribute="value"></tag>` or `<tag attribute="value">`. One tag can have any number of attributes.
 
@@ -107,7 +107,7 @@ Add an anchor tag around "Columbus, Ohio" in the paragraph about Ohio State from
 
 Checkpoint 6:
 
-![](images/tutorial-2/screenshot6.png)
+![](images/html-css-tutorial/screenshot6.png)
 
 ### Result
 Your code should look something like this:
