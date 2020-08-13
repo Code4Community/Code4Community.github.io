@@ -145,8 +145,13 @@ Nice job! Now you know some basic HTML. However, our website is still a bit blan
 ### Background
 CSS stands for Cascading Style Sheets. It is also known as "styling". The "cascade" portion of the title is beyond the scope of this tutorial, but you can [read about it](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) if you'd like to learn more.
 
-### Getting started
+When you're styling a webpage with CSS, you create rules which tell the browser how your webpage should be displayed. Those rules have two parts: selectors and declarations.
 
+#### Selectors
+Selectors allow you to specify *what* elements you're styling. The basic selectors are types, classes, and IDs. You can read more about [the other types of selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) if you'd like to learn more. In CSS, types are specified as tag names like `p`, `h3`, and `img`. Classes and IDs are attributes, so I hope you were paying attention when we went over them earlier. You add classes and IDs to tags just like any other attributes: `<tag class="my-class"></tag>` or `<tag id="my-id"></tag>`. In CSS, classes are specified with a dot prefix like `.my-class` and IDs are specified with a hash prefix like this `#my-id`. You can have multiple elements that use the same type and multiple elements that have the same class, but you can only have one element with a given ID. *That's why they're called IDs, they must be unique.*
+
+#### Declarations
+Declarations allow you to specify *how* you want elements to be styled.
 
 ### Adding styling
 
