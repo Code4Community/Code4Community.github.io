@@ -22,11 +22,11 @@ By: [Max Gruber](https://github.com/maxdg99)
 
 Static webpages are great. Just as you saw in Adam's HTML & CSS tutorial, we can make a pretty cool website with just HTML & CSS. That said, what if we want our website to well... do things?! This is where JavaScript (or JS for short) comes into the picture.
 
-JavaScript is a scripting langugage for the web.  JS helps us take in user input, process it, and react to it.  It is worth noting that **Java and JavaScript are not the same thing *or* similar** for that matter.  Java and JavaScript are very different coding languages with vastly different use cases. Now, with that out of the way, let's learn some JS!
+JavaScript is a scripting language for the web.  JS helps us take in user input, process it, and react to it.  It is worth noting that **Java and JavaScript are not the same thing *or* similar** for that matter.  Java and JavaScript are very different coding languages with vastly different use cases. Now, with that out of the way, let's learn some JS!
 
 ## Basic JavaScript Syntax
 
-Many of the features of JS will look very similar to other langauges that you may know.  Though the similarities do sometimes exist, do not let this trick you!  Sometimes a JS code snippet make look the same as Java for example, but it may behave very differently!
+Many of the features of JS will look very similar to other languages that you may know.  Though the similarities do sometimes exist, do not let this trick you!  Sometimes a JS code snippet make look the same as Java for example, but it may behave very differently!
 
 ### Variables
 
@@ -252,6 +252,20 @@ function myFunction(param1, param2) {
 }
 ```
 
+#### Anonymous Functions
+
+Anonymous Functions are functions that do not have a name, so they cannot be called by name.  Anonymous Functions can be passed as parameters into functions, set as property values in objects (as we saw before), etc.  There are two ways to create an anonymous functions, both are shown below.
+
+```
+    myMethod(function(param1, param2) {
+        return param1 + param2;
+    });
+
+    myMethod((param1, param2) => {
+        param1 + param2
+    });
+```
+
 ### Let's Start Writing Some Code!
 
 Alright, now that we know the basic JS syntax we can get to writing some code! Through out the remainder of this tutorial, we will be adding the current temperature of each OSU campus on the HTML page created in the HTML & CSS tutorial.
@@ -335,40 +349,33 @@ Now that we have the loop figured out, we will need to process that data and get
 
 An HTTP Request is a way to get data from a server.  Essentially, a server provides a url where you can either get data from or give data to.  In order to get the data we want and for the server to know who we are, we need to pass some information along with our request.  There are many types of HTTP requests, but we will be dealing with GET requests for the purposes of this tutorial.  If you would like to learn more about the basics of HTTP, you can check out this (article)[https://www.tutorialspoint.com/http/http_requests.htm].
 
-The API we will be calling today is this (FCC Weather API)[https://fcc-weather-api.glitch.me/].  In order to make a request to the 7Weather API, we need to provide our latitude, longitude, as well as a few other boring things.
+The API we will be calling today is this (FCC Weather API)[https://fcc-weather-api.glitch.me/].  In order to make a request to the FCC Weather API, we need to provide our latitude and longitude.
 
-Making an GET request in JS looks something like this:
+Though there are several ways to make HTTP requests in JS, we will be using the most modern and simple method.  Just understand that you may see other methods in the wild!  Other options can be specified with the fetch() function.  These options can be viewed (here)[https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch].  When no options are given, the default is a GET request.  A GET request is simply requesting data from a server.
 
 ```
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        // This is where our code goes if our HTTP Request was successful
-    }
-};
-xhttp.open("GET", "myUrl", true);
-xhttp.send();
+fetch(url)
+    .then(response => response.json())
+    .then(response => {
+        // Process the response
+    });
 ```
 A lot of the code above may appear scary or confusing, but you can ignore a good part of it.  You will begin to understand more of it as you Google answers to your questions while working on projects!
 
-
 Now, we need to set this up to send our weather API calls.  It will probably be most efficient to write a function that takes our campus objects and makes the API call.  What do you think this will look like?
 
-Thought there may be a few solutions here, this is what I came up with.  The data returned from the GET request is a JS object (you can see the object on the API page). We just need to get the temperature from the object as we would access any object.  Moreover, the returned temperature is in Celsius, so we need to convert it to Fahrenheit.
+Though there may be a few solutions here, this is what I came up with.  The data returned from the GET request is a JS object (you can see the object on the API page). We just need to get the temperature from the object as we would access any object.  Moreover, the returned temperature is in Celsius, so we need to convert it to Fahrenheit.
 
 ```
 function getWeather(campus) {
     var url = "https://fcc-weather-api.glitch.me/api/current?lat="+ campus["lat"] +"&lon=" + campus["lon"];
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.responseText);
+    fetch(url)
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
             var temp = response["main"]["temp"];
             temp = (temp * 9/5) + 32;
-        }
-    };
-    xhttp.open("GET", url, true);
-    xhttp.send();
+        });
 }
 ```
 
@@ -383,13 +390,38 @@ for (campus of campuses) {
 }
 ```
 
+## Asynchronous JS
+
+Javascript has asynchronous capabilities.  For example, if we make two requests with `fetch()`, JS will not wait until the first request returns before making the second one.  This can be very helpful when dealing with many http requests so that our code does not get slowed down.  The asynchronous nature of `fetch()` is why we need to use the `.then()` syntax.  This syntax waits until the HTTP response is returned in order to execute the code.  This code that is executed after an HTTP request (or after any asynchronous action for that matter) is commonly referred to as a callback.  
+
+The `fetch()` function returns a promise.  A promise in JS is very similar to a promise in real life.  It says I promise to get you the data, but I am still figuring that out right now, here is a promise instead.  Once the HTTP response is returned, the response will be in the promise.
+
+We can make our own functions asynchronous with the `async` and `await` keywords.  All `async` functions return a promise, but it is worth noting that an `async` function with no `await`'s will run synchronously.  I understand that this section may seem very confusing.  Once you get to working on your projects and Googling your questions, this will make a lot more sense!
+
+Below is a brief example of these keywords in use.  I encourage you to check out (this article)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function] to gain a better understanding of these keywords
+
+```
+async function myFunc() {
+    await 1
+}
+```
+
 ## The DOM
 
 ### Editing the HTML of the DOM
 
 Great!  Now we have most of our weather thingy working.  Now all we have to do is inject the temperature that we get from the API into the HTML.  This is done with something called DOM Manipulation.  The DOM, or Document Object Model, is an object that represents the HTML page in JS.  
 
-We can find elements in our HTML page by assigning id's to some elements and using the following method call:  `var element = document.getElementById("id");`.  We can then edit the HTML that is inside the returned element with `element.innerHTML = "some html"`.
+We can find elements in our HTML page by assigning id's to some elements and using the following method call:  `var element = document.getElementById("id");`.  We can also find elements by other methods such as by class or tag name, but we will just ID here. We can then edit the HTML that is inside the returned element with `element.innerHTML = "some html"`.  That said, there is a better way when we are adding multiple child listItems to our list parent.  We can create a new node element and then append it to the list!  Check out the example below:
+
+```
+// Assume that we have list with id = "list"
+
+var node = document.createElement("LI");
+var textNode = document.createTextNode("This is the text in our list item");
+node.appendChild(textNode);
+document.getElementById("list").appendChild(node);
+```
 
 The first thing that we need to do in order to add campuses to our HTML page is add an id to the `<ul>` element. In order to do this, replace `<ul>` with `<ul id="campuses">`. Also, remove all of the `<li>` elements from the list. Your file now should look like the following:
 
@@ -417,7 +449,7 @@ The first thing that we need to do in order to add campuses to our HTML page is 
             }
             p {
                 color: gray;
-            }
+            }[]
             #band-info {
                 color: black;
                 font-weight: bold;
@@ -438,18 +470,50 @@ The first thing that we need to do in order to add campuses to our HTML page is 
         <p id="band-info">Ohio State's marching band is known as the best damn band in the land.</p>
     </body>
     <script>
+        var campuses = [
+            {
+                name: "Columbus",
+                lat: "40.0067",
+                lon: "-83.0305"
+            },
+            {
+                name: "Lima",
+                lat: "40.7373",
+                lon: "-84.0283"
+            },
+            {
+                name: "Mansfield",
+                lat: "40.7989",
+                lon: "-82.5779"
+            },
+            {
+                name: "Marion",
+                lat: "40.5804",
+                lon: "-83.0915"
+            },
+            {
+                name: "Newark",
+                lat: "40.0581",
+                lon: "-82.4013"
+            },
+            {
+                name: "Wooster",
+                lat: "40.8051",
+                lon: "-81.9351"
+            }
+        ];
+
         function getWeather(campus) {
             var url = "https://fcc-weather-api.glitch.me/api/current?lat="+ campus["lat"] +"&lon=" + campus["lon"];
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var response = JSON.parse(xhttp.responseText);
+            fetch(url)
+                .then(response => response.json())
+                .then(response => {
+                    console.log(response);
                     var temp = response["main"]["temp"];
                     temp = (temp * 9/5) + 32;
-                }
-            };
-            xhttp.open("GET", url, true);
-            xhttp.send();
+                    var listItem = document.createElement("LI");
+                    var text = document.createTextNode(campus["name"] + " - " + temp);
+                });
         }
 
         var campus;
@@ -463,12 +527,18 @@ The first thing that we need to do in order to add campuses to our HTML page is 
 Now, all we need to do is add some logic to add the campuses and temperatures to the list.  We also need to assign the correct id/class depending if it is the main campus or regional campus.  How do you think we can do this?  The solution that I got is below.
 
 ```
+var listItem = document.createElement("LI");
+var text = document.createTextNode(campus["name"] + " - " + temp);
+
+listItem.appendChild(text);
+
 if (campus["name"] == "Columbus") {
-    var listItem = "<li id='main-campus'>Columbus - " + temp + "<li>"
+    listItem.id = "main-campus";
 } else {
-    var listItem = "<li class='regional-campus'>" + campus["name"] + " - " + temp + "<li>"
+    listItem.classList.add("regional-campus");
 }
-document.getElementById("campuses").innerHtml += listItem;
+
+document.getElementById("campuses").appendChild(listItem);
 ```
 
 Does that make sense?  Do you see how we append the innerHTML every time with a new list item?  Ok, now it is time to put it all together!  Your code now should look like this.
@@ -553,26 +623,30 @@ Does that make sense?  Do you see how we append the innerHTML every time with a 
 
         function getWeather(campus) {
             var url = "https://fcc-weather-api.glitch.me/api/current?lat="+ campus["lat"] +"&lon=" + campus["lon"];
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var response = JSON.parse(xhttp.responseText);
+            fetch(url)
+                .then(response => response.json())
+                .then(response => {
+                    console.log(response);
                     var temp = response["main"]["temp"];
                     temp = (temp * 9/5) + 32;
+ 
+                    var listItem = document.createElement("LI");
+                    var text = document.createTextNode(campus["name"] + " - " + temp);
+
+                    listItem.appendChild(text);
+
                     if (campus["name"] == "Columbus") {
-                        var listItem = "<li id='main-campus'>Columbus - " + temp + "<\li>"
+                        listItem.id = "main-campus";
                     } else {
-                        var listItem = "<li class='regional-campus'>" + campus["name"] + " - " + temp + "<\li>"
+                        listItem.classList.add("regional-campus");
                     }
-                    document.getElementById("campuses").innerHTML += listItem;
-                }
-            };
-            xhttp.open("GET", url, true);
-            xhttp.send();
+
+                    document.getElementById("campuses").appendChild(listItem);
+                });
         }
 
         var campus;
-        for (campus of\ campuses) {
+        for (campus of campuses) {
             getWeather(campus);
         }
     </script>
@@ -691,22 +765,26 @@ Now we just put all of this code together and run it!
 
         function getWeather(campus) {
             var url = "https://fcc-weather-api.glitch.me/api/current?lat="+ campus["lat"] +"&lon=" + campus["lon"];
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var response = JSON.parse(xhttp.responseText);
+            fetch(url)
+                .then(response => response.json())
+                .then(response => {
+                    console.log(response);
                     var temp = response["main"]["temp"];
                     temp = (temp * 9/5) + 32;
+ 
+                    var listItem = document.createElement("LI");
+                    var text = document.createTextNode(campus["name"] + " - " + temp);
+
+                    listItem.appendChild(text);
+
                     if (campus["name"] == "Columbus") {
-                        var listItem = "<li id='main-campus'>Columbus - " + temp + "</li>"
+                        listItem.id = "main-campus";
                     } else {
-                        var listItem = "<li class='regional-campus'>" + campus["name"] + " - " + temp + "</li>"
+                        listItem.classList.add("regional-campus");
                     }
-                    document.getElementById("campuses").innerHTML += listItem;
-                }
-            };
-            xhttp.open("GET", url, true);
-            xhttp.send();
+
+                    document.getElementById("campuses").appendChild(listItem);
+                });
         }
 
         window.addEventListener('load', function () {
