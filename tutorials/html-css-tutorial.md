@@ -251,3 +251,14 @@ Your code should look something like this:
 ```
 
 Now that you've completed this tutorial, you have your own little static webpage!
+
+# Resources
+* HTML
+    * [W3Schools](https://www.w3schools.com/html/)
+* CSS
+    * [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    * [W3Schools](https://www.w3schools.com/css/)
+    * [CSS-Tricks](https://css-tricks.com/)
+
+# Feedback
+If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the exec board members.
