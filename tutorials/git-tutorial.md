@@ -87,9 +87,9 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - Choose "Clone Repository"
 
-- Choose "Clone from Github" and complete the one-time authentiction process
+- Choose "Clone from Github" and complete the one-time authentication process
 
-- You should then be able to type "code4community/" and get a listing of all repositories in our organization!
+- You should then be able to type "code4community/" and get a list of all repositories in our organization!
 
 ![](images/git-tutorial/screenshot2.png)
 
@@ -290,7 +290,7 @@ You're done. Before you leave, ask people to review your request and we should b
 Feedback
 ====
 
-If you have any feedback on this tutorial, feel free to create an issue on the Github repo, or let one of the exec board members (@maxdg99, @adambricelis, @ndrewh) know.
+If you have any feedback on this tutorial, feel free to create an issue on the Github repo or talk to one of the exec board members.
 
 Help! I have merge conflicts... now what?
 =====
