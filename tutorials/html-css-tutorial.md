@@ -160,7 +160,41 @@ Selectors allow you to specify *what* elements you're styling. The basic selecto
 Declarations allow you to specify *how* you want elements to be styled. Each declaration consists of a property and a value. There are [numerous CSS properties](https://www.w3schools.com/cssref/), so we'll only touch on a few in this tutorial. This is the CSS declaration syntax: `css-property: value;`. Properties and values are separated by a colon, and each declaration ends with a semicolon.
 
 ### Adding styling
+Since this is a pretty simple webpage, we'll be adding styling inside of our `.html` file. However, it's best to use [external CSS files](https://www.w3schools.com/css/css_howto.asp) in your future web development endeavors.
 
+Start by adding a `<style></style>` tag inside of the head tag. This is where we'll put all of our CSS rules.
+
+For our first CSS rule we'll change the background color of our website. Since we want to apply this to the whole page, we need to style the `body` tag. Set the `background` property to `#fff7f7`, a nice light reddish pink color I found. This is a hexadecimal color, although there are [many different ways to specify CSS colors](https://www.w3schools.com/cssref/css_colors_legal.asp).
+
+Checkpoint 7:
+
+<!-- ![](images/html-css-tutorial/screenshot7.png) -->
+
+Next, we'll make the headers [Ohio State gray](https://brand.osu.edu/color/). Since we have `h1` and `h3` tags on our webpage, we need to set the `color` property to `#666` for both. Remember, you should be able to do this with a single CSS rule.
+
+Checkpoint 8:
+
+<!-- ![](images/html-css-tutorial/screenshot8.png) -->
+
+Our university seal is great and all, but it's currently too big and not in the right spot on our webpage. Making it smaller and moving it to the right side of the page would be ideal. Since it's the only image on the page, we can style the `img` tag. Set the `float` property to `right` and set the `height` property to `100px`. The height and width properties are set to `auto` by default, so the image's width was automatically scaled down to maintain the image's [aspect ratio](https://en.wikipedia.org/wiki/Aspect_ratio). There are many ways to do layouts in CSS that are better than `float`s, but this solution is quick and simple. Go down the [CSS layout rabbit-hole](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) at your own risk.
+
+Checkpoint 9:
+
+<!-- ![](images/html-css-tutorial/screenshot9.png) -->
+
+Now our webpage looks pretty good! But that list of campuses is still pretty boring. Let's make Columbus red and the regional campuses green (sorry not sorry, Columbus is the best). We're gonna need to use some of those cool CSS classes and IDs we talked about earlier. Give the li tag for Columbus the id `main-campus` (since there's only one). Give the li tags for the regional campuses the class `regional-campus`. Now we can style our list of campuses. For the main campus, set the `color` property to `#bb0000`, [Ohio State red](https://brand.osu.edu/color/). For the regional campuses, set the `color` property to `green`.
+
+Checkpoint 10:
+
+<!-- ![](images/html-css-tutorial/screenshot10.png) -->
+
+For our last styling task, we're going to touch on [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). This topic is pretty advanced, so don't worry if it fails to sink in this time around. First, let's make the paragraphs gray. Style the `p` tag, setting the `color` property to `gray`. Now both paragraphs should be gray. However, we really want to emphasize that our band that is the best damn band in the land, so let's make that paragraph black and bold. Add the `band-info` id to the p tag under the Marching Band header. Style that id by setting the `color` property to `black` and setting the `font-weight` property to `bold`. Now the first paragraph should be gray, while the second one should be black and bold. You should read more about specificity if you're going to be writing more CSS, but I'll give you the abbreviated version now. Styling an ID is more specific than styling a class, styling a class is more specific than styling a type (tag name). So the `#band-info` style for `color` overrides the `p` style for `color`.
+
+Checkpoint 11:
+
+<!-- ![](images/html-css-tutorial/screenshot10.png) -->
+
+Great job! Now you know some basic CSS.
 
 ### Result
 Your code should look something like this:
