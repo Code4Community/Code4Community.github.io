@@ -145,13 +145,19 @@ Nice job! Now you know some basic HTML. However, our website is still a bit blan
 ### Background
 CSS stands for Cascading Style Sheets. It is also known as "styling". The "cascade" portion of the title is beyond the scope of this tutorial, but you can [read about it](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) if you'd like to learn more.
 
-When you're styling a webpage with CSS, you create rules which tell the browser how your webpage should be displayed. Those rules have two parts: selectors and declarations.
+When you're styling a webpage with CSS, you create rules which tell the browser how your webpage should be displayed. Each rule consists of one or more selectors and one or more declarations. Multiple selectors are separated by commas and multiple declarations are separated across multiple lines. We'll get into the syntax for selectors and declarations in a moment, but here's the CSS rule syntax:
+```
+selector-1, selector-2 {
+    declaration-1
+    declaration-2
+}
+```
 
 #### Selectors
-Selectors allow you to specify *what* elements you're styling. The basic selectors are types, classes, and IDs. You can read more about [the other types of selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) if you'd like to learn more. In CSS, types are specified as tag names like `p`, `h3`, and `img`. Classes and IDs are attributes, so I hope you were paying attention when we went over them earlier. You add classes and IDs to tags just like any other attributes: `<tag class="my-class"></tag>` or `<tag id="my-id"></tag>`. In CSS, classes are specified with a dot prefix like `.my-class` and IDs are specified with a hash prefix like this `#my-id`. You can have multiple elements that use the same type and multiple elements that have the same class, but you can only have one element with a given ID. *That's why they're called IDs, they must be unique.*
+Selectors allow you to specify *what* elements you're styling. The basic selectors are types, classes, and IDs. You can read more about [the other types of selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) if you'd like to learn more. In CSS, types are specified as tag names like `p`, `h3`, and `img`. Classes and IDs are attributes, so I hope you were paying attention when we went over them earlier. You add classes and IDs to tags just like any other attributes: `<tag class="my-class"></tag>` or `<tag id="my-id"></tag>`. In CSS, classes are specified with a dot prefix like `.my-class` and IDs are specified with a hash prefix like `#my-id`. You can have multiple elements that use the same type and multiple elements that have the same class, but you can only have one element with a given ID. *That's why they're called IDs, they must be unique.*
 
 #### Declarations
-Declarations allow you to specify *how* you want elements to be styled.
+Declarations allow you to specify *how* you want elements to be styled. Each declaration consists of a property and a value. There are [numerous CSS properties](https://www.w3schools.com/cssref/), so we'll only touch on a few in this tutorial. This is the CSS declaration syntax: `css-property: value;`. Properties and values are separated by a colon, and each declaration ends with a semicolon.
 
 ### Adding styling
 
