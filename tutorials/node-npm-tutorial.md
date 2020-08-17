@@ -1,3 +1,8 @@
+layout: page
+title: Node.js and npm Tutorial
+permalink: /tutorial-4
+content_style: github_markdown
+
 # Node.js and npm Tutorial
 
 ## Before we get started
@@ -32,7 +37,7 @@ Start by creating a new Node.js file titled `tutorial.js`. If you haven't alread
 
 Next, you need to install Express. Express is a framework that helps to make web development much easier. Run the command `npm install express --save`. Successfully completing this command will add a `package-lock.json` file to your current folder. The `package-lock.json` helps to keep track of which version of which module you are using. Your `package.json`'s dependencies should also have been changed to reflect that you installed Express:
 
-![Express in package.json](packageJsonPicture.png)
+![Express in package.json](images/node-npm-tutorial/packageJsonPicture.png)
 
 
 ## Part 3: Starting A Local Server
@@ -52,7 +57,7 @@ The `app.get` function allows a GET request for your server to respond with  "Yo
 
 You're now ready to start running your server locally! Entering the command `node tutorial.js` in the terminal will run your tutorial.js file. Navigate to [http:localhost:3000](http:localhost:3000), and your page should look like this:
 
-![Initial server screenshot](InitialServer.png)
+![Initial server screenshot](images/node-npm-tutorial/InitialServer.png)
 
 
 It's good that you were able to get your server running, but we should definitely add a bit to the page. Let's add some HTML to make it a little more interesting. Replace your `app.get` funciton with the following code:
@@ -76,6 +81,6 @@ It's good that you were able to get your server running, but we should definitel
 
 `res.writeHead` provides a 200 success code and also ensures that the server recognizes we're adding HTML. The res.write statement allows the server to send the provided HTML code as the GET response. Try to complete the rest of the site using your HTML work from Tutorial 2. When you're finished, the page should look like this:
 
-![Node.js final page screenshot](FinishedNodePage.png)
+![Node.js final page screenshot](images/node-npm-tutorial/FinishedNodePage.png)
 
 Congratulations, you finished the tutorial and were able to successfully start a local server with Node.js and npm.
