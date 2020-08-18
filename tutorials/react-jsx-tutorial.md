@@ -87,16 +87,25 @@ You will then see some terminal output, which is React starting the development 
 
 What the command `npm run <command>` does is go to the `package.json` file, go to the `scripts` section, and runs whatever corresponds to the command there. There's some weird stuff that goes in with environment variables (which is why straight-up running these commands instead of doing it through `npm run start` often doesn't work) but that's beyond scope of this tutorial.
 
+### Exploring The Parts Of Our Application
+
+We start in our base directory. `node_modules` is all the JavaScript prerequisites that React has. `public` generally holds any pictures we use. `src` holds all our code, which we will go more in-depth into momentarily. `package.json` holds information about our projects npm dependencies and associated scripts. `package-lock.json` holds information about the versions of prerequisites our project can run on.
+
+Inside the `src` directory, which is generally all that front-end people will change, there are some important parts. `index.js` is the very first file that React tries to run. We generally never edit this. This file includes `App.js`, which is the "base" of our entire application. In context to Mindup, this is where we do routing, meaning it's where we make the decision to display certain pages ("components") when the user is at certain URLs. 
+
+Any other files are either related to styling, or are beyond the scope of this application. Looking them up is sure to give you useful knowledge, but they haven't really been a part of the project up to this point.
 
 ## Part 3: React Components
 
-React offers templating - The ability to duplicate the same bit of code across multiple sections while being able to edit it all in one place - and a whole lot of other stuff via **components**. 
+It's time to get into the meat of React! React, like most other broadly-scoped web frameworks, offers templating - The ability to duplicate the same bit of code across multiple sections while being able to edit it all in one place. It does this via **components**. You can view a component as a section of a page that has its own Layout (the HTML), Styling (the css), and Behavior (the JavaScript).
 
-There are two types of components - Regular components, and stateless functional components.
+Each component gets its own JavaScript file. You can technically create multiple in one file, similar to how you can often declare multiple classes in the same file in a lot of Object-Oriented Languages, but it's not generally recommended at all from a maintainability standpoint, and is no different in our case.
+
+### Creating Our First Component 
 
 ### Regular Components
 
-A "regular" component is React's "base" component. This allows you to hold state (variable values, etc.) and should be used wherever we need to any sort of user authentication or track the state of something (i.e. buttons being pressed, etc.) 
+A "regular" component is React's "base" component. This allows you to hold state (variable values, etc.) and should be used wherever we need to any sort of user authentication or track the state of something (i.e. buttons being pressed) 
 
 A regular component `.js` file looks like the following: 
 
@@ -108,6 +117,8 @@ class Welcome extends React.Component {
   }
 }
 ```
+
+First, we import React, something that always needs to happen. Then, we create a component called `Welcome` that inherits behavior from React's master `Component` class. Classes defined this way, inheriting from `React.Component`, need a `render()` function, which returns the JSX that we want this component to display. If the JSX looks a little weird, don't worry about it. It's covered later.
 
 ### Stateless Functional Components
 
