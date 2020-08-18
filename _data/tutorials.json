@@ -18,5 +18,10 @@
         "name": "Tutorial 4: Node.js and npm",
         "link": "/tutorial-4",
         "description": "This tutorial introduces the Node.js and npm."
+    },  
+    {
+        "name": "Tutorial 6: React/JSX Tutorial", 
+        "link": "/tutorial-6", 
+        "description": "This tutorial walks you through how React/JSX work and then how they are used in context to our system."
     }
 ]
