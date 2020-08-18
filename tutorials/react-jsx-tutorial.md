@@ -12,11 +12,9 @@ Reviewed by:
 
 ## Prerequisite Knowledge
 
-**Required Knowledge**
-- JavaScript: React is written in JavaScript. You will have to at least have the syntax down to understand React. I also recommend you know HTTP Requests and the array functions JavaScript offers (especially `map`) which are used very frequently throughout JSX, though they are not *necessary*.
+- **JavaScript:** You don't need to be an expert, but you need to understand the syntax of JavaScript to understand React. The JavaScript tutorial completed previously is recommended if you are unfamiliar, and you should skim it over even if you already familiar.
+- **HTML/CSS:** You will need to understand HTML to understand JSX (explained later), and you will need to understand CSS to understand SCSS (explained later). React itself requires neither, but you will want to have a good foundation to understand it all together.
 
-**Recommended Knowledge** 
-- HTML/CSS: While not really a prerequisite to actually work with React, especially the parts where we interface with the backend, you will want to understand how to do Front-End Design with HTML/CSS, otherwise much of the templating and front-end specific stuff will be much more challenging. 
 
 ## Setup
 
@@ -25,6 +23,12 @@ To use React, you will need:
 - npm (node package manager), which comes installed with Node.
 
 ## Overview
+
+### What Does This Tutorial Cover?
+
+This tutorial is intended to get a new Code 4 Community up to speed with what they need to know in order to start contributing code to the Mindup! application. The skills necessary are taught through a webapp you will be building concurrently with the tutorial, with screenshots included at the end of each section so that you can verify that your code works as intended.
+
+### Outline
 
 - [Part 1: What Are React and JSX?](#part-1-what-are-react-and-jsx)
 - [Part 2: Set Up And Run A React Application](#part-2-set-up-and-run-a-react-application)
@@ -38,11 +42,13 @@ To use React, you will need:
 
 ## Part 1: What Are React And JSX?
 
+Before we get into making your own application, a little background information is helpful. 
+
 ### React 
 
-[React](https://reactjs.org/) is a JavaScript framework developed and maintained by Facebook and a group of open-source developers. It is generally regarded as the most popular web development framework, but is rivaled by Angular and Vue. There is great reading out there about the differences between them and the advantages of each, but that is beyond the scope of this tutorial. 
+[React](https://reactjs.org/) is a JavaScript framework developed and maintained by Facebook and a group of open-source developers. It is generally regarded as the most popular web development framework, especially at smaller companies, but is rivaled by Angular and Vue. There is great reading out there about the differences between them and the advantages of each, but that is beyond the scope of this tutorial. 
 
-Here is a "Hello, World" React page: 
+As a taste of what's to come, here is a "Hello, World!" page in React: 
 
 ```javascript
 import React from 'react'
@@ -55,56 +61,31 @@ class HelloWorld extends React.Component {
 
 ### JSX 
 
-JSX is cool, but isn't anything to be afraid of. JSX is essentially version of HTML used by React that lets you do a lot of JavaScript stuff right in the middle of it. It is big enough that it is mentioned separately in this tutorial, but much smaller in scale and importance than React overall. 
-
-For example, the following `render` function shows how you can pull values from JavaScript and display them right on the page without needing any DOM Manipulation, which you'd need to do if you weren't using React:
-
-```javascript
-render() {
-    let listElementsToShow = ["Element 1", "Element 2", "Element 3"]
-    let pageTitle = "Mindup!"
-    return (
-        <div>
-            <h1>{pageTitle}</h1>
-            <ul>
-                {listElementsToShow.map(element => {
-                    return (
-                        <li>{element}</li>
-                    )
-                })}
-            </ul>
-        </div>
-    )
-}
-```
+JSX is a version of HTML used by React that lets you plug JavaScript variables directly into the HTML. This is what enables React to do implicit DOM Manipulation. If you don't know what that means, that's fine, but if you're curious, look up "JavaScript DOM Manipulation"; React does that all for us.
 
 ## Part 2: Set Up And Run A React Application
 
 ### Set Up A Baseplate React Application
 
-Setting up a baseplate react application that you can use to figure out how React works, and just tinker with it, is very easy.
+Setting up a React project from scratch manually is difficult, but React has an easy way to create a basic application with all the core functionality needed to take away all that overhead.
 
-Just execute the following line of code in a terminal:
+To do this, simply verify `npm` is installed and execute `npx create-react-app test-app` in a terminal. As a reminder the hotkey to toggle VSCode's integrated terminal is `Ctrl + Tilde` (`Tilde` is the character above `Left Tab`).
 
-```bash
-npx create-react-app <name of project>
-```
+This line uses npx (an npm-related service that is installed with npm) to run `create-react-app`, which is a preregistered command that creates a directory with the name of the third parameter (i.e. `test-app` above) and populates that directory with the baseplate React application itself. It will likely take a few minutes; That is expected.
 
-This line uses npx (a part of npm that runs commands) to run `create-react-app`, which creates a directory with the name of your project and populates that directory with the baseplate react application itself. 
+After it finishes, if you open the folder (`test-app`) for the application in VSCode, it should look like the following: 
+
+![](../images/react-jsx-tutorial/AfterCreateReactApp.png)
 
 ### Run A React Application
 
-To run the application, ensure you are in the application's base directory. For example, if you ran `npx create-react-app sample-project`, ensure you are in the `sample-project` directory. 
+To run the application, first ensure you are in the application's base directory. This will usually be the directory with `package.json` in it. Then, run `npm run start` in a terminal.
 
-Then, run the following line in the terminal: 
+You will then see some terminal output, which is React starting the development server (which lets us hot-reload code without having to refresh the browser) and then loading our project into it. If you did everything right, you should see something like this:
 
-```bash
-npm run start
-```
+![](../images/react-jsx-tutorial/AfterNPMRunStart.png)
 
-What the command `npm run <command>` does is go to the `package.json` file, go to the `scripts` section, and runs whatever corresponds to the command there. In our case, it just starts up React's development server and opens your browser to the page that it is running on. You will generally always want to run `npm run start` from the directory that your `package.json` is in accordingly. 
-
-In context to Mindup, to run the front-end development server, you will run `npm run start` from the `frontend` directory.
+What the command `npm run <command>` does is go to the `package.json` file, go to the `scripts` section, and runs whatever corresponds to the command there. There's some weird stuff that goes in with environment variables (which is why straight-up running these commands instead of doing it through `npm run start` often doesn't work) but that's beyond scope of this tutorial.
 
 
 ## Part 3: React Components
