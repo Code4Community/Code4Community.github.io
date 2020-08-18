@@ -17,7 +17,7 @@ content_style: github_markdown
 * Download [Postman](https://www.postman.com/downloads/)
 
 ## Overview
-* Part 1: Express
+* Part 1: Express/Creating an Express Application
 * Part 2: MongoDB/Mongoose
 * Part 3: Building a REST API
 
@@ -34,13 +34,7 @@ that Express offers are:
 
 ### Creating a Basic Express Application
 1. Launch VS code and open the project that you created in the node/npm tutorial
-2. Open a terminal in VS Code (View -> Terminal) and install Express via NPM:
-    ```
-    npm install express --save
-    ```
-3. Create a new javascript file in the root of your working directory
-    - typical names are "app.js", "server.js", or "index.js" to represent the starting point of the application
-4. Inside of app.js, we must import the express module:
+4. Open the app.js and import the express module (which was installed in the [Node/NPM tutorial](/nodejs-npm-tutorial/#part-2-getting-started-with-npm)):
     ```js
     const express = require('express');
     ```
