@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JavaScript Tutorial
-permalink: /tutorial-3
+permalink: /javascript-tutorial
 content_style: github_markdown
 ---
 

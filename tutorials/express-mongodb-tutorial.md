@@ -16,6 +16,11 @@ content_style: github_markdown
 * Complete the node/npm tutorial
 * Download [Postman](https://www.postman.com/downloads/)
 
+## Overview
+* Part 1: Express
+* Part 2: MongoDB/Mongoose
+* Part 3: Building a REST API
+
 
 ## Part 1: Express
 
@@ -152,7 +157,7 @@ In the `app.js` file:
     * [Guide to sending requests with Postman](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
 
 
-You can view the final code in the tutorial repo
+To view the final code, look at the `app_pt1.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="_blank"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="_blank"} repo:
 
 
 ### Additional Resources
@@ -224,7 +229,10 @@ tOSU.save((err, school) => {
 
 For more information about models and the methods available, please visit the Mongoose [models page](https://mongoosejs.com/docs/models.html){:target="_blank"}
 
-### Continuing the Express Application
+## Part 3: Building a REST API
+
+We can use the information above and what we've built so far to extend our Express application into a fully functioning REST API:
+
 1. Visit the [Getting Started](https://docs.atlas.mongodb.com/getting-started/){:target="_blank"} guide and follow parts 1-4 to set up an account and create a database with MongoDB Atlas. 
 
 2. Next, install Mongoose via NPM:
@@ -241,7 +249,7 @@ For more information about models and the methods available, please visit the Mo
 4. Now we must open a connection to the database. Open the Connect dialog on your MongoDB cluster that you created and copy the provided connection string, replacing `<username>`, `<password>`, and `<dbname>` with your database credentials/information.
     ```js
     const db = () => {
-        return mongoose.connect(mongodb+srv://<username>:<password>@<dbname>-hc9j8.azure.mongodb.net/test?retryWrites=true&w=majority), {useNewUrlParser: true, useUnifiedTopology: true});
+        return mongoose.connect('mongodb+srv://<username>:<password>@<dbname>-hc9j8.azure.mongodb.net/test?retryWrites=true&w=majority), {useNewUrlParser: true, useUnifiedTopology: true}');
     };
     ```
 5. We now have a connection to the database and can get notified when we connect successfully:
@@ -324,7 +332,7 @@ For more information about models and the methods available, please visit the Mo
 
 Congrats! You now have created a simple REST API with Express and MongoDB/Mongoose!
 
-To view the final code, visit the tutorial repo:
+To view the final code, look at the `app_pt3.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="_blank"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="_blank"} repo:
 
 ### Additonal Resources:
 * [MongoDB Atlas](https://docs.atlas.mongodb.com){:target="_blank"}

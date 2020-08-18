@@ -1,7 +1,9 @@
+---
 layout: page
 title: Node.js and npm Tutorial
-permalink: /tutorial-4
+permalink: /nodejs-npm-tutorial
 content_style: github_markdown
+---
 
 # Node.js and npm Tutorial
 
@@ -33,7 +35,7 @@ npm (node package manager) works with Node.js to download and manage software pa
 - `npm start` : Runs the `package.json`'s start attribute
 
 ## Part 2: Getting started with npm
-Start by creating a new Node.js file titled `tutorial.js`. If you haven't already done so, open the VS Code terminal by navigating to Terminal => New Terminal (or, alternatively, Ctrl+Shift+\`). Now, enter the command `npm init` in the terminal. `npm init` will create a location (specifically, a package.json file) to store your project's npm package references. Press enter through each of the prompts until you reach the entry point prompt. Ensure that the entry point is `tutorial.js`, and continue to press enter until the command completes. Completing the command should add a `package.json` file to your current folder.
+Start by creating a new Node.js file titled `app.js`. If you haven't already done so, open the VS Code terminal by navigating to Terminal => New Terminal (or, alternatively, Ctrl+Shift+\`). Now, enter the command `npm init` in the terminal. `npm init` will create a location (specifically, a package.json file) to store your project's npm package references. Press enter through each of the prompts until you reach the entry point prompt. Ensure that the entry point is `app.js`, and continue to press enter until the command completes. Completing the command should add a `package.json` file to your current folder.
 
 Next, you need to install Express. Express is a framework that helps to make web development much easier. Run the command `npm install express --save`. Successfully completing this command will add a `package-lock.json` file to your current folder. The `package-lock.json` helps to keep track of which version of which module you are using. Your `package.json`'s dependencies should also have been changed to reflect that you installed Express:
 
@@ -51,11 +53,11 @@ The first line gives you access to the express module, and the second will allow
         res.send('Your local server is running!');
     });
     app.listen(3000, function () {
-        console.log('tutorial.js is now listening on port 3000');
+        console.log('app.js is now listening on port 3000');
     });
 The `app.get` function allows a GET request for your server to respond with  "Your local server is running!" A GET method is one of the 7 HTTP request methods. It is used to retrieve data from a source. The `app.listen` function runs your server and begins listening on port 3000. This server is local, meaning that it can only be accessed by your computer.
 
-You're now ready to start running your server locally! Entering the command `node tutorial.js` in the terminal will run your tutorial.js file. Navigate to [http:localhost:3000](http:localhost:3000), and your page should look like this:
+You're now ready to start running your server locally! Entering the command `node app.js` in the terminal will run your app.js file. Navigate to [http:localhost:3000](http:localhost:3000), and your page should look like this:
 
 ![Initial server screenshot](images/node-npm-tutorial/InitialServer.png)
 

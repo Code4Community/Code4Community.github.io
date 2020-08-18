@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML & CSS Tutorial
-permalink: /tutorial-2
+permalink: /html-css-tutorial
 content_style: github_markdown
 ---
 <style>
