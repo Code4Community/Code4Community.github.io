@@ -1,17 +1,27 @@
 [
     {
-        "name": "An Introduction to HTML",
-        "link": "/html-tutorial",
-        "description": "This tutorial walks you through how to create a basic static HTML website."
+        "name": "Tutorial 1: Git and Visual Studio Code",
+        "link": "/tutorial-1",
+        "description": "This is our first tutorial of the semester! We will be introducing Git and Visual Studio Code by creating an <a href=\"https://code4community.github.io/git-tutorial/\">animated display</a> of club members."
     },
     {
-        "name": "Git Tutorial",
-        "link": "/tutorial-1",
-        "description": "Git tutorial"
-    }, 
+        "name": "Tutorial 2: HTML and CSS",
+        "link": "/tutorial-2",
+        "description": "This tutorial introduces the languages used in sites across the web. It walks through the creation of a static webpage from scratch."
+    },
     {
-        "name": "React/JSX Tutorial", 
-        "link": "/react-jsx-tutorial", 
-        "description": "This tutorial walks you through how React/JSX work, and then how they are used in context to our system."
+        "name": "Tutorial 3: Javascript",
+        "link": "/tutorial-3",
+        "description": "Our third tutorial introduced you to the scripting language of the web. It walks through the creation of a dynamic webpage."
+    },
+    {
+        "name": "Tutorial 4: Node.js and npm",
+        "link": "/tutorial-4",
+        "description": "This tutorial introduces the Node.js and npm."
+    },  
+    {
+        "name": "Tutorial 6: React/JSX Tutorial", 
+        "link": "/tutorial-6", 
+        "description": "This tutorial walks you through how React/JSX work and then how they are used in context to our system."
     }
 ]
