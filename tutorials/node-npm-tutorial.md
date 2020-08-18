@@ -62,27 +62,22 @@ You're now ready to start running your server locally! Entering the command `nod
 ![Initial server screenshot](images/node-npm-tutorial/InitialServer.png)
 
 
-It's good that you were able to get your server running, but we should definitely add a bit to the page. Let's add some HTML to make it a little more interesting. Replace your `app.get` funciton with the following code:
+It's good that you were able to get your server running, but it would be a lot better if it actually did something. Let's add some Javascript to make it a little more interesting. Replace your `app.get` funciton with the following code:
 
     app.get('/', function (req, res) {
-        res.writeHead(200, {"Content-Type": "text/html"});
-        res.write('<!DOCTYPE html>' +
-            '<html lang="en">' +
-            '  <head>' +
-            '     <title>Ohio State</title>' + 
-            '  </head>' +
-            '   <body>' +
-            '       <h1>' +
-            '           THE Ohio State University' +
-            '       </h1>' +
-            '   </body>' +
-            '</html>'
-        );
+        var c4c = [];
+        c4c.push("Mindup");
+        c4c.push("School Outreach");
+        const someObject = {
+            codeInfo: c4c
+        };
+        console.log(c4c);
+        console.log(someObject);
         res.end();
     });
 
-`res.writeHead` provides a 200 success code and also ensures that the server recognizes we're adding HTML. The res.write statement allows the server to send the provided HTML code as the GET response. Try to complete the rest of the site using your HTML work from Tutorial 2. When you're finished, the page should look like this:
+`var c4c = [];` creates the c4c array, while the `.push` statements add the specified elements to the end of the array. `const someObject = {codeInfo: c4c};` creates a constant (can't be changed after it's intialized) object with the `codeInfo` property. The array and object should both be written to your terminal by the `console.log()` statements. Add to the code above and try to get your terminal's output to match the screenshot below:
 
-![Node.js final page screenshot](images/node-npm-tutorial/FinishedNodePage.png)
+![Node.js final page screenshot](FinalConsoleOut.png)
 
 Congratulations, you finished the tutorial and were able to successfully start a local server with Node.js and npm.
