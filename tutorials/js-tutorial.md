@@ -4,6 +4,7 @@ title: JavaScript Tutorial
 permalink: /tutorial-3
 content_style: github_markdown
 ---
+
 # JavaScript Tutorial
 
 By: [Max Gruber](https://github.com/maxdg99)
@@ -11,12 +12,20 @@ By: [Max Gruber](https://github.com/maxdg99)
 ## Before we get started
 * Fulfill the [prerequisites of the HTML & CSS tutorial](https://code4community.github.io/tutorial-2/#before-we-get-started)
 * Complete the [HTML & CSS tutorial](https://code4community.github.io/tutorial-2)
-* When you reach a checkpoint, please compare your webpage with the screenshot provided. If they don't match up, ask for help!
 
 ## Overview
-
+* [Part 1: Introduction](#introduction)
+* [Part 2: Basic JavaScript Syntax](#basic-javascript-syntax)
+* [Part 3: HTTP Requests](#http-requests)
+* [Part 4: Asynchronous JS](#asynchronous-js)
+* [Part 5: The DOM](#the-dom)
+* [Part 6: Conclusion](#conclusion)
 
 ## Introduction
+
+### How to use this tutorial.
+
+This tutorial is quite long, and it is understandable if you cannot get through the entire thing.  You can also use this tutorial (in addition to Google and the leadership team) as a reference while working on your projects.
 
 ### Why do we need JavaScript?
 
@@ -156,17 +165,17 @@ Equality in JS can get a little tricky since variables are not strongly-typed.  
 Conditional Structures are very similar to what you may be used to in other languages.  The code snippets show examples of a few if structures.
 
 ```
-if(condition) {
+if (condition) {
 
 }
 
-if(condition) {
+if (condition) {
 
 } else {
 
 }
 
-if(condition) {
+if (condition) {
 
 } else if (condition) {
 
