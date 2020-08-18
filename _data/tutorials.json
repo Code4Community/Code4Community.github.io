@@ -10,9 +10,19 @@
         "description": "This tutorial introduces the languages used in sites across the web. It walks through the creation of a static webpage from scratch."
     },
     {
+        "name": "Tutorial 3: Javascript",
+        "link": "/tutorial-3",
+        "description": "Our third tutorial introduced you to the scripting language of the web. It walks through the creation of a dynamic webpage."
+    },
+    {
+        "name": "Tutorial 4: Node.js and npm",
+        "link": "/tutorial-4",
+        "description": "This tutorial introduces the Node.js and npm."
+    },
+    {
         "name": "Tutorial 5: Express and MongoDB/mongoose",
         "link": "/express-mongodb-tutorial",
-        "description": "This tutorial introduces a web framework and database management system to help create the backend of a web application"
+        "description": "This tutorial introduces a web framework and database management system to help create the backend of a web application",
     }
     
 
