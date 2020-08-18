@@ -23,6 +23,11 @@
         "name": "Tutorial 5: Express and MongoDB/mongoose",
         "link": "/express-mongodb-tutorial",
         "description": "This tutorial introduces a web framework and database management system to help create the backend of a web application"
+    },
+    {
+        "name": "Tutorial 6: React and JSX",
+        "link": "/react-jsx-tutorial",
+        "description": "This tutorial introduces a popular javascript libary used to build user interfaces"
     }
     
 
