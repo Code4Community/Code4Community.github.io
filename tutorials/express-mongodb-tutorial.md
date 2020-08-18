@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Express and MongoDB/Mongoose Tutorial
-permalink: /tutorial-5
+permalink: /express-mongodb-tutorial
 content_style: github_markdown
 ---
 # Express and MongoDB/Mongoose Tutorial
@@ -9,9 +9,10 @@ content_style: github_markdown
 ## Objectives
 * Learn what is Express and MongoDB
 * How to interact with the MongoDB database using Mongoose
-* Develop a simple CRUD API
+* Create a simple REST API
 
 ## Before we get started
+* Complete the javascript tutorial
 * Complete the node/npm tutorial
 * Download [Postman](https://www.postman.com/downloads/)
 
@@ -42,16 +43,16 @@ that Express offers are:
     ```js
     const app = express();
     ```
-6. Then, create a [route definition/handler](#Routing) and specify the callback function that will be invoked whenever there is an HTTP `GET` request with path `'/'` relative to the site root. The callback function takes a [request and a response object](#Request-and-response) as arguments, and calls `send()` on the response with the string "Hello World!"
+6. Then, create a [route definition/handler](#routing) and specify the callback function that will be invoked whenever there is an HTTP `GET` request with path `'/'` relative to the site root. The callback function takes a [request and a response object](#request-and-response) as arguments, and calls `send()` on the response with the string "Hello World!"
     ```js
     app.get('/', (req, res) => {
-      res.send('Hello World!')
+      res.send('Hello World!');
     });
     ```
 7. Start up the server on port "3000" and print a comment to the console.
     ```js
     app.listen(3000, () => {
-      console.log(`Example app listening at http://localhost:3000`)
+      console.log(`Example app listening at http://localhost:3000`);
     });
     ```
 8. Save your `app.js` file and then in your terminal run the code using Node.js:
@@ -67,8 +68,10 @@ that Express offers are:
 Your browser should look like this:
 ![](../images/tutorial-5/hello_world_application.png)
 
-Congrats! You now have a basic Express app which responds with "Hello World!" for requests made to the root URL (`'/'`).
+Congrats! You now have a basic Express app which responds with "Hello World!" for `GET` requests made to the root URL (`'/'`).
+* To simulate other types of HTTP requests (as well as `GET` requets), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
 
+<br>
 
 \* The `app` object has methods for:
 - Routing HTTP requests
@@ -84,7 +87,7 @@ Each route can have one or more handler functions, which are executed when the r
 
 Route definitions take the following structure:
 ```js
-app.METHOD(PATH, HANDLER)
+app.METHOD(PATH, HANDLER);
 ```
 where:
 - `app` is an instance of `express`
@@ -98,6 +101,20 @@ For more information about routing, please visit the [routing guide](https://exp
 ### Request and Response
 Express applications uses a callback function whose parameters are `request` and `response` objects.
 - The [request object](https://expressjs.com/en/4x/api.html#req){:target="_blank"} represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, etc...
+
+    Here's some examples on how to get data from a request in Express:
+    * For `GET` requests, we'll want to look at the request's query to get data. To get the message data for the request `GET /?message=hello_world`:
+    ```js
+    app.get('/', (req, res) => {
+            res.send(req.query.message);
+    });
+    ```
+    * For `POST/PUT/DELETE` requests, we'll want to look at the request's body to get data. To get the data from the request at `POST /school`:
+    ```js
+    app.post('/school', (req, res) => {
+            const data = req.body.schoolData;
+    });
+    ```
 - The [response object](https://expressjs.com/en/4x/api.html#res){:target="_blank"} represents the HTTP response that an Express app sends when that route gets a request
 
 ### Serving Static Files in Express
@@ -115,7 +132,7 @@ to see the content of the files.
 
 ### Back to the Express Application
 Lets extend our application to:
-- Handle other endpoints other than root (`'/'`) with other HTTP request types
+- HaHandle other endpoints other than root (`'/'`) with other HTTP request types
 - Land on a custom home page
 - Utilize the express.static middleware to serve some static assets.
 
@@ -126,16 +143,16 @@ In the `app.js` file:
 4. In your root folder, create a new html file, `home_page.html` and add some content.
 5. Modfy the existing `GET` route for the root path to call the `sendFile()` method of the `res` object and passing in the path of your `home_page.html` file
     * Remeber to add `__dirname` to the beginning of the file path to ensure it looks in the root of your working directory (i.e. `res.sendFile(__dirname + "home_page.html")`)
-6. Create a new folder named `public` under your root project and add the following [image](../images/tutorial-5/block_o.png) 
+6. Create a new folder named `public` under your root project and add the following [image](../images/express-mongo-tutorial/block_o.png) 
 7. Add a new HTML file in the `public` directory, `tutorial.html`, with whatever content you want
 8. Use the `epxress.static` middleware to serve the files in the `public` directory
 9. Save your javascript file and run it again with node. 
-10. Visit the new routes and static files and ensure you see the correct messages/content:
-// Add Postman information for testing the newly created routes
+10. Go to [http://localhost:3000](http://localhost:3000){:target="_blank"} to see the contents of your home_page.html file
+11. Use postman to test the other routes you have created ensure you see the correct messages/content
+    * [Guide to sending requests with Postman](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
 
 
-**//Should I add pictures for this?**
-Visit the tutorial repo to view the final code
+You can view the final code in the tutorial repo
 
 
 ### Additional Resources
@@ -152,16 +169,20 @@ MongoDB is a general purpose, document-based, distributed database used in many 
 Mongoose is an object data modeling library for MongoDB and Node.js. It manages the relationships between data, provides schema validation, and is used to translate between objects in our code and the representation of those objects in MongoDB
 
 ### Important Terminology
-**Collections**
+**Collections**:
+
 Equivalent to tables in relational databases. Can hold multiple JSON documents.
 
-**Documents**
+**Documents**:
+
 Equivalent to records or rows of data in SQL.
 
-**Schema**
+**Schema**:
+
 A document data structure (or shape of the document)
 
-**Models**
+**Models**:
+
 Take a schema and create an instance of a document 
 
 ## Defining The Data - Schemas
@@ -201,7 +222,7 @@ tOSU.save((err, school) => {
 });
 ```
 
-For more information about models and the methods available, please visit the Mongoose [models page](https://mongoosejs.com/docs/models.html)
+For more information about models and the methods available, please visit the Mongoose [models page](https://mongoosejs.com/docs/models.html){:target="_blank"}
 
 ### Continuing the Express Application
 1. Visit the [Getting Started](https://docs.atlas.mongodb.com/getting-started/){:target="_blank"} guide and follow parts 1-4 to set up an account and create a database with MongoDB Atlas. 
@@ -238,7 +259,7 @@ For more information about models and the methods available, please visit the Mo
     });
     ```
 
-7. In our working directory, we'll add new folder called `models` and add a new file in it called `schools.js` to represent how the school collection should look like. Since we're working in a new file, we'll need to import the mongoose module again. With the mongoose module imported, we can get a reference to the Schema class and define the properties for a school, compile it into a model and export the model so it can be used in other parts of the app: 
+7. In our working directory, we'll add new folder called `models` and add a new file, `schools.js`, to represent how the school collection should look like. Since we're working in a new file, we'll need to import the mongoose module again. With the mongoose module imported, we can get a reference to the Schema class and define the properties for a school, compile it into a model, and export the model so it can be used in other parts of the app: 
     ```js
     const mongoose = require('mongoose');
     const Schema = mongoose.Schema;
@@ -251,8 +272,62 @@ For more information about models and the methods available, please visit the Mo
     const School = mongoose.model('Schools', schoolSchema);
     module.exports = School;
     ```
-8.  
+8.  We can now interact with the exported `School` model in our express routes to handle a certain type of request at a certain endpoint. For example, to handle a request to add and save a new school to the database and send the created document back, we can add the following route that handles POST requests at the `/school` path in our `app.js` file:
+   ```js
+   app.post('/school', (req, res) => {
+       const data = req.body.schoolData;
+       Schools.create(data, (err, school) => {
+            if (err) {
+                return res.send(err);
+            } 
+            return res.send(school);
+        });
+   });
+   ```
 
+9. To get the new data we just added, we can create a route to handle the `GET` request at the `/school` path:
+   ```js
+   app.get('/school', (req, res) => {
+       Schools.find({}, (err, schools) => {
+            if (err) {
+                return res.send(err);
+            } 
+            return res.send(schools);
+        });
+   });
+   ```
 
+10. To update a school document, Mongoose offers several methods on the `School` object. For example, when given the name of the school to update and its new name, we can update the apropriate school document with the following route:
+   ```js
+   app.put('/school', (req, res) => {
+       Schools.findOneAndUpdate({name: req.body.currentName}, {name: req.body.updatedSchoolName}, (err, school) => {
+            if (err) {
+                return res.send(err);
+            } 
+            return res.send(school);
+        });
+   });
+   ```
+   * Note: the returned document is the document as it was before the update is applied (more info can be found [here](https://mongoosejs.com/docs/api/model.html#model_Model.findOneAndUpdate){:target="_blank"})
+
+11. To delete a school document, we can create a route that handles `DELETE` requets at the `/school` path. For example, to delete a document that matches a specifc name and return the deleted document:
+   ```js
+   app.delete('/school', (req, res) => {
+       Schools.findOneAndDelete({name: req.body.schoolName}, (err, school) => {
+            if (err) {
+                return res.send(err);
+            } 
+            return res.send(school);
+        });
+   });
+   ```
+
+Congrats! You now have created a simple REST API with Express and MongoDB/Mongoose!
+
+To view the final code, visit the tutorial repo:
+
+### Additonal Resources:
+* [MongoDB Atlas](https://docs.atlas.mongodb.com){:target="_blank"}
+* [Mongoose Docs](https://mongoosejs.com/docs/guide.html){:target="_blank"}
 
 
