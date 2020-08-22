@@ -26,29 +26,42 @@
     <nav class="uk-navbar-container uk-margin" uk-navbar>
         <div class="uk-navbar-left">
             <a class="uk-navbar-item uk-logo" href="/">{{ site.title }}</a>
-            <ul class="uk-navbar-nav">
+            <ul id="desktop-navigation-links" class="uk-navbar-nav">
                 <li><a href="/school-outreach">School Outreach</a></li>
                 <li><a href="/mind-up">Mind Up</a></li>
                 <li><a href="/tutorials">Tutorials</a></li>
                 <li><a href="/resources">Resources</a></li>
             </ul>
         </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <a id="hamburger-button" class="uk-navbar-toggle" uk-toggle="target: #mobile-sidebar"
+                    uk-navbar-toggle-icon></a>
+            </div>
+        </div>
     </nav>
+
+    <div id="mobile-sidebar" uk-offcanvas="overlay: true; flip: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-navbar-nav uk-flex uk-flex-column">
+                <li class="uk-nav-header">Navigation</li>
+                <li><a href="/school-outreach">School Outreach</a></li>
+                <li><a href="/mind-up">Mind Up</a></li>
+                <li><a href="/tutorials">Tutorials</a></li>
+                <li><a href="/resources">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+
     {% if page.content_style == "github_markdown" %}
     <div class="uk-container markdown-body">
-    {% else %}
-    <div class="uk-container">
-    {% endif %}
-        {{ content }}
-    </div>
-    <footer>&copy; <script>document.write(new Date().getFullYear())</script> Code 4 Community</footer>
+        {% else %}
+        <div class="uk-container">
+            {% endif %}
+            {{ content }}
+        </div>
+        <footer>&copy; <script>document.write(new Date().getFullYear())</script> Code 4 Community</footer>
 </body>
 
 </html>
-
-<style>
-    footer {
-        position:sticky;
-        top: 100vh;
-    }
-</style>
