@@ -21,3 +21,15 @@ footer {
     position:sticky;
     top: 100vh;
 }
+
+@media screen and (max-width: 749px) {
+    #desktop-navigation-links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #hamburger-button {
+        display: none;
+    }
+}
