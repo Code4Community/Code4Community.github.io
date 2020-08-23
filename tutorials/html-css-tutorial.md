@@ -41,7 +41,7 @@ Each of these questions is answered by one of the languages of the web. HTML kno
 HTML stands for Hypertext Markup Language. A "markup language" is not a programming language. Rather, it's a way of annotating, or "marking up" text with formatting information. The formatting information is interpreted by a program (in this case, a browser) and then displayed to your screen.
 
 Every HTML page should look something like this. The `<!DOCTYPE html>` tag tells the browser we're writing HTML5 (the latest version of HTML). The `<head></head>` tag tells the browser about our webpage (this information is called metadata). The `<body></body>` tag tells the browser what to display on our webpage.
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -111,7 +111,7 @@ Checkpoint 6:
 
 ### Result
 Your code should look something like this:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -146,7 +146,7 @@ Nice job! Now you know some basic HTML. However, our website is still a bit blan
 CSS stands for Cascading Style Sheets. It is also known as "styling". The "cascade" portion of the title is beyond the scope of this tutorial, but you can [read about it](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) if you'd like to learn more.
 
 When you're styling a webpage with CSS, you create rules which tell the browser how your webpage should be displayed. Each rule consists of one or more selectors and one or more declarations. Multiple selectors are separated by commas and multiple declarations are separated across multiple lines. We'll get into the syntax for selectors and declarations in a moment, but here's the CSS rule syntax:
-```
+```css
 selector-1, selector-2 {
     declaration-1
     declaration-2
@@ -198,7 +198,7 @@ Great job! Now you know some basic CSS.
 
 ### Result
 Your code should look something like this:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
