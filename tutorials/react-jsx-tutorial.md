@@ -495,3 +495,13 @@ Feedback
 ====
 
 If you have any feedback on this tutorial, feel free to create an issue on the Github repo and/or let the person that made this tutorial (Anden Acitelli, @aacitelli) or one of the exec board members (@maxdg99, @adambricelis, @ndrewh) know.
+
+Big Points
+- Our goal is to get those working 100%
+- Some stuff is an inconsistent amount of points; Focus on the highest-points stuff
+- Our behaviors don't really follow a state-based system  
+- Might be better to do something action-based, where each event is a success or a failure and we build a map with that
+- Autonomy hides a LOT of actual code that needs written. Like, a LOT is needed to translate a high-level task to actual hardware manipulation. 
+
+Questions
+- What do we need to do to make that jump to manipulation? Build mapping software in? What do we need to do in order to build a mapping system?
