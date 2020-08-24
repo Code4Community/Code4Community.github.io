@@ -78,6 +78,6 @@ It's good that you were able to get your server running, but it would be a lot b
 
 `var c4c = [];` creates the c4c array, while the `.push` statements add the specified elements to the end of the array. `const someObject = {codeInfo: c4c};` creates a constant (can't be changed after it's intialized) object with the `codeInfo` property. The array and object should both be written to your terminal by the `console.log()` statements. Add to the code above and try to get your terminal's output to match the screenshot below:
 
-![Node.js final page screenshot](FinalConsoleOut.png)
+![Final consoleOut screenshot](images/node-npm-tutorial/FinalConsoleOut.png)
 
 Congratulations, you finished the tutorial and were able to successfully start a local server with Node.js and npm.
