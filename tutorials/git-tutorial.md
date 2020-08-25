@@ -260,7 +260,7 @@ For this repository, you need **at least two approvals** before you'll be able t
 - One of the approvals must be @ndrewh, @maxdg99, or @adambricelis. Actual projects may or may not require reviews like this.
 - Request your reviews
 
-![](images/git-tutorial/screenshot20.png){:style="height: 50vh;"}
+    ![](images/git-tutorial/screenshot20.png){:style="height: 50vh;"}
 
 
 Until you have the required reviews, you'll see this:
