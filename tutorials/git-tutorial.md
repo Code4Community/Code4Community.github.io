@@ -11,7 +11,8 @@ By: Andrew Haberlandt
 ## Before we get started
 * Download a modern browser (preferably [Chrome](https://www.google.com/chrome/){:target="_blank"} or [Firefox](https://www.mozilla.org/en-US/firefox/){:target="_blank"})
 * Download [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}
-* You need a Github Account. Fill out the survey on our homepage with your Github username, so we can add you to our Github organization.
+* [Create a GitHub account](https://github.com/join)
+* Fill out the survey on [our homepage](https://code4community.github.io/) and include your Github username, so we can add you to our Github organization
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)
@@ -28,7 +29,7 @@ A 'repository' consists of two parts:
 - a 'working tree': These are the files you have 'checked out' on your computer. This is what you see in the file explorer on your operating system or the explorer pane in VS Code.
 - a 'history':  Stored in the `.git/` folder (*don't touch!*), Git tracks the history of all your files
 
-(Note: This is a simplification. Once you take CSE 3901/3902/3903 you will study Git in more detail)
+(Note: This is a simplification. If you take CSE 3901/3902/3903 you will study Git in more detail.)
 
 A 'history' is a **graph** of **commits**. A **commit** (noun, also known as a 'revision') is a set of changes to files in your repository, accompanied by a message describing the changes. [Here's an example commit on Github.](https://github.com/Code4Community/git-tutorial/commit/0ad8fd04cca43603f9660282e62b40b34c2bc213)
 
@@ -71,7 +72,7 @@ Your local computer and the server (We use Github, but there are many services) 
 
 **You will never be able to directly push to master.** Therefore, before pushing your code you will have to checkout a new local branch (this is covered in the later parts of this tutorial.)
 
-
+Since we're using VS Code's Git interface, we won't perform push and pull operations directly. Instead, we'll click the "sync" button which performs a Git Pull and then a Git Push.
 
 # Part 2: Cloning a repository
 
@@ -92,8 +93,7 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 ![](images/git-tutorial/screenshot2.png)
 
 - Choose "code4community/git-tutorial"
-    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your Github username. Then, contact Max Gruber
-    and he will ensure you are added to the Github organization. 
+    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your Github username. Then, contact a member of the exec board and they will ensure you are added to the Github organization. 
 
 - You will be prompted to choose a location on disk to clone the repository
     - A folder named "git-tutorial" will automatically be created *within* whatever folder you select.
@@ -114,7 +114,7 @@ You can also view the repository for this tutorial on Github [here](https://gith
 
 Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
-![](images/git-tutorial/screenshot5.png)
+![](images/git-tutorial/screenshot5.png){:style="box-shadow: 0 5px 15px grey;"}
 
 # Part 3: Making modifications
 
@@ -144,7 +144,7 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 
 Add an image to the `images/` directory. You can drag-and-drop from the file explorer on your operating system directly into VS Code.
 
-Note: Your image does not have you be an actual picture of yourself, although it might help us learn eachother's names.
+Note: Your image does not have you be an actual picture of yourself, although it might help us learn each other's names.
 
 ![](images/git-tutorial/screenshot6.png)
 
@@ -160,7 +160,7 @@ All you need to do is add the following four lines inside the `<div id="heads-ar
 </div>
 ```
 
-Change the name from 'Brutus' to your name, and change the image `src` to the path to the image you addied in the previous step. 
+Change the name between `<p>` and `</p>` from 'Brutus' to your name, and change the image `src` to the path of the image you added in the previous step. 
 
 Add your lines in index.html directly below the last person's similar-looking piece of code. Ensure that the lines you add are fully inside the `<div id="heads-area">` tag, but not within someone else's `<div class="person-frame-inner">`. 
 
@@ -202,7 +202,7 @@ Note: the 'U' next to the image has changed to an 'A' for `A`dded, now that we h
 
 ## Step 2: Commit your changes
 
-Add a commit message:
+Add a commit message (this should briefly explain your changes):
 
 ![](images/git-tutorial/screenshot13.png)
 
