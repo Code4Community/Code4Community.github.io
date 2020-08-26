@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Git Tutorial
-permalink: /tutorial-1
+permalink: /git-vscode-tutorial
 content_style: github_markdown
 ---
 # Tutorial 1: Git and Visual Studio Code
@@ -83,15 +83,15 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - Select the 'Git' menu.
 
-![](images/tutorial-1/screenshot1.png)
+![](images/git-tutorial/screenshot1.png)
 
 - Choose "Clone Repository"
 
-- Choose "Clone from Github" and complete the one-time authentiction process
+- Choose "Clone from Github" and complete the one-time authentication process
 
-- You should then be able to type "code4community/" and get a listing of all repositories in our organization!
+- You should then be able to type "code4community/" and get a list of all repositories in our organization!
 
-![](images/tutorial-1/screenshot2.png)
+![](images/git-tutorial/screenshot2.png)
 
 - Choose "code4community/git-tutorial"
     - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your Github username. Then, contact Max Gruber
@@ -102,13 +102,13 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - After the clone is complete, you will see the the following in the lower-right:
     
-    ![](images/tutorial-1/screenshot3.png)
+    ![](images/git-tutorial/screenshot3.png)
 
     You likely want to choose "Open" if you followed the instructions closely, since you already have an empty window.
 
 You should see the files for the repository, as shown in the below screenshot:
 
-![](images/tutorial-1/screenshot4.png)
+![](images/git-tutorial/screenshot4.png)
 
 Congratulations! You succesfully cloned our repository!
 
@@ -116,14 +116,13 @@ You can also view the repository for this tutorial on Github [here](https://gith
 
 Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
-![](images/tutorial-1/screenshot5.png)
+![](images/git-tutorial/screenshot5.png)
 
 # Part 3: Making modifications
 
 Goal: Add yourself to our [display of bouncing heads](https://code4community.github.io/git-tutorial/)
 
-Step 0: Check out a new branch
-------
+## Step 0: Check out a new branch
 
 By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured Github to refuse pushing to the `master` branch directly.** 
 
@@ -131,11 +130,11 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 
 - Select the 'master' button in the bottom bar of VS Code
 
-![](images/tutorial-1/screenshot10.png)
+![](images/git-tutorial/screenshot10.png)
 
 - Select 'Create new branch...'
 
-![](images/tutorial-1/screenshot9.png)
+![](images/git-tutorial/screenshot9.png)
 
 
 - Give your branch a unique name. For the purposes of this tutorial, just use your lastname.#
@@ -143,17 +142,17 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 - Verify in the bottom bar that your new branch name is displayed instead of 'master'.
 
 
-Step 1: Add your image
------
+## Step 1: Add your image
+
 Add an image to the `images/` directory. You can drag-and-drop from the file explorer on your operating system directly into VS Code.
 
 Note: Your image does not have you be an actual picture of yourself, although it might help us learn eachother's names.
 
-![](images/tutorial-1/screenshot6.png)
+![](images/git-tutorial/screenshot6.png)
 
 
-Step 2: Modify index.html
------
+## Step 2: Modify index.html
+
 All you need to do is add the following four lines inside the `<div id="heads-area">` tag.
 
 ```html
@@ -169,8 +168,7 @@ Add your lines in index.html directly below the last person's similar-looking pi
 
 We will be covering HTML and CSS next week, so don't worry about the details too much right now.
 
-Optional: Make it your own
-------
+## Optional: Make it your own
 
 If you're feeling creative, feel free to modify your own animation (see main.css to see how we did it). Feel free to google something or ask if you're not sure how. (Note: we'll be covering HTML/CSS in more detail next week, so you're not expected to know how to do any of this)
 
@@ -181,63 +179,58 @@ Ideas:
 
 # Part 4: Commit and push your changes
 
-![](images/tutorial-1/screenshot7.png)
+![](images/git-tutorial/screenshot7.png)
 
 Things to note:
 - The 'M' next to index.html means we have `M`odified that file in our working tree
 - The 'U' next you the image you added means this file is `U`ntracked - we haven't told Git to track changes to this file yet. The file is brand-new and has no history.
 
 
-Step 1: 'Stage' your changes
-------
+## Step 1: 'Stage' your changes
 
 Switch to the Git pane, and you'll see only the files with changes in your working copy.
 
-![](images/tutorial-1/screenshot11.png)
+![](images/git-tutorial/screenshot11.png)
 
 - Press the '+' on the files you'd like to commit. Or, select '+' next to 'Changes' to add all changes.
 
-![](images/tutorial-1/screenshot12.png)
+![](images/git-tutorial/screenshot12.png)
 
 Now, you should see:
 
-![](images/tutorial-1/screenshot14.png)
+![](images/git-tutorial/screenshot14.png)
 
 Note: the 'U' next to the image has changed to an 'A' for `A`dded, now that we have added this file to Git.
 
-Step 2: Commit your changes
-----
+## Step 2: Commit your changes
 
 Add a commit message:
 
-![](images/tutorial-1/screenshot13.png)
+![](images/git-tutorial/screenshot13.png)
 
 Press the checkmark:
 
-![](images/tutorial-1/screenshot15.png)
+![](images/git-tutorial/screenshot15.png)
 
-Step 3: Push your changes
------
+## Step 3: Push your changes
 
 - Look in the bottom bar. You should see something like the following (it will say your branch name rather than master):
     
-    ![](images/tutorial-1/screenshot16.png)
+    ![](images/git-tutorial/screenshot16.png)
     
     This means you have 1 commit to push, and 0 commits to pull. If someone else was working on the same branch as you and pushed their changes, there would be a nonzero number of commits for you to pull.
 
 - Press on the button pictured above in the bottom bar. It will automatically push and pull from the remote repository.
 
-Part 5: Pull Request
-=======
+# Part 5: Pull Request
 
 [Example Pull Request](https://github.com/Code4Community/git-tutorial/pull/1)
 
-Step 1: Create the pull request
------
+## Step 1: Create the pull request
 
 If you pull up the [repository](https://github.com/Code4Community/git-tutorial) in a browser, you might see the following (with your branch name):
 
-![](images/tutorial-1/screenshot17.png)
+![](images/git-tutorial/screenshot17.png)
 
 If so, you can click 'Compare & Pull request' and it save you a few clicks.
 
@@ -248,7 +241,7 @@ Otherwise:
 
 You'll see something like this:
 
-![](images/tutorial-1/screenshot18.png)
+![](images/git-tutorial/screenshot18.png)
 
 - 'base' is the branch you want you merge your changes *into*
 - 'compare' is the branch your changes are currently on (this is the branch you created earlier)
@@ -260,40 +253,36 @@ So,
 - Give your pull request a title and leave a comment with any issues you had
 - Click 'Create pull request' (again)
 
-Step 2: Getting your pull request reviewed
------
+## Step 2: Getting your pull request reviewed
 
 For this repository, you need **at least two approvals** before you'll be able to merge your pull request into master.
 - We encourage you to seek approvals from others completing the tutorial, and feel free to review others pull requests as well.
 - One of the approvals must be @ndrewh, @maxdg99, or @adambricelis. Actual projects may or may not require reviews like this.
 - Request your reviews
-    
-    ![](images/tutorial-1/screenshot20.png){:style="height: 50vh;"}
+
+    ![](images/git-tutorial/screenshot20.png){:style="height: 50vh;"}
 
 
 Until you have the required reviews, you'll see this:
 
-![](images/tutorial-1/screenshot21.png){:style="width: 50vw;"}
+![](images/git-tutorial/screenshot21.png){:style="width: 50vw;"}
 
 
 Once you have the required approvals, your pull request will show this and you'll be able to merge it into master with one click :)
 
-![](images/tutorial-1/screenshot19.png){:style="width: 50vw;"}
+![](images/git-tutorial/screenshot19.png){:style="width: 50vw;"}
 
 
-That's it!
-===
+# That's it!
 
 You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/) once your changes get merged into master.
 
 
-Feedback
-====
+# Feedback
 
-If you have any feedback on this tutorial, feel free to create an issue on the Github repo, or let one of the exec board members (@maxdg99, @adambricelis, @ndrewh) know.
+If you have any feedback on this tutorial, feel free to create an issue on the Github repo or talk to one of the exec board members.
 
-Help! I have merge conflicts... now what?
-=====
+# Help! I have merge conflicts... now what?
 
 Merge conflicts can occur when multiple developers make changes to the same part of the same file, and then try to merge their branches. 
 
