@@ -65,7 +65,7 @@ that Express offers are:
     Open a browser and navigate to [http://localhost:3000](http://localhost:3000){:target="_blank"}
 
 Your browser should look like this:
-![](../images/tutorial-5/hello_world_application.png)
+![](../images/express-mongo-tutorial/hello_world_application.png)
 
 Congrats! You now have a basic Express app which responds with "Hello World!" for `GET` requests made to the root URL (`'/'`).
 * To simulate other types of HTTP requests (as well as `GET` requets), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
