@@ -41,43 +41,30 @@ Next, you need to install Express. Express is a framework that helps to make web
 
 ![Express in package.json](images/node-npm-tutorial/packageJsonPicture.png)
 
-
-## Part 3: Starting A Local Server
-You're now ready to start running your own local server. Copy the following lines into your program:
-
-    var express = require('express');
-    var app = express();
-The first line gives you access to the express module, and the second will allow you to use some helpful methods from that module. Next, add these lines:
-
-    app.get('/', function (req, res) {
-        res.send('Your local server is running!');
-    });
-    app.listen(3000, function () {
-        console.log('app.js is now listening on port 3000');
-    });
-The `app.get` function allows a GET request for your server to respond with  "Your local server is running!" A GET method is one of the 7 HTTP request methods. It is used to retrieve data from a source. The `app.listen` function runs your server and begins listening on port 3000. This server is local, meaning that it can only be accessed by your computer.
-
-You're now ready to start running your server locally! Entering the command `node app.js` in the terminal will run your app.js file. Navigate to [http:localhost:3000](http:localhost:3000), and your page should look like this:
-
-![Initial server screenshot](images/node-npm-tutorial/InitialServer.png)
+Express is a critical part of [Tutorial 5](https://code4community.github.io/express-mongodb-tutorial), so be sure that you have downloaded it correctly before continuing.
 
 
-It's good that you were able to get your server running, but it would be a lot better if it actually did something. Let's add some Javascript to make it a little more interesting. Replace your `app.get` funciton with the following code:
+## Part 3: Creating and running a Node program
+You're now ready to start working on your Node file. Copy the following line into your program:
 
-    app.get('/', function (req, res) {
-        var c4c = [];
-        c4c.push("Mindup");
-        c4c.push("School Outreach");
-        const someObject = {
-            codeInfo: c4c
-        };
-        console.log(c4c);
-        console.log(someObject);
-        res.end();
-    });
+    console.log("Node program has successfully run");
 
+
+You're now ready to run your Node program! Entering the command `node tutorial.js` in the terminal will run your tutorial.js file. Your terminal should display the message "Node program has successfully run."
+
+While it's good that you were able to get run this program, it would be a lot better if it actually did something. Let's add to the Javascript to make it a little more interesting. Replace your `console.log()` statement with the following code:
+
+    var c4c = [];
+    c4c.push("Mindup");
+    c4c.push("School Outreach");
+    const someObject = {
+        codeInfo: c4c
+    };
+    console.log(c4c);
+    console.log(someObject);
+    
 `var c4c = [];` creates the c4c array, while the `.push` statements add the specified elements to the end of the array. `const someObject = {codeInfo: c4c};` creates a constant (can't be changed after it's intialized) object with the `codeInfo` property. The array and object should both be written to your terminal by the `console.log()` statements. Add to the code above and try to get your terminal's output to match the screenshot below:
 
-![Final consoleOut screenshot](images/node-npm-tutorial/FinalConsoleOut.png)
+![Node.js final page screenshot](FinalConsoleOut.png)
 
-Congratulations, you finished the tutorial and were able to successfully start a local server with Node.js and npm.
+Congratulations, you finished the tutorial and were able to successfully start run a program with Node.js and npm.

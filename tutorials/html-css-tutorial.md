@@ -15,8 +15,8 @@ content_style: github_markdown
 By: [Adam Lis](https://github.com/adambricelis)
 
 ## Before we get started
-* Fulfill the [prerequisites of the git tutorial](https://code4community.github.io/tutorial-1#before-we-get-started)
-* Complete the [git tutorial](https://code4community.github.io/tutorial-1)
+* Fulfill the [prerequisites of the git tutorial](https://code4community.github.io/git-vscode-tutorial#before-we-get-started)
+* Complete the [git tutorial](https://code4community.github.io/git-vscode-tutorial)
 * When you reach a checkpoint, please compare your webpage with the screenshot provided. If they don't match up, ask for help!
 
 ## Overview

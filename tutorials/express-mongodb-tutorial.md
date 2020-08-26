@@ -65,7 +65,7 @@ that Express offers are:
     Open a browser and navigate to [http://localhost:3000](http://localhost:3000){:target="_blank"}
 
 Your browser should look like this:
-![](../images/tutorial-5/hello_world_application.png)
+![](../images/express-mongo-tutorial/hello_world_application.png)
 
 Congrats! You now have a basic Express app which responds with "Hello World!" for `GET` requests made to the root URL (`'/'`).
 * To simulate other types of HTTP requests (as well as `GET` requets), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
@@ -81,6 +81,13 @@ Congrats! You now have a basic Express app which responds with "Hello World!" fo
 
 ### Routing
 Routing refers to determining how an application responds to a client request to a certain endpoint, which is a URI (or path) and a specific HTTP request method (e.g. GET, POST, PUT, DELETE).
+
+* Here's a quick breakdown of the most common HTTP methods:
+
+    * `GET`: Used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data
+    * `POST`: Used to send data to the server
+    * `PUT`: Replaces all current representations of the target resource with the uploaded content.
+    * `DELETE`: Removes all current representations of the target resource given by a URI.
 
 Each route can have one or more handler functions, which are executed when the route is matched.
 
@@ -131,7 +138,7 @@ to see the content of the files.
 
 ### Back to the Express Application
 Lets extend our application to:
-- HaHandle other endpoints other than root (`'/'`) with other HTTP request types
+- Handle other endpoints other than root (`'/'`) with other HTTP request types
 - Land on a custom home page
 - Utilize the express.static middleware to serve some static assets.
 
@@ -140,11 +147,11 @@ In the `app.js` file:
 2. Create a route that responds to a PUT request to the school path (`'/school'`) and send the message "PUT request made at /school"
 3. Create a route that responds to a DELETE request to the school path (`'/school'`) and send the message "DELETE request made at /school"
 4. In your root folder, create a new html file, `home_page.html` and add some content.
-5. Modfy the existing `GET` route for the root path to call the `sendFile()` method of the `res` object and passing in the path of your `home_page.html` file
+5. Modify the existing `GET` route for the root path to call the `sendFile()` method of the `res` object and passing in the path of your `home_page.html` file
     * Remeber to add `__dirname` to the beginning of the file path to ensure it looks in the root of your working directory (i.e. `res.sendFile(__dirname + "home_page.html")`)
 6. Create a new folder named `public` under your root project and add the following [image](../images/express-mongo-tutorial/block_o.png) 
 7. Add a new HTML file in the `public` directory, `tutorial.html`, with whatever content you want
-8. Use the `epxress.static` middleware to serve the files in the `public` directory
+8. Use the `express.static` middleware to serve the files in the `public` directory
 9. Save your javascript file and run it again with node. 
 10. Go to [http://localhost:3000](http://localhost:3000){:target="_blank"} to see the contents of your home_page.html file
 11. Use postman to test the other routes you have created ensure you see the correct messages/content
@@ -193,7 +200,7 @@ Everything in Mongoose starts with a [Schema](https://mongoosejs.com/docs/guide.
         name: String, 
         state: String,
         enrollment: Number,
-        ivyLeage: Boolean,
+        ivyLeague: Boolean,
     });
 ```
 
@@ -213,7 +220,7 @@ const tOSU = new School({
 })
 console.log(tOSU.name) // 'The Ohio State University'
 ```
-We now have a object representing The Ohio State University, but haven't saved anything to MongoDB. Each document can be saved to the database by calling the `save` method. The first argument to the callback with be an error if any occured.
+We now have a object representing The Ohio State University, but haven't saved anything to MongoDB. Each document can be saved to the database by calling the `save` method. The first argument to the callback will be an error if any occured and the second argument is the document object that represents the new school you created.
 ```js
 tOSU.save((err, school) => {
     if (err) return console.error(err);
