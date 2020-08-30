@@ -4,6 +4,11 @@ title: Node.js and npm Tutorial
 permalink: /nodejs-npm-tutorial
 content_style: github_markdown
 ---
+<style>
+    img {
+        box-shadow: 0 5px 15px grey;
+    }
+</style>
 
 # Node.js and npm Tutorial
 
@@ -65,6 +70,6 @@ While it's good that you were able to get run this program, it would be a lot be
     
 `var c4c = [];` creates the c4c array, while the `.push` statements add the specified elements to the end of the array. `const someObject = {codeInfo: c4c};` creates a constant (can't be changed after it's intialized) object with the `codeInfo` property. The array and object should both be written to your terminal by the `console.log()` statements. Add to the code above and try to get your terminal's output to match the screenshot below:
 
-![Node.js final page screenshot](FinalConsoleOut.png)
+![Node.js final page screenshot](images/node-npm-tutorial/FinalConsoleOut.png)
 
 Congratulations, you finished the tutorial and were able to successfully start run a program with Node.js and npm.

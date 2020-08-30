@@ -4,6 +4,12 @@ title: React / JSX Tutorial
 permalink: /react-jsx-tutorial
 content_style: github_markdown
 ---
+<style>
+    img {
+        box-shadow: 0 5px 15px grey;
+    }
+</style>
+
 # Tutorial: React and JSX
 
 By: Anden Acitelli
