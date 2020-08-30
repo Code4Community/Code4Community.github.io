@@ -24,7 +24,7 @@ footer {
 
 /* UPDATE THIS BREAKPOINT WHEN ADDING/REMOVING NAVBAR ITEMS */
 @media screen and (max-width: 699px) {
-    #desktop-navigation-links {
+    #desktop-navigation-links, #desktop-github-icon {
         display: none;
     }
 }
