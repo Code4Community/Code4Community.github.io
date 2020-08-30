@@ -56,7 +56,7 @@ While it's good that you were able to get run this program, it would be a lot be
 
     var c4c = [];
     c4c.push("Mindup");
-    c4c.push("School Outreach");
+    c4c.push("Outreach");
     const someObject = {
         codeInfo: c4c
     };

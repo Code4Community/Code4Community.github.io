@@ -1,7 +1,7 @@
 ---
 layout: page
-title: School Outreach
-permalink: /school-outreach
+title: Outreach
+permalink: /outreach
 ---
 
 <style>
@@ -27,13 +27,13 @@ permalink: /school-outreach
     }
 </style>
 
-<h1>The School Outreach Project</h1>
+<h1>Outreach Project</h1>
 
 <br>
 
 <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
     <ul class="uk-slideshow-items">
-        {% for image in site.data.school_outreach_images %}
+        {% for image in site.data.outreach_images %}
             {% if forloop.first == true %}
                 <li>
                     <img class="center" data-src={{image}} height="300" alt="test"
@@ -64,8 +64,8 @@ permalink: /school-outreach
         <div class="uk-card uk-card-default uk-card-body">
             <h2 class="uk-card-title">Project Overview</h2>
             <p>
-                The school outreach project aims to help the community around us by educated the youth of Columbus on
-                programming basics. School outreach meets once a week to work on modules designed to faciliate the
+                The Outreach project aims to help the community around us by educated the youth of Columbus on
+                programming basics. Outreach meets once a week to work on modules designed to faciliate the
                 student's learning of several programming concepts. These modules can be games, activities, or
                 anything else you can think of! We, then, take these modules to local schools and educate the students
                 with our workshops.
@@ -96,6 +96,6 @@ permalink: /school-outreach
         </div>
     </div>
 
-    {% include leaders.html content=site.data.school_outreach_leaders %}
+    {% include leaders.html content=site.data.outreach_leaders %}
 
 </div>
