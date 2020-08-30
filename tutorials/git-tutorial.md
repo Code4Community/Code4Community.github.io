@@ -10,9 +10,10 @@ By: Andrew Haberlandt
 
 ## Before we get started
 * Download a modern browser (preferably [Chrome](https://www.google.com/chrome/){:target="_blank"} or [Firefox](https://www.mozilla.org/en-US/firefox/){:target="_blank"})
+* Download [Git](https://git-scm.com/downloads){:target="_blank"}
 * Download [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}
-* [Create a GitHub account](https://github.com/join)
-* Fill out the survey on [our homepage](https://code4community.github.io/) and include your Github username, so we can add you to our Github organization
+* [Create a GitHub account](https://github.com/join){:target="_blank"}
+* Fill out the survey on [our homepage](https://code4community.github.io/){:target="_blank"} and include your GitHub username, so we can add you to our GitHub organization
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)
@@ -31,7 +32,7 @@ A "repository" consists of two parts:
 
 (Note: This is a simplification. If you take CSE 3901/3902/3903 you will study Git in more detail.)
 
-A "history" is a **graph** of **commits**. A **commit** (noun, also known as a "revision") is a set of changes to files in your repository, accompanied by a message describing the changes. [Here's an example commit on Github.](https://github.com/Code4Community/git-tutorial/commit/0ad8fd04cca43603f9660282e62b40b34c2bc213)
+A "history" is a **graph** of **commits**. A **commit** (noun, also known as a "revision") is a set of changes to files in your repository, accompanied by a message describing the changes. [Here's an example commit on GitHub.](https://github.com/Code4Community/git-tutorial/commit/0ad8fd04cca43603f9660282e62b40b34c2bc213)
 
 - A **commit** (except for the first) always has at least one parent - thus you can always trace any commit back to the single "initial" commit in any repository. So, you can see all of the changes that lead up to the current state.
 
@@ -65,7 +66,7 @@ A \      C      / E \     F \         I
 
 This entire graph is stored in the "history".
 
-Your local computer and the server (We use Github, but there are many services) might have differing histories. To sync our history with the history stored by the server, we will use two operations:
+Your local computer and the server (We use GitHub, but there are many services) might have differing histories. To sync our history with the history stored by the server, we will use two operations:
 
 - **Push**: Push any additional commits **on the current branch** from my local history to the remote server. (If a remote branch does not exist with that name, VS Code will prompt you and it will be created on the remote server.)
 - **Pull**: Pull any additional commits **on the current branch** from the remote server and store them in my local history. This also updates your **working tree** (the files you see on disk will update to reflect any changes).
@@ -86,14 +87,14 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - Choose "Clone Repository"
 
-- Choose "Clone from Github" and complete the one-time authentication process
+- Choose "Clone from GitHub" and complete the one-time authentication process
 
 - You should then be able to type "code4community/" and get a list of all repositories in our organization!
 
 ![](images/git-tutorial/screenshot2.png)
 
 - Choose "code4community/git-tutorial"
-    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your Github username. Then, contact a member of the exec board and they will ensure you are added to the Github organization. 
+    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your GitHub username. Then, contact a member of the exec board and they will ensure you are added to the GitHub organization. 
 
 - You will be prompted to choose a location on disk to clone the repository
     - A folder named "git-tutorial" will automatically be created *within* whatever folder you select.
@@ -110,7 +111,7 @@ You should see the files for the repository, as shown in the below screenshot:
 
 Congratulations! You succesfully cloned our repository!
 
-You can also view the repository for this tutorial on Github [here](https://github.com/Code4Community/git-tutorial). All of our repositories are available on our [organization Github page](https://github.com/Code4Community).
+You can also view the repository for this tutorial on GitHub [here](https://github.com/Code4Community/git-tutorial). All of our repositories are available on our [organization GitHub page](https://github.com/Code4Community).
 
 Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
@@ -122,9 +123,9 @@ Goal: Add yourself to our [display of bouncing heads](https://code4community.git
 
 ## Step 0: Check out a new branch
 
-By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured Github to refuse pushing to the `master` branch directly.** 
+By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured GitHub to refuse pushing to the `master` branch directly.** 
 
-Why? It's because for all of our projects, you will be pushing to separate branches for each feature you work on. You will then create a **pull request** in Github, requesting that *your peers review your code* before it gets merged into the `master` branch.
+Why? It's because for all of our projects, you will be pushing to separate branches for each feature you work on. You will then create a **pull request** in GitHub, requesting that *your peers review your code* before it gets merged into the `master` branch.
 
 - Select the "master" button in the bottom bar of VS Code
 
@@ -278,12 +279,12 @@ You're done. Before you leave, ask people to review your request and we should b
 
 # Feedback
 
-If you have any feedback on this tutorial, feel free to create an issue on the Github repo or talk to one of the exec board members.
+If you have any feedback on this tutorial, feel free to create an issue on the GitHub repo or talk to one of the exec board members.
 
 # Help! I have merge conflicts... now what?
 
 Merge conflicts can occur when multiple developers make changes to the same part of the same file, and then try to merge their branches. 
 
-As long as you are working on your own branch, you will not run into merge conflicts *until you try to merge into `master`*. Github now has a nice UI for handling merge conflicts -- and we can walk you through this if you get to it.
+As long as you are working on your own branch, you will not run into merge conflicts *until you try to merge into `master`*. GitHub now has a nice UI for handling merge conflicts -- and we can walk you through this if you get to it.
 
 Being able to deal with merge conflicts is not necessary to be able to contribute to any of our projects -- there will always be someone to help you with merge conflicts.
