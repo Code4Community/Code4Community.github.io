@@ -22,13 +22,13 @@ footer {
     top: 100vh;
 }
 
-@media screen and (max-width: 749px) {
+/* UPDATE THIS BREAKPOINT WHEN ADDING/REMOVING NAVBAR ITEMS */
+@media screen and (max-width: 699px) {
     #desktop-navigation-links {
         display: none;
     }
 }
-
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
     #hamburger-button {
         display: none;
     }
