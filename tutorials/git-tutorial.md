@@ -10,8 +10,10 @@ By: Andrew Haberlandt
 
 ## Before we get started
 * Download a modern browser (preferably [Chrome](https://www.google.com/chrome/){:target="_blank"} or [Firefox](https://www.mozilla.org/en-US/firefox/){:target="_blank"})
+* Download [Git](https://git-scm.com/downloads){:target="_blank"}
 * Download [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}
-* You need a Github Account. Fill out the survey on our homepage with your Github username, so we can add you to our Github organization.
+* [Create a GitHub account](https://github.com/join){:target="_blank"}
+* Fill out the survey on [our homepage](https://code4community.github.io/){:target="_blank"} and include your GitHub username, so we can add you to our GitHub organization
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)
@@ -23,20 +25,20 @@ By: Andrew Haberlandt
 
 # Part 1: About Git
 
-A 'repository' consists of two parts:
+A "repository" consists of two parts:
 
-- a 'working tree': These are the files you have 'checked out' on your computer. This is what you see in the file explorer on your operating system or the explorer pane in VS Code.
-- a 'history':  Stored in the `.git/` folder (*don't touch!*), Git tracks the history of all your files
+- a "working tree": These are the files you have "checked out" on your computer. This is what you see in the file explorer on your operating system or the explorer pane in VS Code.
+- a "history":  Stored in the `.git/` folder (*don't touch!*), Git tracks the history of all your files
 
-(Note: This is a simplification. Once you take CSE 3901/3902/3903 you will study Git in more detail)
+(Note: This is a simplification. If you take CSE 3901/3902/3903 you will study Git in more detail.)
 
-A 'history' is a **graph** of **commits**. A **commit** (noun, also known as a 'revision') is a set of changes to files in your repository, accompanied by a message describing the changes. [Here's an example commit on Github.](https://github.com/Code4Community/git-tutorial/commit/0ad8fd04cca43603f9660282e62b40b34c2bc213)
+A "history" is a **graph** of **commits**. A **commit** (noun, also known as a "revision") is a set of changes to files in your repository, accompanied by a message describing the changes. [Here's an example commit on GitHub.](https://github.com/Code4Community/git-tutorial/commit/0ad8fd04cca43603f9660282e62b40b34c2bc213)
 
-- A **commit** (except for the first) always has at least one parent - thus you can always trace any commit back to the single 'initial' commit in any repository. So, you can see all of the changes that lead up to the current state.
+- A **commit** (except for the first) always has at least one parent - thus you can always trace any commit back to the single "initial" commit in any repository. So, you can see all of the changes that lead up to the current state.
 
-- A **commit** will always be on a particular **branch** - you can think of branches as multiple independent (but connected)  parts of your 'history' - this is useful if you are simulataneously working on multiple features on the same project. The default branch in Git is the `master` branch.
+- A **commit** will always be on a particular **branch** - you can think of branches as multiple independent (but connected)  parts of your "history" - this is useful if you are simulataneously working on multiple features on the same project. The default branch in Git is the `master` branch.
 
-- 'commit' is also used as a verb - meaning the act of creating a commit from your local changes (we'll use this in Part 4)
+- "commit" is also used as a verb - meaning the act of creating a commit from your local changes (we'll use this in Part 4)
 
 If everyone just pushed to the `master` branch, you might have a purely linear history:
 
@@ -64,14 +66,14 @@ A \      C      / E \     F \         I
 
 This entire graph is stored in the "history".
 
-Your local computer and the server (We use Github, but there are many services) might have differing histories. To sync our history with the history stored by the server, we will use two operations:
+Your local computer and the server (We use GitHub, but there are many services) might have differing histories. To sync our history with the history stored by the server, we will use two operations:
 
 - **Push**: Push any additional commits **on the current branch** from my local history to the remote server. (If a remote branch does not exist with that name, VS Code will prompt you and it will be created on the remote server.)
 - **Pull**: Pull any additional commits **on the current branch** from the remote server and store them in my local history. This also updates your **working tree** (the files you see on disk will update to reflect any changes).
 
 **You will never be able to directly push to master.** Therefore, before pushing your code you will have to checkout a new local branch (this is covered in the later parts of this tutorial.)
 
-
+Since we're using VS Code's Git interface, we won't perform push and pull operations directly. Instead, we'll click the "sync" button which performs a Git Pull and then a Git Push.
 
 # Part 2: Cloning a repository
 
@@ -79,21 +81,20 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - Open Visual Studio Code, and open a new window (File -> New Window)
 
-- Select the 'Git' menu.
+- Select the "Git" menu.
 
 ![](images/git-tutorial/screenshot1.png)
 
 - Choose "Clone Repository"
 
-- Choose "Clone from Github" and complete the one-time authentication process
+- Choose "Clone from GitHub" and complete the one-time authentication process
 
 - You should then be able to type "code4community/" and get a list of all repositories in our organization!
 
 ![](images/git-tutorial/screenshot2.png)
 
 - Choose "code4community/git-tutorial"
-    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your Github username. Then, contact Max Gruber
-    and he will ensure you are added to the Github organization. 
+    - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your GitHub username. Then, contact a member of the exec board and they will ensure you are added to the GitHub organization. 
 
 - You will be prompted to choose a location on disk to clone the repository
     - A folder named "git-tutorial" will automatically be created *within* whatever folder you select.
@@ -110,11 +111,11 @@ You should see the files for the repository, as shown in the below screenshot:
 
 Congratulations! You succesfully cloned our repository!
 
-You can also view the repository for this tutorial on Github [here](https://github.com/Code4Community/git-tutorial). All of our repositories are available on our [organization Github page](https://github.com/Code4Community).
+You can also view the repository for this tutorial on GitHub [here](https://github.com/Code4Community/git-tutorial). All of our repositories are available on our [organization GitHub page](https://github.com/Code4Community).
 
 Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
-![](images/git-tutorial/screenshot5.png)
+![](images/git-tutorial/screenshot5.png){:style="box-shadow: 0 5px 15px grey;"}
 
 # Part 3: Making modifications
 
@@ -122,29 +123,29 @@ Goal: Add yourself to our [display of bouncing heads](https://code4community.git
 
 ## Step 0: Check out a new branch
 
-By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured Github to refuse pushing to the `master` branch directly.** 
+By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured GitHub to refuse pushing to the `master` branch directly.** 
 
-Why? It's because for all of our projects, you will be pushing to separate branches for each feature you work on. You will then create a **pull request** in Github, requesting that *your peers review your code* before it gets merged into the `master` branch.
+Why? It's because for all of our projects, you will be pushing to separate branches for each feature you work on. You will then create a **pull request** in GitHub, requesting that *your peers review your code* before it gets merged into the `master` branch.
 
-- Select the 'master' button in the bottom bar of VS Code
+- Select the "master" button in the bottom bar of VS Code
 
 ![](images/git-tutorial/screenshot10.png)
 
-- Select 'Create new branch...'
+- Select "Create new branch..."
 
 ![](images/git-tutorial/screenshot9.png)
 
 
 - Give your branch a unique name. For the purposes of this tutorial, just use your lastname.#
 
-- Verify in the bottom bar that your new branch name is displayed instead of 'master'.
+- Verify in the bottom bar that your new branch name is displayed instead of "master".
 
 
 ## Step 1: Add your image
 
 Add an image to the `images/` directory. You can drag-and-drop from the file explorer on your operating system directly into VS Code.
 
-Note: Your image does not have you be an actual picture of yourself, although it might help us learn eachother's names.
+Note: Your image does not have you be an actual picture of yourself, although it might help us learn each other's names.
 
 ![](images/git-tutorial/screenshot6.png)
 
@@ -160,7 +161,7 @@ All you need to do is add the following four lines inside the `<div id="heads-ar
 </div>
 ```
 
-Change the name from 'Brutus' to your name, and change the image `src` to the path to the image you addied in the previous step. 
+Change the name between `<p>` and `</p>` from "Brutus" to your name, and change the image `src` to the path of the image you added in the previous step. 
 
 Add your lines in index.html directly below the last person's similar-looking piece of code. Ensure that the lines you add are fully inside the `<div id="heads-area">` tag, but not within someone else's `<div class="person-frame-inner">`. 
 
@@ -180,17 +181,17 @@ Ideas:
 ![](images/git-tutorial/screenshot7.png)
 
 Things to note:
-- The 'M' next to index.html means we have `M`odified that file in our working tree
-- The 'U' next you the image you added means this file is `U`ntracked - we haven't told Git to track changes to this file yet. The file is brand-new and has no history.
+- The "M" next to index.html means we have `M`odified that file in our working tree
+- The "U" next you the image you added means this file is `U`ntracked - we haven't told Git to track changes to this file yet. The file is brand-new and has no history.
 
 
-## Step 1: 'Stage' your changes
+## Step 1: "Stage" your changes
 
 Switch to the Git pane, and you'll see only the files with changes in your working copy.
 
 ![](images/git-tutorial/screenshot11.png)
 
-- Press the '+' on the files you'd like to commit. Or, select '+' next to 'Changes' to add all changes.
+- Press the "+" on the files you'd like to commit. Or, select "+" next to "Changes" to add all changes.
 
 ![](images/git-tutorial/screenshot12.png)
 
@@ -198,11 +199,11 @@ Now, you should see:
 
 ![](images/git-tutorial/screenshot14.png)
 
-Note: the 'U' next to the image has changed to an 'A' for `A`dded, now that we have added this file to Git.
+Note: the "U" next to the image has changed to an "A" for `A`dded, now that we have added this file to Git.
 
 ## Step 2: Commit your changes
 
-Add a commit message:
+Add a commit message (this should briefly explain your changes):
 
 ![](images/git-tutorial/screenshot13.png)
 
@@ -230,26 +231,26 @@ If you pull up the [repository](https://github.com/Code4Community/git-tutorial) 
 
 ![](images/git-tutorial/screenshot17.png)
 
-If so, you can click 'Compare & Pull request' and it save you a few clicks.
+If so, you can click "Compare & Pull request" and it save you a few clicks.
 
 Otherwise:
 - Go to the [repository homepage](https://github.com/Code4Community/git-tutorial)
-- Click 'Pull Requests'
-- Click 'New Pull Request'
+- Click "Pull Requests"
+- Click "New Pull Request"
 
 You'll see something like this:
 
 ![](images/git-tutorial/screenshot18.png)
 
-- 'base' is the branch you want you merge your changes *into*
-- 'compare' is the branch your changes are currently on (this is the branch you created earlier)
+- "base" is the branch you want you merge your changes *into*
+- "compare" is the branch your changes are currently on (this is the branch you created earlier)
 
 So,
 
-- All you should have to do is change the 'compare' branch to your branch, and click 'Create pull request'.
+- All you should have to do is change the "compare" branch to your branch, and click "Create pull request".
     - If you can't find your branch, that means you didn't successfully push your changes in the previous part. Let us know and we can try to help you.
 - Give your pull request a title and leave a comment with any issues you had
-- Click 'Create pull request' (again)
+- Click "Create pull request" (again)
 
 ## Step 2: Getting your pull request reviewed
 
@@ -278,12 +279,12 @@ You're done. Before you leave, ask people to review your request and we should b
 
 # Feedback
 
-If you have any feedback on this tutorial, feel free to create an issue on the Github repo or talk to one of the exec board members.
+If you have any feedback on this tutorial, feel free to create an issue on the GitHub repo or talk to one of the exec board members.
 
 # Help! I have merge conflicts... now what?
 
 Merge conflicts can occur when multiple developers make changes to the same part of the same file, and then try to merge their branches. 
 
-As long as you are working on your own branch, you will not run into merge conflicts *until you try to merge into `master`*. Github now has a nice UI for handling merge conflicts -- and we can walk you through this if you get to it.
+As long as you are working on your own branch, you will not run into merge conflicts *until you try to merge into `master`*. GitHub now has a nice UI for handling merge conflicts -- and we can walk you through this if you get to it.
 
 Being able to deal with merge conflicts is not necessary to be able to contribute to any of our projects -- there will always be someone to help you with merge conflicts.
