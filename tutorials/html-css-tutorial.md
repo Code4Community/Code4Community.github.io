@@ -40,6 +40,8 @@ Each of these questions is answered by one of the languages of the web. HTML kno
 ### Background
 HTML stands for Hypertext Markup Language. A "markup language" is not a programming language. Rather, it's a way of annotating, or "marking up" text with formatting information. The formatting information is interpreted by a program (in this case, a browser) and then displayed to your screen.
 
+You "mark up" text in HTML using tags. An opening tag looks like `<tag>`, it's a tag name with an angle bracket on each side. A closing tag looks like `</tag>`, it's a forward slash and a tag name with an angle bracket on each side. Let's say that you want to display the text "Go Bucks". You might want to display that as a header, paragraph, or a link. Your decision on that front would dictate which tag you would use. If you want a header, then you'd put `<h1>Go Bucks</h1>`. If you want a paragraph, then you'd put `<p>Go Bucks</p>`.
+
 Every HTML page should look something like this. The `<!DOCTYPE html>` tag tells the browser we're writing HTML5 (the latest version of HTML). The `<head></head>` tag tells the browser about our webpage (this information is called metadata). The `<body></body>` tag tells the browser what to display on our webpage.
 ```html
 <!DOCTYPE html>
