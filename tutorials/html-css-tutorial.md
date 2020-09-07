@@ -78,23 +78,21 @@ Congrats! You have a webpage! Although...it's pretty boring. Let's change that b
 ### Adding Content
 HTML has many different tags we can use to display different information. There are tags for headers, paragraphs, lists, navigation, links, images, forms, and all sorts of other things. We'll just cover a few today, although you can read about [all of HTML's tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) if you'd like to learn more.
 
-Let's start with a paragraph. Put a `<p></p>` tag inside of the `<body></body>` tag and put some text between the opening (`<p>`) and closing (`</p>`) tags.
+Let's start with a paragraph. Put a `<p></p>` tag inside of the `<body></body>` tag and put some text between the opening (`<p>`) and closing (`</p>`) tags. I'm going to use the text from the first paragraph on [Ohio State's Wikipedia page](https://en.wikipedia.org/wiki/Ohio_State_University).
 
 **Note: VS Code will automatically add the `</p>` end tag as you type the `<p>` start tag. You won't need to explicitly type this.**
-
-Let's start with a paragraph. Put a `<p></p>` tag inside of the `<body></body>` tag and put some text between the opening (`<p>`) and closing (`</p>`) tags. I'm going to use the text from the first paragraph on [Ohio State's Wikipedia page](https://en.wikipedia.org/wiki/Ohio_State_University).
 
 Checkpoint 2:
 
 ![](images/html-css-tutorial/screenshot2.png)
 
-At the end of that paragraph from Wikipedia, there's a list of regional campuses. Let's take that sentence out of our paragraph and move it into a list of campuses. HTML has two types of lists: ordered `<ol></ol>` and unordered `<ul></ul>` (see [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) for more info on unordered lists). Since there isn't any particular order to the campuses, we'll use an unordered list. Put it inside of the body tag but after the paragraph tag. Then, put each campus in a list item tag (`<li></li>`) between the opening (`<ul>`) and closing (`</ul>`) list tags. Don't forget to add Columbus to the list!
+At the end of that paragraph from Wikipedia, there's a list of regional campuses. Let's take that sentence out of our paragraph and move it into a list of campuses. HTML has two types of lists: [ordered](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol) `<ol></ol>` and [unordered](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) `<ul></ul>`. Since there isn't any particular order to the campuses, we'll use an unordered list. Put it inside of the body tag but after the paragraph tag. Then, put each campus in a list item tag (`<li></li>`) between the opening (`<ul>`) and closing (`</ul>`) list tags. Don't forget to add Columbus to the list!
 
 Checkpoint 3:
 
 ![](images/html-css-tutorial/screenshot3.png)
 
-Since this webpage is taking on an Ohio State theme, we should probably update the title and add a header. Change the contents of the title tag from "Hello World!" to "Ohio State". There are six header tags in HTML, `<h1></h1>`...`<h6></h6>` ([more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)) with h1 tags being the largest headers and h6 tags being the smallest headers. Let's add an h1 tag to top of our webpage with the text "THE Ohio State University". Make sure to put it inside of the body tag but before the paragraph tag.
+Since this webpage is taking on an Ohio State theme, we should probably update the title and add a header. Change the contents of the title tag from "Hello World!" to "Ohio State". There are six [header tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) in HTML, `<h1></h1>`...`<h6></h6>` with h1 tags being the largest headers and h6 tags being the smallest headers. Let's add an h1 tag to top of our webpage with the text "THE Ohio State University". Make sure to put it inside of the body tag but before the paragraph tag.
 
 Checkpoint 4:
 
@@ -108,9 +106,9 @@ Checkpoint 5:
 
 Lastly, we're going to add an image (`<img>`) and a link (`<a></a>`) to our page. Thus far, we've only dealt with tags that have text inside. However, these last two tags are a little bit different. The anchor (link) tag has opening and closing tags, but the image tag doesn't. And both of them require you to set attributes to make them useful. Here's the syntax for setting a tag attribute in HTML: `<tag attribute="value"></tag>` or `<tag attribute="value">`. One tag can have any number of attributes.
 
-Add an image tag inside of the h1 tag after "THE Ohio State University". Set its `src` attribute to "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Ohio_State_University_seal.svg/150px-Ohio_State_University_seal.svg.png", the URL of OSU's seal on Wikipedia. This attribute tells the browser where to find the image you'd like to display. Set the `alt` attribute to "University Seal". This attribute is important for accessibility because visually impaired people browse the web using [screen readers](https://en.wikipedia.org/wiki/Screen_reader). It also tells the browser what to display if the browser cannot retrieve the image. ([more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img))
+Add an [image tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) inside of the h1 tag after "THE Ohio State University". Set its `src` attribute to "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Ohio_State_University_seal.svg/150px-Ohio_State_University_seal.svg.png", the URL of OSU's seal on Wikipedia. This attribute tells the browser where to find the image you'd like to display. Set the `alt` attribute to "University Seal". This attribute is important for accessibility because visually impaired people browse the web using [screen readers](https://en.wikipedia.org/wiki/Screen_reader). It also tells the browser what to display if the browser cannot retrieve the image.
 
-Add an anchor tag around "Columbus, Ohio" in the paragraph about Ohio State from Wikipedia. Set its `href` attribute to "https://www.columbus.gov/", Columbus's website. ([more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a))
+Add an [anchor tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) around "Columbus, Ohio" in the paragraph about Ohio State from Wikipedia. Set its `href` attribute to "https://www.columbus.gov/", Columbus's website.
 
 Checkpoint 6:
 
