@@ -68,7 +68,7 @@ Your browser should look like this:
 ![](../images/express-mongo-tutorial/hello_world_application.png)
 
 Congrats! You now have a basic Express app which responds with "Hello World!" for `GET` requests made to the root URL (`'/'`).
-* To simulate other types of HTTP requests (as well as `GET` requets), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
+* To simulate other types of HTTP requests (as well as `GET` requests), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
 
 <br>
 
@@ -247,7 +247,7 @@ We can use the information above and what we've built so far to extend our Expre
     ```js
     const mongoose = require('mongoose');
     ```
-4. Now we must open a connection to the database. Open the Connect dialog on your MongoDB cluster that you created and copy the provided connection string, replacing `<username>`, `<password>`, and `<dbname>` with your database credentials/information.
+4. Now we must open a connection to the database. Open the Connect dialog on your MongoDB cluster that you created and copy the provided connection string, replacing `<username>`, `<password>`, and `<dbname>` with your database credentials/information. Visit the following link to see how to get connection string: https://docs.atlas.mongodb.com/tutorial/connect-to-your-cluster/#connect-to-your-atlas-cluster
     ```js
     const db = () => {
         return mongoose.connect('mongodb+srv://<username>:<password>@<dbname>-hc9j8.azure.mongodb.net/test?retryWrites=true&w=majority), {useNewUrlParser: true, useUnifiedTopology: true}');
@@ -319,7 +319,7 @@ We can use the information above and what we've built so far to extend our Expre
    ```
    * Note: the returned document is the document as it was before the update is applied (more info can be found [here](https://mongoosejs.com/docs/api/model.html#model_Model.findOneAndUpdate){:target="_blank"})
 
-11. To delete a school document, we can create a route that handles `DELETE` requets at the `/school` path. For example, to delete a document that matches a specifc name and return the deleted document:
+11. To delete a school document, we can create a route that handles `DELETE` requests at the `/school` path. For example, to delete a document that matches a specifc name and return the deleted document:
    ```js
    app.delete('/school', (req, res) => {
        Schools.findOneAndDelete({name: req.body.schoolName}, (err, school) => {
