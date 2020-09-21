@@ -55,7 +55,7 @@ You're now ready to start working on your Node file. Copy the following line int
     console.log("Node program has successfully run");
 
 
-You're now ready to run your Node program! Entering the command `node app.js` in the terminal will run your tutorial.js file. Your terminal should display the message "Node program has successfully run."
+You're now ready to run your Node program! Entering the command `node app.js` in the terminal will run your app.js file. Your terminal should display the message "Node program has successfully run."
 
 While it's good that you were able to get run this program, it would be a lot better if it actually did something. Let's add to the Javascript to make it a little more interesting. Replace your `console.log()` statement with the following code:
 
