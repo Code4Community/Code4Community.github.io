@@ -148,7 +148,7 @@ In the `app.js` file:
 3. Create a route that responds to a DELETE request to the school path (`'/school'`) and send the message "DELETE request made at /school"
 4. In your root folder, create a new html file, `home_page.html` and add some content.
 5. Modify the existing `GET` route for the root path to call the `sendFile()` method of the `res` object and passing in the path of your `home_page.html` file
-    * Remeber to add `__dirname` to the beginning of the file path to ensure it looks in the root of your working directory (i.e. `res.sendFile(__dirname + "home_page.html")`)
+    * Remeber to add `__dirname` to the beginning of the file path to ensure it looks in the root of your working directory (i.e. `res.sendFile(__dirname + "\home_page.html")`)
 6. Create a new folder named `public` under your root project and add the following [image](../images/express-mongo-tutorial/block_o.png) 
 7. Add a new HTML file in the `public` directory, `tutorial.html`, with whatever content you want
 8. Use the `express.static` middleware to serve the files in the `public` directory
