@@ -34,24 +34,21 @@ permalink: /outreach
 <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
     <ul class="uk-slideshow-items">
         {% for image in site.data.outreach_images %}
-            {% if forloop.first == true %}
-                <li>
-                    <img class="center" data-src={{image}} height="300" alt="test"
-                        uk-img="target: !ul > :last-child, !* +*">
-                </li>
-            {% elsif forloop.last == true %}
-                <li>
-                    <img class="center" data-src={{image}} height="300" alt="test"
-                        uk-img="target: !* -*, !ul > :first-child">
-                </li>
-            {% else %}
-                <li>
-                    <img class="center" data-src={{image}} height="300" alt="test"
-                        uk-img="target: !* -*, !* +*">
-                </li>
-            {% endif %}
+        {% if forloop.first == true %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !ul > :last-child, !* +*">
+        </li>
+        {% elsif forloop.last == true %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !* -*, !ul > :first-child">
+        </li>
+        {% else %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !* -*, !* +*">
+        </li>
+        {% endif %}
         {% endfor %}
-        
+
     </ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
         uk-slideshow-item="previous"></a>
@@ -59,43 +56,53 @@ permalink: /outreach
         uk-slideshow-item="next"></a>
 </div>
 
-<div class="uk-child-width-expand@s uk-grid-match" uk-grid>
-    <div class="uk-width-1-1@m">
-        <div class="uk-card uk-card-default uk-card-body">
-            <h2 class="uk-card-title">Project Overview</h2>
-            <p>
-                The Outreach project aims to help the community around us by educated the youth of Columbus on
-                programming basics. Outreach meets once a week to work on modules designed to faciliate the
-                student's learning of several programming concepts. These modules can be games, activities, or
-                anything else you can think of! We, then, take these modules to local schools and educate the students
-                with our workshops.
-            </p>
-        </div>
-    </div>
+<br>
 
-    <div class="uk-width-1-2@m">
-        <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-            <h2 class="uk-card-title">Past Projects</h2>
+<div class="uk-card uk-card-default uk-card-body">
+    <h2 class="uk-card-title">Project Overview</h2>
+    <p>
+        The Outreach project serves the community by exposing the youth of Columbus to computer science through
+        workshops. This is foundational to promoting diversity in computing professions. Outreach meets weekly to
+        build modules which teach basic computer programming. These modules can be games, activities, or anything
+        else you can think of! Once completed, we present these modules in workshops at local schools.
+    </p>
+</div>
+
+<br>
+
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Current Modules</h2>
             <ul>
                 <li>
-                    <a target="_blank" href="https://repl.it/@adambricelis/C4CWHG">The World's Hardest Game</a>
-                    <br>
-                    <p>
-                        With this module, the end goal was to modify the code to win the last level.
-                        The students could also change the images used for the player, the obstacles, the goal, and the background.
-                    </p>
+                    <a target="_blank" href="https://repl.it/@adambricelis/C4CWHG">World's Hardest Game</a>
+                    <div>Students must modify the code to beat Level 3. They can also change the images used for the
+                        player, the obstacles, the goal, and the background.</div>
+                </li>
+                <li>
+                    <a target="_blank" href="https://code4community.github.io/tanks/">Brutus Ball</a>
+                    <div>Students write code to compete against a computer player or each other! The last Brutus Buckeye
+                        standing wins.</div>
                 </li>
             </ul>
         </div>
     </div>
-    
-    <div class="uk-width-1-2@m">
-        <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-            <h2 class="uk-card-title">Current Projects</h2>
-            <p>Check back next semester to see what we are up to!</p>
+
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Upcoming Modules</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/Code4Community/cats-and-mice">Cats and Mice</a>
+                    <div>In this platformer, you're a mouse. Your goal is to get the cheese while avoiding the cats.
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-
-    {% include leaders.html content=site.data.outreach_leaders %}
-
 </div>
+
+<br>
+
+{% include leaders.html content=site.data.outreach_leaders %}
