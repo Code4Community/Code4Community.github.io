@@ -7,6 +7,6 @@ content_style: github_markdown
 
 # Resume Workshop
 
-- [Github Setup](/resume-workshop/1)
+- [Github Setup](/resume-workshop/setup)
 
 
