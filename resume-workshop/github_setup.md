@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume Workshop - Github Setup
-permalink: /resume-workshop/1
+permalink: /resume-workshop/setup
 content_style: github_markdown
 ---
 
