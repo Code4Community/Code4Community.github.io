@@ -13,11 +13,13 @@ https://github.com/andrewbanchich/forty-jekyll-theme
 ## Be sure to consult the [Github Basics](basics) page to see step-by-step instructions on how to add, remove, or, or rename a file.
 
 1. Modify config.yml:
+
     (a) baseurl: ‘/repo_name’, so probably ‘/forty-jekyll-theme’ unless you rename the repository
     (b) url: https://YourUsername.github.io/
     (c) author: Your Name
     (d) Change street address or phone # if you wish, or leave blank
     (e) Change anything under “# social settings” if you want, or leave any of them blank to exclude
+
 2. Modify index.md
     (a) Find the line:
     ```
