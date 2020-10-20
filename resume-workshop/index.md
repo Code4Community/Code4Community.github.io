@@ -13,3 +13,6 @@ content_style: github_markdown
 - [Hosting your Template on GitHub Pages](/resume-workshop/github_pages)
 - [Changing the Content of your Website](/resume-workshop/content_changes)
 
+Templates:
+
+- [forty-jekyll-template](/resume-workshop/forty)
