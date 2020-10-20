@@ -33,3 +33,7 @@ Start by nagivating to [GitHub.com](https://github.com/)
 
 * Stop when you get to this screen:
 ![github](images/github-11.png)
+
+----
+
+Next: [Github Basics](github_basics)
