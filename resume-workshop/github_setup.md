@@ -7,6 +7,7 @@ content_style: github_markdown
 
 # Resume Workshop - Github Setup
 
+*If you already have a GitHub account, please skip this page and proceed to the rest of the workshop*
 Start by nagivating to [GitHub.com](https://github.com/)
 ![github](images/github-1.png)
 
