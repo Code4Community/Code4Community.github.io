@@ -7,6 +7,13 @@ content_style: github_markdown
 
 # Resume Workshop - Github Basics
 
+- [Adding Files](#adding-files)
+- [Removing Files](#removing-files)
+- [Renaming Files](#renaming-files)
+- [Duplicating Files](#duplicating-files)
+
+
+
 ## Adding Files
 
 1. Click “Add File
