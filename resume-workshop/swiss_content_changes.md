@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Resume Workshop - Making Content Changes
-permalink: /resume-workshop/content_changes
+title: Swiss - Making Content Changes
+permalink: /resume-workshop/swiss_content_changes
 content_style: github_markdown
 ---
 

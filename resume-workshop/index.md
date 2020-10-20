@@ -11,8 +11,8 @@ content_style: github_markdown
 - [Github Basics](/resume-workshop/basics)
 - [Choosing a Template](/resume-workshop/templates)
 - [Hosting your Template on GitHub Pages](/resume-workshop/github_pages)
-- [Changing the Content of your Website](/resume-workshop/content_changes)
 
 Templates:
 
+- [Swiss Jekyll Template](/resume-workshop/swiss_content_changes)
 - [forty-jekyll-template](/resume-workshop/forty)
