@@ -12,3 +12,6 @@ content_style: github_markdown
 - [Choosing a Template](/resume-workshop/templates)
 - [Hosting your Template on GitHub Pages](/resume-workshop/github_pages)
 
+Templates:
+
+- [forty-jekyll-template](/resume-workshop/forty)
