@@ -9,6 +9,6 @@ content_style: github_markdown
 
 - [Github Setup](/resume-workshop/setup)
 - [Github Basics](/resume-workshop/basics)
-- [Templates](/resume-workshop/templates)
-
+- [Choosing a Template](/resume-workshop/templates)
+- [Hosting your Template on GitHub Pages](/resume-workshop/github_pages)
 
