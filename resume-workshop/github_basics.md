@@ -23,7 +23,6 @@ content_style: github_markdown
 ## Removing Files
 
 1. Open the file you’d like to duplicate, click the trash can to delete
-
 ![github](images/addfile-7.png)
 
 
@@ -34,16 +33,12 @@ content_style: github_markdown
 ## Renaming Files
 
 1. Open the file you’d like to duplicate, click edit
-
 ![github](images/addfile-3.png)
 
-
 2. Change the name
-
 ![github](images/addfile-5.png)
 
 3. Scroll to the bottom of the page and click 'Commit changes'
-
 ![github](images/addfile-6.png)
 
 
@@ -53,16 +48,13 @@ content_style: github_markdown
 ## Duplicating Files
 
 1. Open the file you’d like to duplicate, click edit
-
 ![github](images/addfile-3.png)
 
 2. Copy the entire file contents (CTRL-C or CMD-C)
-
 ![github](images/addfile-4.png)
 
 
 2. Go back to your repository home (click the repository name)
-
 ![github](images/addfile-2.png)
 
 3. Click “Add File
