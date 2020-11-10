@@ -28,6 +28,7 @@ content_style: github_markdown
    * Here, the &lt;p> tag is opened, then &lt;em> is opened. Then &lt;em> is closed, then &lt;p> is closed.
 * This principle holds true, no matter how many tags are present.
 * Here is an example of a larger collection of HTML tags. Don't worry if you don't recognize the tags (you can always look this up).
+
 ![alt text](./htmlex1.png?raw=true)
 
    
