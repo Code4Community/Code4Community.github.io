@@ -5,25 +5,31 @@ permalink: /resume-workshop/html
 content_style: github_markdown
 ---
 
-# Resume Workshop - Templates
-## Step 1: Find a template you like and fork in
-* The links below are for website templates. Follow along with the Swiss template or, if you’re feeling adventurous, choose one of the other themes that you like.
-* The most extensive directions are for the Swiss template:
-    * [Swiss](https://github.com/broccolini/swiss)
-* We also have some directions for the following two themes:
-    * [Forty](https://github.com/andrewbanchich/forty-jekyll-theme)
-    * [Minimal Resume](https://github.com/murraco/jekyll-theme-minimal-resume)
-* The same principles discussed apply to the three themes below:
-    * [Kross](https://github.com/themefisher/kross-jekyll)
-    * [Console](https://github.com/b2a3e8/jekyll-theme-console)
-    * [Creative](https://github.com/volny/creative-theme-jekyll)
+# Resume Workshop - HTML Introduction
+## Basics
+* HTML (hyper text markup language) is the basis of most websites.
+* HTML is the scaffolding and structure of a webpage; It tells your browser the basics of how your content should be laid out.
+* To do this, HTML uses **tags** and **attributes**
+#### Tags + Attributes
+* Tags: symbolize one single HTML element.
+   * Tags are denoted with angled brackets ‘<’ and ‘>’, with the specific type of tag enclosed inside of them. 
+   * Example: A paragraph in HTML uses the &lt;p&gt; tag 
+* Most tags require a closing tag. This just tells the browser where this particular element ends. The ending tag has a ‘/’ just inside the first angle bracket.
+   * Example: with closing tag, the proper formatting for a paragraph is: <p> sample text </p>
+* Attributes: specify additional information about that particular tag.
+   * Example: in HTML images are included with the <img> tag, but the browser needs to know where to find the image.
+   * &lt;img src = “picture.jpg”&gt;
+   * Here img is the tag, and src is an attribute that is being set to ‘picture.jpg
+   * The end result is that the browser displays picture.jpg 
+#### Opening and Closing Tags
+* Tags must be closed in the order that you opened them.
+   * Example: &lt;p> some &lt;em> text &lt;/p> &lt;/em>. This is wrong. You must close the &lt;em> tag before you can close the &lt;p> tag. 
+   * The correct way to do this would be &lt;p> some &lt;em> text &lt;/em> &lt;/p>
+   * Here, the &lt;p> tag is opened, then &lt;em> is opened. Then &lt;em> is closed, then &lt;p> is closed.
+* This principle holds true, no matter how many tags are present.
+* Here is an example of a larger collection of HTML tags. Don't worry if you don't recognize the tags (you can always look this up).
+![alt text](./htmlex1.png?raw=true)
 
-### Directions
-1. In the far upper-right-hand corner of the page, you should find a button labeled “Fork”.
-    * Click the “Fork” button at the top right of the repo. You should see a modal pop up over your screen asking “Where should we fork swiss?” Immediately below that you should see your username. Click your own username to fork the repository containing your theme to your own GitHub account
-        * If you don’t see your own username, check to make sure you are signed in. If not, sign in to GitHub using your credentials and try again.
-    * So, what the heck did we just do? 
-        * The code for making the generic website template you chose is stored in a GitHub Repository (a “repo”), which is like a folder for code. 
-        * Forking the repository to your own GitHub account makes a repository that you own, on your account, filled with a copy of all of the code from the template repository
-        * You can now edit this code and your changes can be saved to your own copy of the template. That’s exactly what we’re going to do to make this website your own.
-        * You should end up with something like this where it should be [your github username]/swiss in the top left hand corner.
+   
+
+
