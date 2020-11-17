@@ -44,6 +44,7 @@ content_style: github_markdown
 ![alt text](./htmlex3.png?raw=true)
 
 > \* Most modern browsers may still be able to understand your HTML page without these, but it is best practice to include all three of the above tags in every page.
+
 #### Basic Tags
 * &lt;h1>,&lt;h2> ... &lt;h6> : used to denote a heading. h1 is the largest/most bolded, h6 the smallest/least bolded.
   * Example: &lt;h1> About Me: &lt;/h1>
