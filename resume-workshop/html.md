@@ -66,7 +66,7 @@ content_style: github_markdown
 		<li> Cat </li>
 		<li> Fish </li>
 	    </ul>
-* There are many, many, more HTML tags than those listed above; These are just the very basics. If you are looking for more, you can find a searchable list of tags here: https://www.w3schools.com/TAGS/default.ASP
+* There are many, many, more HTML tags than those listed above; These are just the very basics. If you are looking for more, you can find a searchable list of tags here: <a href="https://www.w3schools.com/TAGS/default.ASP">https://www.w3schools.com/TAGS/default.ASP</a> 
   
  
 
