@@ -35,7 +35,7 @@ content_style: github_markdown
 		          &lt;h1 class = “custom”> header! </h1>
   * In CSS file: 
   * .custom { color: red; }
-* There are a lot of rules and properties you can set (too many to list here), for a list of basic CSS functionality go to https://www.w3schools.com/css/default.asp 
+* There are a lot of rules and properties you can set (too many to list here), for a list of basic CSS functionality go to <a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a>
 
 
 
