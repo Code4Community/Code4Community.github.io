@@ -14,7 +14,7 @@ content_style: github_markdown
 * We apply styling in rules which follow the format of property:value
   * Example: 'color:red' changes the text color to red
   * Example: 'border:1px black' creates a 1px wide black border
-### Where can we put our rules? 
+## Where can we put our rules? 
 * The way we choose what to style and how is dependent on the **selectors**. These tell the browser which rules to apply to which parts of the HTML page. 
 * There are 3 main ways to apply CSS styling to your HTML page
   * Inline: straight inside of the HTML tag itself with the style attribute
@@ -25,7 +25,7 @@ content_style: github_markdown
   * External: inside of a completely separate CSS file call a stylesheet. This file can be full of as many rules as you want
     * Example: the following external styling would change all of the paragraphs’ text color to red (in any HTML page that linked to the stylesheet).
     * ![alt text](./cssex2.png?raw=true)
-### How do I select which elements get styled?
+## How do I select which elements get styled?
 * Style all of a particular HTML tag
   * Example: the following changes all p tags to have a text color of red.
   * ![alt text](./cssex2.png?raw=true)
