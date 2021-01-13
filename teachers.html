@@ -1,0 +1,126 @@
+---
+layout: page
+title: For Teachers
+permalink: /teachers
+---
+
+<style>
+    #slideshow {
+        max-height: 350px;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .leader {
+        border-radius: 5px;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .leader h3 {
+        font-weight: 700;
+    }
+
+    .leader img {
+        height: 200px;
+    }
+</style>
+
+<h1>For Teachers</h1>
+
+<br>
+
+<div id="slideshow" class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="autoplay: true">
+    <ul class="uk-slideshow-items">
+        {% for image in site.data.outreach_images %}
+        {% if forloop.first == true %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !ul > :last-child, !* +*">
+        </li>
+        {% elsif forloop.last == true %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !* -*, !ul > :first-child">
+        </li>
+        {% else %}
+        <li>
+            <img class="center" data-src={{image}} height="300" alt="test" uk-img="target: !* -*, !* +*">
+        </li>
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+        uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+        uk-slideshow-item="next"></a>
+</div>
+
+<br>
+
+<div class="uk-child-width-expand@s uk-grid-match" uk-grid>
+    <div class="uk-width-1-1@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">Important Notice for Spring 2021</h2>
+            <p>            
+                Code 4 Community will be holding all workshops over Zoom or another video meeting service.
+            </p>
+        </div>
+    </div>
+    <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">What do we do?</h2>
+            <p>
+                Code 4 Community works to help the community around us through computer science. For the past three
+                years, we
+                have been going to schools and after school programs to present our program to students. The students in
+                Code 4
+                Community volunteer their time to develop games and learning programs that makes learning the basics of
+                computer
+                science fun for students!
+            </p>
+        </div>
+    </div>
+    <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h2 class="uk-card-title">FAQs</h2>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">How do I get C4C workshops at my school?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            Reach out to us! Our email is <a href="mailto://c4cosu@gmail.com">c4cosu@gmail.com</a>.
+                            Please include the school name and the grade level of your students!
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">What grade levels can attend a C4C workshop?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            The current lesson plans we have work best for 5th grade to 8th grade, but we are working on
+                            expanding to more grade levels. Depending on the situation, however, we may be able to adapt
+                            the lesson plans to older or younger students.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">What do your lesson plans consist of?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            Our lesson plans are made of a few pieces (depending on the amount of time allocated to the workshops):
+                            <ul>
+                                <li>An explanation of what Code 4 Community does</li>
+                                <li>An overview of how computer science fits into the student's daily life</li>
+                                <li>An overview of the game or learning tool that they students will be using</li>
+                                <li>Teach the students computer science principles through the game or learning tool</li>
+                                <li>Next steps if the student is interested in learning more about computer science</li>
+                            </ul>
+                            Checkout some of our current and past games on our homepage!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
