@@ -28,6 +28,11 @@
         "name": "Tutorial 6: React and JSX",
         "link": "/react-jsx-tutorial",
         "description": "This tutorial introduces a popular javascript libary used to build user interfaces"
+    },
+    {
+        "name": "Stub Tutorial 7: Multiplayer Game (Work in Progress)",
+        "link": "https://docs.google.com/document/d/1OqFh3IEAm9Gmg5gdtrKUlz-wp0Pba26U07rjMN8x99o/edit?usp=sharing"
+        "description": "This is a link to the Multiplayer game's Google Doc full of notes. At some future point this will become a tutorial"
     }
     
 
