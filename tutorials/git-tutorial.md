@@ -9,11 +9,11 @@ content_style: github_markdown
 By: Andrew Haberlandt
 
 ## Before we get started
-* Download a modern browser (preferably [Chrome](https://www.google.com/chrome/){:target="_blank"} or [Firefox](https://www.mozilla.org/en-US/firefox/){:target="_blank"})
-* Download [Git](https://git-scm.com/downloads){:target="_blank"}
-* Download [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}
-* [Create a GitHub account](https://github.com/join){:target="_blank"}
-* Fill out the survey on [our homepage](https://code4community.github.io/){:target="_blank"} and include your GitHub username, so we can add you to our GitHub organization
+* Download a modern browser (preferably [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"} or [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"})
+* Download [Git](https://git-scm.com/downloads){:target="blank" rel="noopener"}
+* Download [Visual Studio Code](https://code.visualstudio.com/download){:target="blank" rel="noopener"}
+* [Create a GitHub account](https://github.com/join){:target="blank" rel="noopener"}
+* Fill out the survey on [our homepage](https://code4community.github.io/){:target="blank" rel="noopener"} and include your GitHub username, so we can add you to our GitHub organization
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)

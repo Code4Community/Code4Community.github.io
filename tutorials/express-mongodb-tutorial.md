@@ -27,7 +27,7 @@ content_style: github_markdown
 ### What is Express?
 Express is a Node.js web application framework that provides a robust set of features for web and mobile applications. Some of the core features
 that Express offers are:
-* Allows to set up [middlewares](https://expressjs.com/en/guide/using-middleware.html){:target="_blank"} to respond to HTTP requests
+* Allows to set up [middlewares](https://expressjs.com/en/guide/using-middleware.html){:target="blank" rel="noopener"} to respond to HTTP requests
 * Defines a routing table which is used to perform different actions based on HTTP method and URL
 * Allows to dynamically render HTML pages based on passing arguments to templates
 
@@ -62,13 +62,13 @@ that Express offers are:
     ```
     Example app listening at http://localhost:3000
     ```
-    Open a browser and navigate to [http://localhost:3000](http://localhost:3000){:target="_blank"}
+    Open a browser and navigate to [http://localhost:3000](http://localhost:3000){:target="blank" rel="noopener"}
 
 Your browser should look like this:
 ![](../images/express-mongo-tutorial/hello_world_application.png)
 
 Congrats! You now have a basic Express app which responds with "Hello World!" for `GET` requests made to the root URL (`'/'`).
-* To simulate other types of HTTP requests (as well as `GET` requests), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
+* To simulate other types of HTTP requests (as well as `GET` requests), please visit the [Postman docs](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="blank" rel="noopener"}
 
 <br>
 
@@ -97,16 +97,16 @@ app.METHOD(PATH, HANDLER);
 ```
 where:
 - `app` is an instance of `express`
-- `METHOD` is an [HTTP request method](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods){:target="_blank"} (in lowercase)
+- `METHOD` is an [HTTP request method](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods){:target="blank" rel="noopener"} (in lowercase)
 - `PATH` is a path on the server.
 - `HANDLER` is the function executed when the route is matched.
 
-For more information about routing, please visit the [routing guide](https://expressjs.com/en/guide/routing.html){:target="_blank"}
+For more information about routing, please visit the [routing guide](https://expressjs.com/en/guide/routing.html){:target="blank" rel="noopener"}
 
 
 ### Request and Response
 Express applications uses a callback function whose parameters are `request` and `response` objects.
-- The [request object](https://expressjs.com/en/4x/api.html#req){:target="_blank"} represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, etc...
+- The [request object](https://expressjs.com/en/4x/api.html#req){:target="blank" rel="noopener"} represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, etc...
 
     Here's some examples on how to get data from a request in Express:
     * For `GET` requests, we'll want to look at the request's query to get data. To get the message data for the request `GET /?message=hello_world`:
@@ -121,7 +121,7 @@ Express applications uses a callback function whose parameters are `request` and
             const data = req.body.schoolData;
     });
     ```
-- The [response object](https://expressjs.com/en/4x/api.html#res){:target="_blank"} represents the HTTP response that an Express app sends when that route gets a request
+- The [response object](https://expressjs.com/en/4x/api.html#res){:target="blank" rel="noopener"} represents the HTTP response that an Express app sends when that route gets a request
 
 ### Serving Static Files in Express
 To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express by passing in the name of the directory containing your assets.
@@ -153,17 +153,17 @@ In the `app.js` file:
 7. Add a new HTML file in the `public` directory, `tutorial.html`, with whatever content you want
 8. Use the `express.static` middleware to serve the files in the `public` directory
 9. Save your javascript file and run it again with node. 
-10. Go to [http://localhost:3000](http://localhost:3000){:target="_blank"} to see the contents of your home_page.html file
+10. Go to [http://localhost:3000](http://localhost:3000){:target="blank" rel="noopener"} to see the contents of your home_page.html file
 11. Use postman to test the other routes you have created ensure you see the correct messages/content
-    * [Guide to sending requests with Postman](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="_blank"}
+    * [Guide to sending requests with Postman](https://learning.postman.com/docs/getting-started/sending-the-first-request/){:target="blank" rel="noopener"}
 
 
-To view the final code, look at the `app_pt1.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="_blank"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="_blank"} repo:
+To view the final code, look at the `app_pt1.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="blank" rel="noopener"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="blank" rel="noopener"} repo:
 
 
 ### Additional Resources
 - Visit the [API Reference](https://expressjs.com/en/4x/api.html) to see everything that Express provides
-- Visit the [Express examples](https://expressjs.com/en/starter/examples.html){:target="_blank"} page to get a better idea of what express allows you to do, 
+- Visit the [Express examples](https://expressjs.com/en/starter/examples.html){:target="blank" rel="noopener"} page to get a better idea of what express allows you to do, 
 
 
 ## Part 2: MongoDB/Mongoose
@@ -228,13 +228,13 @@ tOSU.save((err, school) => {
 });
 ```
 
-For more information about models and the methods available, please visit the Mongoose [models page](https://mongoosejs.com/docs/models.html){:target="_blank"}
+For more information about models and the methods available, please visit the Mongoose [models page](https://mongoosejs.com/docs/models.html){:target="blank" rel="noopener"}
 
 ## Part 3: Building a REST API
 
 We can use the information above and what we've built so far to extend our Express application into a fully functioning REST API:
 
-1. Visit the [Getting Started](https://docs.atlas.mongodb.com/getting-started/){:target="_blank"} guide and follow parts 1-4 to set up an account and create a database with MongoDB Atlas. 
+1. Visit the [Getting Started](https://docs.atlas.mongodb.com/getting-started/){:target="blank" rel="noopener"} guide and follow parts 1-4 to set up an account and create a database with MongoDB Atlas. 
 
 2. Next, install Mongoose via NPM:
 
@@ -317,7 +317,7 @@ We can use the information above and what we've built so far to extend our Expre
         });
    });
    ```
-   * Note: the returned document is the document as it was before the update is applied (more info can be found [here](https://mongoosejs.com/docs/api/model.html#model_Model.findOneAndUpdate){:target="_blank"})
+   * Note: the returned document is the document as it was before the update is applied (more info can be found [here](https://mongoosejs.com/docs/api/model.html#model_Model.findOneAndUpdate){:target="blank" rel="noopener"})
 
 11. To delete a school document, we can create a route that handles `DELETE` requests at the `/school` path. For example, to delete a document that matches a specifc name and return the deleted document:
    ```js
@@ -333,10 +333,10 @@ We can use the information above and what we've built so far to extend our Expre
 
 Congrats! You now have created a simple REST API with Express and MongoDB/Mongoose!
 
-To view the final code, look at the `app_pt3.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="_blank"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="_blank"} repo:
+To view the final code, look at the `app_pt3.js` file in the [express-mongodb-tutorial](https://github.com/Code4Community/completed-tutorials/tree/master/express-mongodb-tutorial){:target="blank" rel="noopener"} directory in the [completed-tutorials](https://github.com/Code4Community/completed-tutorials){:target="blank" rel="noopener"} repo:
 
 ### Additonal Resources:
-* [MongoDB Atlas](https://docs.atlas.mongodb.com){:target="_blank"}
-* [Mongoose Docs](https://mongoosejs.com/docs/guide.html){:target="_blank"}
+* [MongoDB Atlas](https://docs.atlas.mongodb.com){:target="blank" rel="noopener"}
+* [Mongoose Docs](https://mongoosejs.com/docs/guide.html){:target="blank" rel="noopener"}
 
 
