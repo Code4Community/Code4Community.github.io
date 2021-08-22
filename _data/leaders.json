@@ -24,21 +24,21 @@
         "email": "herz.9@osu.edu"
     },
     {
-        "img": "leaders/margot_hare.jpeg",
+        "img": "",
         "name": "Margot Hare",
         "role": "Outreach Coordinator",
         "email": "hare.98@osu.edu"
     },
     {
-        "img": "leaders/ethan_harpster.jpeg",
+        "img": "leaders/ethan_harpster.png",
         "name": "Ethan Harpster",
         "role": "Outreach Coordinator",
         "email": "harpster.47@osu.edu"
     },
     {
-        "img": "leaders/lillian_gorelik.jpeg",
+        "img": "leaders/lillian_gorelik.jpg",
         "name": "Lillian Gorelik",
-        "role": "OSU Facing Coordinator",  
+        "role": "Outreach Coordinator",  
         "email": "gorelik.7@osu.edu"
     }
 ]
