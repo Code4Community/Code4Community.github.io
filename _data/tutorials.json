@@ -13,10 +13,5 @@
         "name": "Tutorial 3: Javascript",
         "link": "/javascript-tutorial",
         "description": "Our third tutorial introduced you to the scripting language of the web. It walks through the creation of a dynamic webpage."
-    },
-    {
-        "name": "Multiplayer Game (WIP)",
-        "link": "https://docs.google.com/document/d/1OqFh3IEAm9Gmg5gdtrKUlz-wp0Pba26U07rjMN8x99o/edit?usp=sharing",
-        "description": "This is a link to all of the notes on the <a href=\"https://github.com/Code4Community/MultiplayerPrototype\">Multiplayer Game</a>. This will become a tutorial at some point in the future."
     }
 ]
