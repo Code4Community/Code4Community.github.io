@@ -11,12 +11,18 @@ layout: page
 
     .button-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 200px);
+        grid-template-columns: repeat(auto-fit, 13rem);
         justify-content: center;
         row-gap: .5rem;
         column-gap: 1rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .button-icon {
+        height: 20px;
+        align-self: center;
+        padding-right: 0.5rem;
     }
 
     .leader {
@@ -37,35 +43,29 @@ layout: page
 <img id="logo" src="/logo.jpg" />
 
 <h3 class="text-center">
-    Information Session from 7:00pm to 8:00pm on August 24th
+    Information Session on Tuesday, August 24th from 7:00pm to 8:00pm
 </h3>
 <h3 class="text-center">
     Hitchcock Hall Room 035
 </h3>
 <br>
-<br>
 <h3 class="text-center">
-    Mondays from 7:00pm to 8:30pm Starting August 30th
+    Meetings on Mondays from 7:00pm to 8:30pm (starting August 30th)
 </h3>
 <h3 class="text-center">
     Enarson Classroom Building Room 222
 </h3>
 
 <div class="button-wrapper">
-    <a class="uk-button uk-button-primary"
+    <a class="uk-button uk-button-primary uk-flex uk-flex-center"
         href="http://eepurl.com/hoDfgz"
         target="blank" rel="noopener">
-        Email List Sign Up
+        <span class="button-icon" uk-icon="icon: mail"></span>
+        <span>Our Mailing List</span>
     </a>
-    <a class="uk-button uk-button-primary"
-        href="https://join.slack.com/t/code4community/shared_invite/zt-4c7bwexu-FMRPb21cog9rqvjgguE73Q"
-        target="blank" rel="noopener">
-        Slack Sign Up
-    </a>
-    <a class="uk-button uk-button-primary" href="https://github.com/code4community" target="blank" rel="noopener">
-        <span uk-icon="icon: github"></span>
-        &nbsp;
-        Our GitHub
+    <a class="uk-button uk-button-primary uk-flex uk-flex-center" href="https://github.com/code4community" target="blank" rel="noopener">
+        <span class="button-icon" uk-icon="icon: github"></span>
+        <span>Our GitHub</span>
     </a>
 </div>
 
