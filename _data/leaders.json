@@ -24,7 +24,7 @@
         "email": "herz.9@osu.edu"
     },
     {
-        "img": "",
+        "img": "leaders/margot_hare.jpg",
         "name": "Margot Hare",
         "role": "Outreach Coordinator",
         "email": "hare.98@osu.edu"
@@ -40,5 +40,11 @@
         "name": "Lillian Gorelik",
         "role": "Outreach Coordinator",  
         "email": "gorelik.7@osu.edu"
+    },
+    {
+        "img": "leaders/alek_kundla.jfif",
+        "name": "Alek Kundla",
+        "role": "Project Leader",  
+        "email": "kundla.9@osu.edu"
     }
 ]
