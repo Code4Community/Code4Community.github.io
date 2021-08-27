@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JavaScript Tutorial
-permalink: /javascript-tutorial
+permalink: /tutorials/js
 content_style: github_markdown
 ---
 
@@ -10,8 +10,7 @@ content_style: github_markdown
 By: [Max Gruber](https://github.com/maxdg99)
 
 ## Before we get started
-* Fulfill the [prerequisites of the HTML & CSS tutorial](https://code4community.github.io/tutorial-2/#before-we-get-started)
-* Complete the [HTML & CSS tutorial](https://code4community.github.io/tutorial-2)
+* Complete the [HTML & CSS tutorial](./html-css)
 
 ## Overview
 * [Part 1: Introduction](#introduction)

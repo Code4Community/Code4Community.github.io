@@ -1,17 +1,17 @@
 [
     {
-        "name": "Tutorial 1: Git and Visual Studio Code",
-        "link": "/git-vscode-tutorial",
-        "description": "This is our first tutorial of the semester! We will be introducing Git and Visual Studio Code by creating an <a href=\"https://code4community.github.io/git-tutorial/\">animated display</a> of club members."
+        "name": "Tutorial 1: Git and VS Code",
+        "link": "/tutorials/git",
+        "description": "This is our first tutorial! We will be introducing Git and Visual Studio Code by creating an <a href=\"https://code4community.github.io/git-tutorial/\">animated display</a> of club members."
     },
     {
         "name": "Tutorial 2: HTML and CSS",
-        "link": "/html-css-tutorial",
+        "link": "/tutorials/html-css",
         "description": "This tutorial introduces the languages used in sites across the web. It walks through the creation of a static webpage from scratch."
     },
     {
-        "name": "Tutorial 3: Javascript",
-        "link": "/javascript-tutorial",
-        "description": "Our third tutorial introduced you to the scripting language of the web. It walks through the creation of a dynamic webpage."
+        "name": "Tutorial 3: JavaScript",
+        "link": "/tutorials/js",
+        "description": "This tutorial introduces you to the scripting language of the web. It walks through the creation of a dynamic webpage."
     }
 ]
