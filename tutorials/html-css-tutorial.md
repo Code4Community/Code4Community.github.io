@@ -27,15 +27,15 @@ By: [Adam Lis](https://github.com/adambricelis)
 * [Part 3: CSS](#part-3-css)
 
 ## Part 1: Why do we need HTML, CSS, *and*, JavaScript?
-If you have prior experience with programming languages like Java or Python, you've probably written entire applications in one programming language. This begs the question in the title of this section: why do webpages involve *three* programming languages?
+If you have prior experience with programming languages like Java or Python, you've probably written entire applications in one programming language. This begs the question in the title of this section: why does writing webpages involve using *three* programming languages?
 
-Every webpage has to answer a few different questions before it shows up on your screen in your browser.
+Every webpage has to answer a few different questions before it can be displayed in your browser.
 
 1. What am I displaying?
 1. How am I displaying it?
 1. How do I respond to user interaction?
 
-Each of these questions is answered by one of the languages of the web. HTML knows what to display, CSS knows how to display it, and JavaScript knows how to respond to user interaction. Without HTML, your webpage has no content. Without CSS, your webpage looks like [this](https://www.berkshirehathaway.com/). Without JavaScript, users can't *do* anything other than look at your site (which is okay for some sites, but not for others). When building a website, it's best to keep your HTML, CSS, and JavaScript in separate files. However, we're going to keep everything in one file for the sake of simplicity.
+Each of these questions is answered by one of the languages of the web. HTML knows what to display, CSS knows how to display it, and JavaScript knows how to respond to user interaction. Without HTML, your webpage has no content. Without CSS, your webpage looks like [this](https://www.berkshirehathaway.com/). Without JavaScript, users can't *do* anything other than look at your site (which is okay for some sites, but not for others). When building a website, it's best to keep your HTML, CSS, and JavaScript in separate files. However, we're going to keep everything in one file during these tutorials for the sake of simplicity.
 
 ## Part 2: HTML
 
@@ -80,7 +80,7 @@ Congrats! You have a webpage! Although...it's pretty boring. Let's change that b
 ### Adding Content
 HTML has many different tags we can use to display different information. There are tags for headers, paragraphs, lists, navigation, links, images, forms, and all sorts of other things. We'll just cover a few today, although you can read about [all of HTML's tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) if you'd like to learn more.
 
-Let's start with a paragraph. Put a `<p></p>` tag inside of the `<body></body>` tag and put some text between the opening (`<p>`) and closing (`</p>`) tags. I'm going to use the text from the first paragraph on [Ohio State's Wikipedia page](https://en.wikipedia.org/wiki/Ohio_State_University).
+Let's start with a paragraph. Put a [`<p></p>` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) inside of the `<body></body>` tag and put some text between the opening (`<p>`) and closing (`</p>`) tags. Let's use the first paragraph on [Ohio State's Wikipedia page](https://en.wikipedia.org/wiki/Ohio_State_University) to make things easy.
 
 **Note: VS Code will automatically add the `</p>` end tag as you type the `<p>` start tag. You won't need to explicitly type this.**
 
@@ -100,13 +100,13 @@ Checkpoint 4:
 
 ![](../images/html-css-tutorial/screenshot4.png)
 
-Since we're making a website about Ohio State, we *have* to mention the marching band. Let's add a paragraph at the bottom of the page that says "Ohio State's marching band is known as the best damn band in the land." While we're at it, we should add a couple headers: one for our list of campus and one for the marching band. Put an h3 tag that says "Campuses" before the list of campuses, and put an h3 tag that says "Marching Band" before the paragraph about the marching band. Make sure not to put those inside of any tags other than the body tag.
+Since we're making a website about Ohio State, we *have* to mention the marching band. Let's add a paragraph at the bottom of the page that says "Ohio State's marching band is known as the best damn band in the land." While we're at it, we should add a couple headers: one for our list of campuses and one for the marching band. Put an h3 tag that says "Campuses" before the list of campuses, and put an h3 tag that says "Marching Band" before the paragraph about the marching band. Make sure not to put those inside of any tags other than the body tag.
 
 Checkpoint 5:
 
 ![](../images/html-css-tutorial/screenshot5.png)
 
-Lastly, we're going to add an image (`<img>`) and a link (`<a></a>`) to our page. Thus far, we've only dealt with tags that have text inside. However, these last two tags are a little bit different. The anchor (link) tag has opening and closing tags, but the image tag doesn't. And both of them require you to set attributes to make them useful. Here's the syntax for setting a tag attribute in HTML: `<tag attribute="value"></tag>` or `<tag attribute="value">`. One tag can have any number of attributes.
+Lastly, we're going to add an image (`<img>`) and a link (`<a></a>`) to our page. Thus far, we've only dealt with tags that have text inside. However, these last two tags are a little bit different. The anchor (link) tag has opening and closing tags, but the image tag doesn't. And both of them require you to set attributes to make them useful. Here's the syntax for setting a tag attribute in HTML: `<tag attribute="value"></tag>` or `<tag attribute="value">`. Each tag can have zero or more attributes.
 
 Add an [image tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) inside of the h1 tag after "THE Ohio State University". Set its `src` attribute to "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Ohio_State_University_seal.svg/150px-Ohio_State_University_seal.svg.png", the URL of OSU's seal on Wikipedia. This attribute tells the browser where to find the image you'd like to display. Set the `alt` attribute to "University Seal". This attribute is important for accessibility because visually impaired people browse the web using [screen readers](https://en.wikipedia.org/wiki/Screen_reader). It also tells the browser what to display if the browser cannot retrieve the image.
 
@@ -161,10 +161,10 @@ selector-1, selector-2 {
 ```
 
 #### Selectors
-Selectors allow you to specify *what* elements you're styling. The basic selectors are types, classes, and IDs. You can read more about [the other types of selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) if you'd like to learn more. In CSS, types are specified as tag names like `p`, `h3`, and `img`. Classes and IDs are attributes, so I hope you were paying attention when we went over them earlier. You add classes and IDs to tags just like any other attributes: `<tag class="my-class"></tag>` or `<tag id="my-id"></tag>`. In CSS, classes are specified with a dot prefix like `.my-class` and IDs are specified with a hash prefix like `#my-id`. You can have multiple elements that use the same type and multiple elements that have the same class, but you can only have one element with a given ID. *That's why they're called IDs, they must be unique.*
+Selectors allow you to specify *what* elements you're styling. The basic selectors are types, classes, and IDs. You can read more about [the other types of selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) if you'd like to learn more. In CSS, types are specified as tag names like `p`, `h3`, and `img`. Classes and IDs are attributes, so I hope you were paying attention when we went over those earlier. You add classes and IDs to tags just like any other attributes: `<tag class="my-class"></tag>` or `<tag id="my-id"></tag>`. In CSS, classes are specified with a dot prefix like `.my-class` and IDs are specified with a hash prefix like `#my-id`. You can have multiple elements that use the same type and multiple elements that have the same class, but you can only have one element with a given ID. *That's why they're called IDs, they must be unique.*
 
 #### Declarations
-Declarations allow you to specify *how* you want elements to be styled. Each declaration consists of a property and a value. There are [numerous CSS properties](https://www.w3schools.com/cssref/), so we'll only touch on a few in this tutorial. This is the CSS declaration syntax: `css-property: value;`. Properties and values are separated by a colon, and each declaration ends with a semicolon.
+Declarations allow you to specify *how* you want elements to be styled. Each declaration consists of a property and a value. There are [numerous CSS properties](https://www.w3schools.com/cssref/), so we'll only touch on a few in this tutorial. This is the CSS declaration syntax: `property: value;`. Properties and values are separated by a colon, and each declaration ends with a semicolon.
 
 ### Adding styling
 Since this is a pretty simple webpage, we'll be adding styling inside of our `.html` file. However, it's best to use [external CSS files](https://www.w3schools.com/css/css_howto.asp) in your future web development endeavors.
@@ -183,7 +183,7 @@ Checkpoint 8:
 
 ![](../images/html-css-tutorial/screenshot8.png)
 
-Our university seal is great and all, but it's currently too big and not in the right spot on our webpage. Making it smaller and moving it to the right side of the page would be ideal. Since it's the only image on the page, we can style the `img` tag. Set the `float` property to `right` and set the `height` property to `100px`. The height and width properties are set to `auto` by default, so the image's width was automatically scaled down to maintain the image's [aspect ratio](https://en.wikipedia.org/wiki/Aspect_ratio). There are many ways to do layouts in CSS that are better than `float`s, but this solution is quick and simple. Go down the [CSS layout rabbit-hole](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) at your own risk.
+Our university seal is great and all, but it's currently too big and not in the right spot on our webpage. Making it smaller and moving it to the right side of the page would be ideal. Since it's the only image on the page, we can style the `img` tag. Set the `float` property to `right` and set the `height` property to `100px`. The height and width properties are set to `auto` by default, so the image's width was automatically scaled down to maintain the image's [aspect ratio](https://en.wikipedia.org/wiki/Aspect_ratio). There are many ways to do layouts in CSS that are better than `float`s, but this solution is quick and simple. Go down the [CSS layout rabbit hole](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) at your own risk.
 
 Checkpoint 9:
 
@@ -268,4 +268,4 @@ Now that you've completed this tutorial, you have your own little static webpage
     * [CSS-Tricks](https://css-tricks.com/)
 
 # Feedback
-If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the exec board members.
+If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the leaders of C4C.
