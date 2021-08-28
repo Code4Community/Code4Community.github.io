@@ -1,5 +1,10 @@
 [
     {
+        "name": "Tutorial 0: Download and Set-up",
+        "link": "/download-setup-tutorial",
+        "description": "First, we will install/Set-up the necessary tools for us to code together this semester."
+    },
+    {
         "name": "Tutorial 1: Git and Visual Studio Code",
         "link": "/git-vscode-tutorial",
         "description": "This is our first tutorial of the semester! We will be introducing Git and Visual Studio Code by creating an <a href=\"https://code4community.github.io/git-tutorial/\">animated display</a> of club members."
