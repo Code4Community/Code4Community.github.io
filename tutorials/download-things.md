@@ -22,11 +22,11 @@ Here we will walk through how to download [Chrome](https://www.google.com/chrome
 
 Click on chrome above and you will be taken to this page: 
 
-![](images/downloading-tutorial/downloading-chrome.JPG)
+![](../images/downloading-tutorial/downloading-chrome.JPG)
 
 Click to download chrome and then open the .exe file that downloads on your computer. You may be prompted by this screen below, but select install anyways if so. 
 
-![](images/downloading-tutorial/install-anyways.JPG)
+![](../images/downloading-tutorial/install-anyways.JPG)
 
 Then you will be prompted with system dialog screens and should select "yes" to any that pop up. After that simply wait for Chrome to install and it should open automatically. 
 
@@ -34,21 +34,21 @@ Then you will be prompted with system dialog screens and should select "yes" to 
 
 Once you have successfully downloaded a modern browser we will now move on to Git. You can find the link to that page [here](https://git-scm.com/downloads){:target="blank" rel="noopener"} and that will take you to this page. 
 
-![](images/downloading-tutorial/GitDownload.JPG)
+![](../images/downloading-tutorial/GitDownload.JPG)
 
 From here select the Operating System (OS) of your computer and it should automatically begin to download. You maybe be prompted on yout downloads bar to "keep" or "discard" if so select keep, and similar to before, open the .exe file. You may again be prompted with this screen: 
 
-![](images/downloading-tutorial/install-anyways.JPG)
+![](../images/downloading-tutorial/install-anyways.JPG)
 
 And if so again click install anyways. You will again be prompted with a system dialog screen and you should again select "yes". 
 
 After that Git will launch and you should see this screen:
 
-![](images/downloading-tutorial/gnu-agreement.JPG)
+![](../images/downloading-tutorial/gnu-agreement.JPG)
 
 You can click next through most of these as the defaults are fine except make sure to choose this option when you reach this screen:
 
-![](images/downloading-tutorial/3rd-party-software.JPG)
+![](../images/downloading-tutorial/3rd-party-software.JPG)
 
 Once you reach the least page the next button will become an install button, and then you are done.
 
@@ -56,15 +56,15 @@ Once you reach the least page the next button will become an install button, and
 
 Once we have Chrome and Git we can install our third and final thing which is Visual Studio Code. The link for that can be found [here](https://code.visualstudio.com/download){:target="blank" rel="noopener"}. You should land here:
 
-![](images/downloading-tutorial/VS-code-install.JPG)
+![](../images/downloading-tutorial/VS-code-install.JPG)
 
 Where you again should select your correct OS. You will follow the same prompts as before to "keep" if prompted "install anyways". Open the .exe file and this page should pop-up:
 
-![](images/downloading-tutorial/VS-Code-pop-up.JPG)
+![](../images/downloading-tutorial/VS-Code-pop-up.JPG)
 
 Click that you agree to the Liscencing Agreement, and similar to git you can click next through most of the pages except you must make sure that VS Code is added to your path similar to Git. 
 
-![](images/downloading-tutorial/add-to-path-vs-code.JPG)
+![](../images/downloading-tutorial/add-to-path-vs-code.JPG)
 
 Once you have done this get to the last page where you can click "Install", and then wait for it to finish downloading and click "Finish".
 
@@ -72,7 +72,7 @@ Once you have done this get to the last page where you can click "Install", and 
 
 After everything has been installed on your computer you will need a [GitHub account](https://github.com/join){:target="blank" rel="noopener"} so that we are able to work collaboratively on coding projects.
 
-![](images/downloading-tutorial/github-account.JPG)
+![](../images/downloading-tutorial/github-account.JPG)
 
 Once you reach this page click sign-up and follow the prompts to enter your email and set up a username and password (Remember these! They are pretty important). We reccommend also adding your real name and/or profile picture to your account so we are able to better connect you with your account. 
 
