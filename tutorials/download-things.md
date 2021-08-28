@@ -16,7 +16,6 @@ By: [Mackenzie Scott](https://github.com/kenzerkay)
 - [Part 5: Add Yourself to C4C Github](#part-5-add-yourself-to-c4c-github)
 - [Part 6: Let Us Know Your Availability](#part-6-let-us-know-your-availability)
 
-
 ## Part 1: Install Modern Browser 
 
 Here we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"}) will work just fine. 
@@ -59,9 +58,15 @@ Once we have Chrome and Git we can install our third and final thing which is Vi
 
 ![](images/downloading-tutorial/VS-code-install.JPG)
 
-Where you again should select your correct OS. You will follow the same prompts as before to "keep" if prompted "install anyways" if prompted and follow the system dialog screens that pop-up on your computer
+Where you again should select your correct OS. You will follow the same prompts as before to "keep" if prompted "install anyways". Open the .exe file and this page should pop-up:
 
-MORE TO-DO 
+![](images/downloading-tutorial/VS-Code-pop-up.JPG)
+
+Click that you agree to the Liscencing Agreement, and similar to git you can click next through most of the pages except you must make sure that VS Code is added to your path similar to Git. 
+
+![](images/downloading-tutorial/add-to-path-vs-code.JPG)
+
+Once you have done this get to the last page where you can click "Install", and then wait for it to finish downloading and click "Finish".
 
 ## Part 4: Create A Github Account
 
