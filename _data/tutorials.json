@@ -2,7 +2,7 @@
     {
         "name": "Tutorial 0: Machine Setup",
         "link": "/tutorials/setup",
-        "description": "First, we will install/Set-up the necessary tools for us to code together this semester."
+        "description": "First, we will install and set up the necessary tools for us to code together this semester."
     },
     {
         "name": "Tutorial 1: Git and VS Code",

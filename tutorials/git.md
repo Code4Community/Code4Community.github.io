@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Git Tutorial
+title: Git and Visual Studio Code Tutorial
 permalink: /tutorials/git
 content_style: github_markdown
 ---
-# Git and Visual Studio Code
+# Git and Visual Studio Code Tutorial
 
 By: Andrew Haberlandt
 

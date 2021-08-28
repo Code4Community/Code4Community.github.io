@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HTML & CSS Tutorial
+title: HTML and CSS Tutorial
 permalink: /tutorials/html-css
 content_style: github_markdown
 ---

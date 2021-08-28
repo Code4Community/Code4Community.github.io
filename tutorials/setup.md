@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Download and Set-up
+title: Machine Setup Tutorial
 permalink: /tutorials/setup
 content_style: github_markdown
 ---
@@ -18,7 +18,7 @@ By: [Mackenzie Scott](https://github.com/kenzerkay)
 
 ## Part 1: Install Modern Browser 
 
-Here we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"}) will work just fine. 
+Here we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"} will work just fine. 
 
 Click on chrome above and you will be taken to this page: 
 
