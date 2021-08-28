@@ -78,7 +78,7 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - Select the "Git" menu.
 
-![](../images/git-tutorial/screenshot1.png)
+![](../images/tutorials/git/screenshot1.png)
 
 - Choose "Clone Repository"
 
@@ -86,7 +86,7 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - You should then be able to type "code4community/" and get a list of all repositories in our organization!
 
-![](../images/git-tutorial/screenshot2.png)
+![](../images/tutorials/git/screenshot2.png)
 
 - Choose "code4community/git-tutorial"
     - If you can't find it, make sure you have filled out the sign-up form on our website homepage with your GitHub username. Then, contact a member of the exec board and they will ensure you are added to the GitHub organization. 
@@ -96,13 +96,13 @@ Git has a nice [command-line interface](https://git-scm.com/docs/gittutorial), b
 
 - After the clone is complete, you will see the the following in the lower-right:
     
-    ![](../images/git-tutorial/screenshot3.png)
+    ![](../images/tutorials/git/screenshot3.png)
 
     You likely want to choose "Open" if you followed the instructions closely, since you already have an empty window.
 
 You should see the files for the repository, as shown in the below screenshot:
 
-![](../images/git-tutorial/screenshot4.png)
+![](../images/tutorials/git/screenshot4.png)
 
 Congratulations! You succesfully cloned our repository!
 
@@ -110,7 +110,7 @@ You can also view the repository for this tutorial on GitHub [here](https://gith
 
 Find the repository location in your operating system's finder/explorer, and open index.html in your web browser of choice. You should see the following (with the images moving around the screen):
 
-![](../images/git-tutorial/screenshot5.png){:style="box-shadow: 0 5px 15px grey;"}
+![](../images/tutorials/git/screenshot5.png){:style="box-shadow: 0 5px 15px grey;"}
 
 ## Part 3: Making modifications
 
@@ -124,11 +124,11 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 
 - Select the "master" button in the bottom bar of VS Code
 
-![](../images/git-tutorial/screenshot10.png)
+![](../images/tutorials/git/screenshot10.png)
 
 - Select "Create new branch..."
 
-![](../images/git-tutorial/screenshot9.png)
+![](../images/tutorials/git/screenshot9.png)
 
 
 - Give your branch a unique name. For the purposes of this tutorial, just use your lastname.#
@@ -142,7 +142,7 @@ Add an image to the `images/` directory. You can drag-and-drop from the file exp
 
 Note: Your image does not have you be an actual picture of yourself, although it might help us learn each other's names.
 
-![](../images/git-tutorial/screenshot6.png)
+![](../images/tutorials/git/screenshot6.png)
 
 
 ### Step 2: Modify index.html
@@ -173,7 +173,7 @@ Ideas:
 
 ## Part 4: Commit and push your changes
 
-![](../images/git-tutorial/screenshot7.png)
+![](../images/tutorials/git/screenshot7.png)
 
 Things to note:
 - The "M" next to index.html means we have `M`odified that file in our working tree
@@ -184,15 +184,15 @@ Things to note:
 
 Switch to the Git pane, and you'll see only the files with changes in your working copy.
 
-![](../images/git-tutorial/screenshot11.png)
+![](../images/tutorials/git/screenshot11.png)
 
 - Press the "+" on the files you'd like to commit. Or, select "+" next to "Changes" to add all changes.
 
-![](../images/git-tutorial/screenshot12.png)
+![](../images/tutorials/git/screenshot12.png)
 
 Now, you should see:
 
-![](../images/git-tutorial/screenshot14.png)
+![](../images/tutorials/git/screenshot14.png)
 
 Note: the "U" next to the image has changed to an "A" for `A`dded, now that we have added this file to Git.
 
@@ -200,17 +200,17 @@ Note: the "U" next to the image has changed to an "A" for `A`dded, now that we h
 
 Add a commit message (this should briefly explain your changes):
 
-![](../images/git-tutorial/screenshot13.png)
+![](../images/tutorials/git/screenshot13.png)
 
 Press the checkmark:
 
-![](../images/git-tutorial/screenshot15.png)
+![](../images/tutorials/git/screenshot15.png)
 
 ### Step 3: Push your changes
 
 - Look in the bottom bar. You should see something like the following (it will say your branch name rather than master):
     
-    ![](../images/git-tutorial/screenshot16.png)
+    ![](../images/tutorials/git/screenshot16.png)
     
     This means you have 1 commit to push, and 0 commits to pull. If someone else was working on the same branch as you and pushed their changes, there would be a nonzero number of commits for you to pull.
 
@@ -224,7 +224,7 @@ Press the checkmark:
 
 If you pull up the [repository](https://github.com/Code4Community/git-tutorial) in a browser, you might see the following (with your branch name):
 
-![](../images/git-tutorial/screenshot17.png)
+![](../images/tutorials/git/screenshot17.png)
 
 If so, you can click "Compare & Pull request" and it save you a few clicks.
 
@@ -235,7 +235,7 @@ Otherwise:
 
 You'll see something like this:
 
-![](../images/git-tutorial/screenshot18.png)
+![](../images/tutorials/git/screenshot18.png)
 
 - "base" is the branch you want you merge your changes *into*
 - "compare" is the branch your changes are currently on (this is the branch you created earlier)
@@ -254,17 +254,17 @@ For this repository, you need **at least two approvals** before you'll be able t
 - One of the approvals must be @ndrewh, @maxdg99, or @adambricelis. Actual projects may or may not require reviews like this.
 - Request your reviews
 
-    ![](../images/git-tutorial/screenshot20.png){:style="height: 50vh;"}
+    ![](../images/tutorials/git/screenshot20.png){:style="height: 50vh;"}
 
 
 Until you have the required reviews, you'll see this:
 
-![](../images/git-tutorial/screenshot21.png){:style="width: 50vw;"}
+![](../images/tutorials/git/screenshot21.png){:style="width: 50vw;"}
 
 
 Once you have the required approvals, your pull request will show this and you'll be able to merge it into master with one click :)
 
-![](../images/git-tutorial/screenshot19.png){:style="width: 50vw;"}
+![](../images/tutorials/git/screenshot19.png){:style="width: 50vw;"}
 
 
 ## That's it!
