@@ -22,7 +22,7 @@ Here we will walk through how to download [Chrome](https://www.google.com/chrome
 
 Click on chrome above and you will be taken to this page: 
 
-![](../images/tutorials/setup/downloading-chrome.JPG)
+![](../images/tutorials/setup/download-chrome.JPG)
 
 Click to download chrome and then open the .exe file that downloads on your computer. You may be prompted by this screen below, but select install anyways if so. 
 
