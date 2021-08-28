@@ -19,17 +19,11 @@ permalink: /tutorials
 
 <br>
 
-<table class="uk-table">
-    <thead>
-        <th class="header">Tutorial</th>
-        <th class="header">Description</th>
-    </thead>
-    <tbody>
-        {% for tutorial in site.data.tutorials %}
-            <tr>
-                <td><a href="{{tutorial.link}}">{{tutorial.name}}</a></td>
-                <td>{{tutorial.description}}</td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div uk-grid>
+    <div class="uk-width-1-4 uk-text-bold">Tutorial</div>
+    <div class="uk-width-3-4 uk-text-bold">Description</div>
+    {% for tutorial in site.data.tutorials %}
+        <div class="uk-width-1-4"><a href="{{tutorial.link}}">{{tutorial.name}}</a></div>
+        <div class="uk-width-3-4">{{tutorial.description}}</div>
+    {% endfor %}
+</div>
