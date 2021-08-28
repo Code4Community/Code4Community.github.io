@@ -18,7 +18,7 @@ content_style: github_markdown
 By: [Adam Lis](https://github.com/adambricelis)
 
 ## Before we get started
-* Complete the [git tutorial](./git)
+* Complete the [Git and VS Code tutorial](./git)
 * When you reach a checkpoint, please compare your webpage with the screenshot provided. If they don't match up, ask for help!
 
 ## Overview

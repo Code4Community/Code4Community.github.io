@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Download and Set-up
-permalink: /download-setup-tutorial
+permalink: /tutorials/setup
 content_style: github_markdown
 ---
-# Download and Set-up Tutorial
+# Machine Setup Tutorial
 
 By: [Mackenzie Scott](https://github.com/kenzerkay)
 

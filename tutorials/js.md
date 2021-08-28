@@ -10,7 +10,7 @@ content_style: github_markdown
 By: [Max Gruber](https://github.com/maxdg99)
 
 ## Before we get started
-* Complete the [HTML & CSS tutorial](./html-css)
+* Complete the [HTML and CSS tutorial](./html-css)
 
 ## Overview
 * [Part 1: Introduction](#introduction)

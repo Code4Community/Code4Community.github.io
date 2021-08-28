@@ -9,7 +9,7 @@ content_style: github_markdown
 By: Andrew Haberlandt
 
 ## Before we get started
-* Complete the [Download and Set-up Tutorial](https://code4community.github.io/download-setup-tutorial)
+* Complete the [Machine Setup tutorial](./setup)
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)
