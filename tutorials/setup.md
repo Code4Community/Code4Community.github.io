@@ -9,14 +9,26 @@ content_style: github_markdown
 By: [Mackenzie Scott](https://github.com/kenzerkay)
 
 ## Overview
-- [Part 1: Install Modern Browser](#part-1-install-mordern-browser)
-- [Part 2: Install Git](#part-2-install-git)
-- [Part 3: Install Visual Studio Code](#part-3-install-visual-studio-code)
-- [Part 4: Create A Github Account](#part-4-create-a-github-account)
-- [Part 5: Add Yourself to C4C Github](#part-5-add-yourself-to-c4c-github)
+- [Part 1: Create A Github Account](#part-1-create-a-github-account)
+- [Part 2: Add Yourself to C4C Github](#part-2-add-yourself-to-the-c4c-github)
+- [Part 3: Install Modern Browser](#part-3-install-modern-browser)
+- [Part 4: Install Git](#part-4-install-git)
+- [Part 5: Install Visual Studio Code](#part-5-install-visual-studio-code)
 - [Part 6: Let Us Know Your Availability](#part-6-let-us-know-your-availability)
 
-## Part 1: Install Modern Browser 
+## Part 1: Create A Github Account
+
+After everything has been installed on your computer you will need a [GitHub account](https://github.com/join){:target="blank" rel="noopener"} so that we are able to work collaboratively on coding projects.
+
+![](../images/tutorials/setup/github-account.JPG)
+
+Once you reach this page click sign-up and follow the prompts to enter your email and set up a username and password (Remember these! They are pretty important). We reccommend also adding your real name and/or profile picture to your account so we are able to better connect you with your account. 
+
+## Part 2: Add yourself to the C4C Github
+
+Fill out this [survey](https://docs.google.com/forms/d/e/1FAIpQLSdQWdiVJvrZl-Xe8PHy7OmbkejtYxj2b-Np_5OuLCScHE9e-w/viewform?usp=sf_link){:target="blank" rel="noopener"}, and we will add you to the GitHub organization.
+
+## Part 3: Install Modern Browser 
 
 Here we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"} will work just fine. 
 
@@ -30,7 +42,7 @@ Click to download chrome and then open the .exe file that downloads on your comp
 
 Then you will be prompted with system dialog screens and should select "yes" to any that pop up. After that simply wait for Chrome to install and it should open automatically. 
 
-## Part 2: Install Git
+## Part 4: Install Git
 
 Once you have successfully downloaded a modern browser we will now move on to Git. You can find the link to that page [here](https://git-scm.com/downloads){:target="blank" rel="noopener"} and that will take you to this page. 
 
@@ -52,7 +64,7 @@ You can click next through most of these as the defaults are fine except make su
 
 Once you reach the least page the next button will become an install button, and then you are done.
 
-## Part 3: Install Visual Studio Code 
+## Part 5: Install Visual Studio Code 
 
 Once we have Chrome and Git we can install our third and final thing which is Visual Studio Code. The link for that can be found [here](https://code.visualstudio.com/download){:target="blank" rel="noopener"}. You should land here:
 
@@ -67,18 +79,6 @@ Click that you agree to the Liscencing Agreement, and similar to git you can cli
 ![](../images/tutorials/setup/add-to-path-vs-code.JPG)
 
 Once you have done this get to the last page where you can click "Install", and then wait for it to finish downloading and click "Finish".
-
-## Part 4: Create A Github Account
-
-After everything has been installed on your computer you will need a [GitHub account](https://github.com/join){:target="blank" rel="noopener"} so that we are able to work collaboratively on coding projects.
-
-![](../images/tutorials/setup/github-account.JPG)
-
-Once you reach this page click sign-up and follow the prompts to enter your email and set up a username and password (Remember these! They are pretty important). We reccommend also adding your real name and/or profile picture to your account so we are able to better connect you with your account. 
-
-## Part 5: Add yourself to the C4C Github
-
-After all of this is done, fill out the survey on [our homepage](https://code4community.github.io/){:target="blank" rel="noopener"}, and we will add you to the GitHub
 
 ## Part 6: Let Us Know Your Availability
 
