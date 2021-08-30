@@ -18,7 +18,7 @@ By: [Mackenzie Scott](https://github.com/kenzerkay)
 
 ## Part 1: Create A Github Account
 
-After everything has been installed on your computer you will need a [GitHub account](https://github.com/join){:target="blank" rel="noopener"} so that we are able to work collaboratively on coding projects.
+First and foremost, you will need a [GitHub account](https://github.com/join){:target="blank" rel="noopener"} so that we are able to work collaboratively on coding projects.
 
 ![](../images/tutorials/setup/github-account.JPG)
 
@@ -26,11 +26,11 @@ Once you reach this page click sign-up and follow the prompts to enter your emai
 
 ## Part 2: Add yourself to the C4C Github
 
-Fill out this [survey](https://docs.google.com/forms/d/e/1FAIpQLSdQWdiVJvrZl-Xe8PHy7OmbkejtYxj2b-Np_5OuLCScHE9e-w/viewform?usp=sf_link){:target="blank" rel="noopener"}, and we will add you to the GitHub organization.
+Next, fill out this [survey](https://docs.google.com/forms/d/e/1FAIpQLSdQWdiVJvrZl-Xe8PHy7OmbkejtYxj2b-Np_5OuLCScHE9e-w/viewform?usp=sf_link){:target="blank" rel="noopener"}, and we will add you to the GitHub organization.
 
 ## Part 3: Install Modern Browser 
 
-Here we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"} will work just fine. 
+Now we will walk through how to download [Chrome](https://www.google.com/chrome/){:target="blank" rel="noopener"}, but other modern browsers such as [Firefox](https://www.mozilla.org/en-US/firefox/){:target="blank" rel="noopener"} will work just fine. 
 
 Click on chrome above and you will be taken to this page: 
 
@@ -66,7 +66,7 @@ Once you reach the least page the next button will become an install button, and
 
 ## Part 5: Install Visual Studio Code 
 
-Once we have Chrome and Git we can install our third and final thing which is Visual Studio Code. The link for that can be found [here](https://code.visualstudio.com/download){:target="blank" rel="noopener"}. You should land here:
+Once we have a modren browser and Git we can install our third and final thing which is Visual Studio Code. The link for that can be found [here](https://code.visualstudio.com/download){:target="blank" rel="noopener"}. You should land here:
 
 ![](../images/tutorials/setup/VS-code-install.JPG)
 
