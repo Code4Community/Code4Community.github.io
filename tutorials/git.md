@@ -6,7 +6,7 @@ content_style: github_markdown
 ---
 # Git and Visual Studio Code Tutorial
 
-By: [Adam Lis](https://github.com/adambricelis) and [Mackenzie Scott](https://github.com/kenzerkay)
+By: Andrew Haberlandt
 
 ## Before we get started
 * Complete the [Machine Setup tutorial](./setup)
