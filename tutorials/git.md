@@ -6,7 +6,7 @@ content_style: github_markdown
 ---
 # Git and Visual Studio Code Tutorial
 
-By: Andrew Haberlandt
+By: Andrew Haberlandt and [Adam Lis](https://github.com/adambricelis)
 
 ## Before we get started
 * Complete the [Machine Setup tutorial](./setup)
@@ -116,7 +116,7 @@ Find the repository location in your operating system's finder/explorer, and ope
 
 Goal: Add yourself to our [display of bouncing heads](https://code4community.github.io/git-tutorial/)
 
-### Step 0: Check out a new branch
+### Step 1: Create a new branch
 
 By default, when you clone a repository, Git checks out the `master` branch. On your local machine, you can commit to the master branch. **However, we have configured GitHub to refuse pushing to the `master` branch directly.** 
 
@@ -131,12 +131,12 @@ Why? It's because for all of our projects, you will be pushing to separate branc
 ![](../images/tutorials/git/screenshot9.png)
 
 
-- Give your branch a unique name. For the purposes of this tutorial, just use your lastname.#
+- Give your branch a unique name. For the purposes of this tutorial, just use your name.#
 
 - Verify in the bottom bar that your new branch name is displayed instead of "master".
 
 
-### Step 1: Add your image
+### Step 2: Add your image
 
 Add an image to the `images/` directory. You can drag-and-drop from the file explorer on your operating system directly into VS Code.
 
@@ -144,39 +144,11 @@ Note: Your image does not have you be an actual picture of yourself, although it
 
 ![](../images/tutorials/git/screenshot6.png)
 
-
-### Step 2: Modify index.html
-
-All you need to do is add the following four lines inside the `<div id="heads-area">` tag.
-
-```html
-<div class="person-frame-inner">
-    <img class="ball" src="images/brutus.jpg" />
-    <p>Brutus</p>
-</div>
-```
-
-Change the name between `<p>` and `</p>` from "Brutus" to your name, and change the image `src` to the path of the image you added in the previous step. 
-
-Add your lines in index.html directly below the last person's similar-looking piece of code. Ensure that the lines you add are fully inside the `<div id="heads-area">` tag, but not within someone else's `<div class="person-frame-inner">`. 
-
-We will be covering HTML and CSS next week, so don't worry about the details too much right now.
-
-### Optional: Make it your own
-
-If you're feeling creative, feel free to modify your own animation (see main.css to see how we did it). Feel free to google something or ask if you're not sure how. (Note: we'll be covering HTML/CSS in more detail next week, so you're not expected to know how to do any of this)
-
-Ideas:
-- Rotate or resize your image as part of the animation
-- Adjust the animation speed
-- Implement collisions between images (note: this is difficult using CSS animations. you'll need some fancy javascript)
-
 ## Part 4: Commit and push your changes
 
 ![](../images/tutorials/git/screenshot7.png)
 
 Things to note:
-- The "M" next to index.html means we have `M`odified that file in our working tree
 - The "U" next you the image you added means this file is `U`ntracked - we haven't told Git to track changes to this file yet. The file is brand-new and has no history.
 
 
@@ -186,7 +158,7 @@ Switch to the Git pane, and you'll see only the files with changes in your worki
 
 ![](../images/tutorials/git/screenshot11.png)
 
-- Press the "+" on the files you'd like to commit. Or, select "+" next to "Changes" to add all changes.
+- Press the "+" on the file you'd like to commit. Or, select "+" next to "Changes" to add all changes.
 
 ![](../images/tutorials/git/screenshot12.png)
 
@@ -208,13 +180,13 @@ Press the checkmark:
 
 ### Step 3: Push your changes
 
-- Look in the bottom bar. You should see something like the following (it will say your branch name rather than master):
+- Look in the bottom bar. You should see something like this (it will say your branch name rather than brutus.1):
     
     ![](../images/tutorials/git/screenshot16.png)
-    
-    This means you have 1 commit to push, and 0 commits to pull. If someone else was working on the same branch as you and pushed their changes, there would be a nonzero number of commits for you to pull.
 
-- Press on the button pictured above in the bottom bar. It will automatically push and pull from the remote repository.
+- Press the cloud with an upward arrow. This pushes your changes to GitHub.
+
+    ![](../images/tutorials/git/screenshot22.png)
 
 ## Part 5: Pull Request
 
@@ -275,11 +247,3 @@ You're done. Before you leave, ask people to review your request and we should b
 # Feedback
 
 If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the leaders of C4C.
-
-## Help! I have merge conflicts... now what?
-
-Merge conflicts can occur when multiple developers make changes to the same part of the same file, and then try to merge their branches. 
-
-As long as you are working on your own branch, you will not run into merge conflicts *until you try to merge into `master`*. GitHub now has a nice UI for handling merge conflicts -- and we can walk you through this if you get to it.
-
-Being able to deal with merge conflicts is not necessary to be able to contribute to any of our projects -- there will always be someone to help you with merge conflicts.
