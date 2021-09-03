@@ -269,12 +269,12 @@ Once you have the required approvals, your pull request will show this and you'l
 
 ## That's it!
 
-You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/) once your changes get merged into master.
+You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/) once they get merged into master.
 
 
-## Feedback
+# Feedback
 
-If you have any feedback on this tutorial, feel free to create an issue on the GitHub repo or talk to one of the exec board members.
+If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the leaders of C4C.
 
 ## Help! I have merge conflicts... now what?
 

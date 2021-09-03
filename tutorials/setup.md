@@ -83,3 +83,7 @@ Once you have done this get to the last page where you can click "Install", and 
 ## Part 6: Let Us Know Your Availability
 
 Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1sB_6yL7rx1-0chFmpYwMmmUff-o6aS_IIy9-mXVpEt8/edit?usp=sharing){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
+
+# Feedback
+
+If you have any feedback for this tutorial, please [create a GitHub issue](https://github.com/Code4Community/Code4Community.github.io/issues/new) or talk to one of the leaders of C4C.
