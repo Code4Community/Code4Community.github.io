@@ -13,8 +13,9 @@ By: [Mackenzie Scott](https://github.com/kenzerkay)
 - [Part 2: Add Yourself to C4C Github](#part-2-add-yourself-to-the-c4c-github)
 - [Part 3: Install Modern Browser](#part-3-install-modern-browser)
 - [Part 4: Install Git](#part-4-install-git)
-- [Part 5: Install Visual Studio Code](#part-5-install-visual-studio-code)
-- [Part 6: Let Us Know Your Availability](#part-6-let-us-know-your-availability)
+- [Part 5: Configure Git](#part-5-configure-git)
+- [Part 6: Install Visual Studio Code](#part-6-install-visual-studio-code)
+- [Part 7: Let Us Know Your Availability](#part-7-let-us-know-your-availability)
 
 ## Part 1: Create A Github Account
 
@@ -64,7 +65,13 @@ You can click next through most of these as the defaults are fine except make su
 
 Once you reach the least page the next button will become an install button, and then you are done.
 
-## Part 5: Install Visual Studio Code 
+## Part 5: Configure Git
+
+1. Open a terminal window (PowerShell on Windows, Terminal on macOS)
+1. Run the following command, replacing MY NAME with your first and last name: `git config --global user.name "MY NAME"`
+1. Run the following command, replacing MY GITHUB EMAIL with the email address associated with your GitHub account: `git config --global user.email "MY GITHUB EMAIL"`
+
+## Part 6: Install Visual Studio Code 
 
 Once we have a modren browser and Git we can install our third and final thing which is Visual Studio Code. The link for that can be found [here](https://code.visualstudio.com/download){:target="blank" rel="noopener"}. You should land here:
 
@@ -80,7 +87,7 @@ Click that you agree to the Liscencing Agreement, and similar to git you can cli
 
 Once you have done this get to the last page where you can click "Install", and then wait for it to finish downloading and click "Finish".
 
-## Part 6: Let Us Know Your Availability
+## Part 7: Let Us Know Your Availability
 
 Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1sB_6yL7rx1-0chFmpYwMmmUff-o6aS_IIy9-mXVpEt8/edit?usp=sharing){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
 
