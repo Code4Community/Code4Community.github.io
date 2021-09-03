@@ -10,6 +10,7 @@ By: Andrew Haberlandt and [Adam Lis](https://github.com/adambricelis)
 
 ## Before we get started
 * Complete the [Machine Setup tutorial](./setup)
+* Accept the email invitation to our GitHub organization. If you don't have such an email, please reach out to someone on our leadership team (contact info can be found on our [homepage](../../)).
 
 ## Overview
 - [Part 1: About Git](#part-1-about-git)
