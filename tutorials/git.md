@@ -193,7 +193,7 @@ Press the checkmark:
 
 [Example Pull Request](https://github.com/Code4Community/git-tutorial/pull/1)
 
-### Step 1: Create the pull request
+### Step 1: Create your pull request
 
 If you pull up the [repository](https://github.com/Code4Community/git-tutorial) in a browser, you might see the following (with your branch name):
 
@@ -215,35 +215,48 @@ You'll see something like this:
 
 So,
 
-- All you should have to do is change the "compare" branch to your branch, and click "Create pull request".
-    - If you can't find your branch, that means you didn't successfully push your changes in the previous part. Let us know and we can try to help you.
+- All you have to do is change the "compare" branch to your branch, and click "Create pull request".
+    - If you can't find your branch, that means you didn't successfully push your changes in the previous part. Let us know and we will help you.
 - Give your pull request a title and leave a comment with any issues you had
 - Click "Create pull request" (again)
 
-### Step 2: Getting your pull request reviewed
-
-For this repository, you need **at least two approvals** before you'll be able to merge your pull request into master.
-- We encourage you to seek approvals from others completing the tutorial, and feel free to review others pull requests as well.
-- One of the approvals must be @ndrewh, @maxdg99, or @adambricelis. Actual projects may or may not require reviews like this.
-- Request your reviews
+For this repository, you need **at least two approvals** before you can merge your pull request into master.
+- We encourage you to seek approvals from others completing the tutorial
+- Request your reviews here:
 
     ![](../images/tutorials/git/screenshot20.png){:style="height: 50vh;"}
 
+### Step 2: Review other pull requests
+* Choose one of your peers' [pull requests](https://github.com/Code4Community/git-tutorial/pulls)
+* Click on the "Files changed" tab
+* Look over their changes
+* Click "Review changes"
+* If you think their changes look good...
+    1. Leave them a nice comment (e.g. "Good job!", "Nice work!", "LGTM!")
+    1. Click "Approve"
+    1. Click "Submit review"
+* If you think there are issues with their changes
+    1. Leave them a friendly comment explaining the issue
+    1. Click "Request changes"
+    1. Click "Submit review"
 
-Until you have the required reviews, you'll see this:
+Please review multiple pull requests so everyone can merge their PR :)
 
-![](../images/tutorials/git/screenshot21.png){:style="width: 50vw;"}
+### Step 3: Merge your pull request
+Hopefully, you now have two approvals on your PR
+* If not, you'll see this:
 
+  ![](../images/tutorials/git/screenshot21.png){:style="width: 50vw;"}
 
-Once you have the required approvals, your pull request will show this and you'll be able to merge it into master with one click :)
+* If so, you'll see this: 
 
-![](../images/tutorials/git/screenshot19.png){:style="width: 50vw;"}
+  ![](../images/tutorials/git/screenshot19.png){:style="width: 50vw;"}
 
+* If you have two approvals, click the big green merge button!
 
 ## That's it!
 
-You're done. Before you leave, ask people to review your request and we should be able to merge it in very quickly. You'll be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/) once they get merged into master.
-
+Now you should be able to see your changes live on [https://code4community.github.io/git-tutorial/](https://code4community.github.io/git-tutorial/)!
 
 # Feedback
 
