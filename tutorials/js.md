@@ -199,6 +199,7 @@ function myFunction(param1, param2) {
 
 ## HTTP Requests
 
+Here's the general format of an HTTP request in JS:
 ```javascript
 // Call the initial functioi
 fetch(url)
@@ -212,11 +213,11 @@ fetch(url)
 
 ## Webpage Interaction
 
-Next up, we will talk about how you can react to user input through action listers and change what the user sees on the webpage through DOM manipulation.
+Next, we will finally talk about reacting to user input! We will use action listeners to observe the user's input and then we will use DOM manipulation to change the webpage accordingly.
 
 ### Action Listeners
 
-One a webpage, we can add HTML elements such as buttons, dropdowns, input boxes, etc.  When the user interacts with these elements, we want to do things with their values.  We do this through action listeners. 
+On a webpage, we can add HTML elements like buttons, dropdowns, and input boxes. When the user interacts with these elements, we want to know! We do accomplish this using action listeners.
 
 Suppose we want to write "Hello, world." to a 
 
@@ -226,7 +227,7 @@ https://dog.ceo/api/breed/[BREED]/images/random
 
 ## Conclusion
 
-We just went through a ton of information, and I do not expect any of you to be masters of JS by now.  While working on projects, use this page, w3schools.com, and stackoverflow.com as resources.  Moreover, you can always ask the leadership of C4C for help!
+There is a lot of breadth and depth to JavaScript, so don't worry if your're not a JS master quite yet! While working on your projects, you can use this tutorial and other sites like [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [W3Schools](https://www.w3schools.com/js/default.asp), and [Stack Overflow](https://stackoverflow.com/) as resources. In addition, you can always ask C4C leaders for help!
 
 # Feedback
 
