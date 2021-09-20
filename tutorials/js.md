@@ -196,20 +196,6 @@ function myFunction(param1, param2) {
 }
 ```
 
-## HTTP Requests
-
-Here's the general format of an HTTP request in JS:
-```javascript
-// Call the initial functioi
-fetch(url)
-    // When we get a response back from the server, convert it to json
-    .then(response => response.json())
-    // When we are done converting to json, do something with it
-    .then(response => {
-        // Process the response
-    });
-```
-
 ## Phaser
 
 Phaser is a JavaScript library for building games. We've used it for [Brutus Ball](https://github.com/Code4Community/brutus-ball) and [Cats and Mice](https://github.com/Code4Community/cats-and-mice). Your project group will probably use it as well! To get some hands-on time with JavaScript, you're going to complete the "Making your first Phaser 3 game" tutorial.
