@@ -15,10 +15,7 @@ By: [Max Gruber](https://github.com/maxdg99)
 ## Overview
 * [Part 1: Introduction](#introduction)
 * [Part 2: Syntax](#syntax)
-* [Part 3: HTTP Requests](#http-requests)
-* [Part 4: Webpage Interaction](#webpage-interaction)
-* [Part 5: Example](#example)
-* [Part 6: Conclusion](#conclusion)
+* [Part 3: Phaser](#phaser)
 
 ## Introduction
 
@@ -211,19 +208,13 @@ fetch(url)
     });
 ```
 
-## Webpage Interaction
+## Phaser
 
-Next, we will finally talk about reacting to user input! We will use action listeners to observe the user's input and then we will use DOM manipulation to change the webpage accordingly.
+Phaser is a JavaScript library for building games. We've used it for [Brutus Ball](https://github.com/Code4Community/brutus-ball) and [Cats and Mice](https://github.com/Code4Community/cats-and-mice). Your project group will probably use it as well! To get some hands-on time with JavaScript, you're going to complete the "Making your first Phaser 3 game" tutorial.
 
-### Action Listeners
+Before you get started on that, install the latest version of [Python](https://www.python.org/). We'll use Python's built-in web server when we're developing games using Phaser. You can learn more about using Python's simple HTTP server [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server).
 
-On a webpage, we can add HTML elements like buttons, dropdowns, and input boxes. When the user interacts with these elements, we want to know! We do accomplish this using action listeners.
-
-Suppose we want to write "Hello, world." to a 
-
-## Example
-https://dog.ceo/api/breeds/list/all
-https://dog.ceo/api/breed/[BREED]/images/random
+Once Python is installed, get started on the [Phaser 3 tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1). Good luck!
 
 ## Conclusion
 
