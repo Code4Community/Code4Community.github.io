@@ -187,7 +187,7 @@ while (condition) {
 
 ### Functions
 
-Functions in JS are quite simple. You do not need to provide the return type or parameter types as you may in other programming languages. Functions will look something like this:
+Functions in JS are quite simple. You do not provide the return type or parameter types as you do in other programming languages. Functions will look something like this:
 
 ```javascript
 function myFunction(param1, param2) {
