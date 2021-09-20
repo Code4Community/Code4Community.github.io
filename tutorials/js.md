@@ -14,7 +14,7 @@ By: [Max Gruber](https://github.com/maxdg99)
 
 ## Overview
 * [Part 1: Introduction](#introduction)
-* [Part 2: JavaScript Syntax](#javascript-syntax)
+* [Part 2: Syntax](#syntax)
 * [Part 3: HTTP Requests](#http-requests)
 * [Part 4: Webpage Interaction](#webpage-interaction)
 * [Part 5: Example](#example)
@@ -24,64 +24,69 @@ By: [Max Gruber](https://github.com/maxdg99)
 
 ### Why do we need JavaScript?
 
-Static webpages are great. Just as you saw in Adam's HTML & CSS tutorial, we can make a pretty cool website with just HTML & CSS. That said, what if we want our website to well... do things?! This is where JavaScript (or JS for short) comes into the picture.
+Static webpages are great! Just as you saw in the HTML and CSS tutorial, we can make a pretty cool website with just HTML and CSS. However, as previously mentioned, those websites are *static*. What if we want *dynamic* webpages? What if we want users to be able to *interact* with our webpages? This is where JavaScript (JS) comes into the picture.
 
-JavaScript is a scripting language for the web.  JS helps us take in user input, process it, and react to it.  It is worth noting that **Java and JavaScript are not the same thing *or* similar** for that matter.  Java and JavaScript are very different coding languages with vastly different use cases. That said, any experience with Java or any other programming language will help you learn JS quickly. Now, with that out of the way, let's learn some JS!
+JavaScript is the programming language of the web. It allows us to react to user input from mice, keyboards, or other devices. Although knowledge of Java (or any other [procedural](https://en.m.wikipedia.org/wiki/Procedural_programming) programming language) will make it easier for you to learn JavaScript, it should be noted that **Java and JavaScript are *not* the same**. Now, with that out of the way, let's learn some JS!
 
-## JavaScript Syntax
+## Syntax
 
-Many of the features of JS will look very similar to other languages that you may know.  Though the similarities do sometimes exist, do not let this trick you!  Sometimes a JS code snippet make look the same as Java for example, but it may behave very differently!
+JS looks pretty similar to other languages in the [C family of programming languages](https://en.m.wikipedia.org/wiki/List_of_C-family_programming_languages) like Java, C#, and C++. Do not let these similarities trick you! A snippet of JS code may look similar to Java while behaving quite differently.
 
 ### Variables
 
-Variables in JS are created like this: `var myVar = 2`.  Pretty cool, right?  We do not need to declare the type of a variable in JS!  If you think that is cool, check this out.
+Variables in JS are created like this: `var myVar = 2`. Pretty cool, right? We do not need to declare the type of a variable in JS! If you think that is cool, check this out.
 ```javascript
 var myVar = 2;
 myVar = "Michigan Sucks";
 myVar = 2.33;
 myVar = [1, 3, 10];
 ```
-Pretty crazy!  In JS, variables can changes types on the fly as shown above.
+Pretty crazy! In JS, variables can changes types on the fly as shown above.
 
 ### Types
 
-In JS, types seem to take a backseat (which is one of the many criticisms of the language).  As you saw above, variables are not given a specific type and can be changed at any point.  This causes some hard to find bugs!  That said, there are only a few important types in JS.
+In JS, types don't appear to be very important (which is a common criticism of the language). As you saw above, variables are not declared with specific types and their types be changed at runtime. This can cause some pesky bugs! For that reason, we recommend that you try to stick to one type per variable when possible. Now we will go over a few important types in JS.
 
 #### Number
 
-This is a very straight forward type.  JS Numbers can be Integers, Floats, or Doubles.
+This one is pretty straightforward. JS Numbers can be [integers](https://en.m.wikipedia.org/wiki/Integer) (whole numbers, positive or negative) or [floating-point numbers](https://en.m.wikipedia.org/wiki/Floating-point_arithmetic) (numbers with fractional components).
 
 #### Boolean
 
-This is very straight forward as well.  Just true or false!
+This one isn't too bad either. Booleans can be either `true` or `false`.
 
-#### Arrays
+#### Array
 
-Arrays in JS are very different than what you are used to in other languages.  An empty array is created with `var myArray = []`.  We can also initialize an array object with `var myArray = [2, "cool string", 3.9, true]`.  You may notice something odd here; JS arrays do not have to be restricted to only one type! Arrays can be accessed with normal indices (meaning that they are 0 indexed) such that `myArray[2]` would return 3.9.  Moreover, Arrays can serve as stacks, queues, and other similar data structures with the methods listed [here](https://www.w3schools.com/jsref/jsref_obj_array.asp).
+Arrays in JS are very different from arrays in other programming languages. An empty array is created like this: `var myArray = []`. We can also initialize an array with values like this: `var myArray = [2, "cool string", 3.9, true]`. You may notice something odd here; JS arrays can contain multiple types!
+
+Array values are accessed like this: `myArray[2]`. Since arrays are 0-indexed (meaning that the first element is at index 0), `myArray[2]` returns `3.9`.
+
+Arrays can also serve as stacks, queues, and other similar data structures by using [methods like `pop()`, `push()`, `shift()`, and `unshift()`](https://www.w3schools.com/js/js_array_methods.asp).
 
 #### String
 
-There is nothing too complicated here either.  To define a string we can simply do `var myString = "look ma, I made a string!"`.  To get the length of this string, we would simple say `myString.length`.
+In JS, you can write a String literal in single quotes (`'Hello, world!'`) or double quotes (`"Hello, world!"`). To get the length of a string, you can access its length property like this: `myString.length`.
 
 #### Objects
 
-This is where things tend to diverge from other languages.  JS Objects are somewhat similar to C structs.  A JS Object is created with the following code:
+JS Objects are also pretty different from Objects in other languages. A JS Object is created as follows:
 
 ```javascript
 var team = {
     name: "Michigan",
     good: false,
-    wins: 0
+    wins: 0,
+    type: "College Football"
 };
 ```
 
-As we can see, objects are comma separated key-value pairs.  The values can be any JS datatype or method.  For example, an object can contain another object or even an array!  One use case for JS Objects is as the return type of HTTPS REST APIs, but we will get to that later.
+Objects are comma-separated key-value pairs. The keys are strings (like `name`, `good`, and `wins`), and the values are literals (like `"Michigan"`, `false`, and `0`) or variable names which evaluate to literals. For example, an object can contain another object or even an array! One major use case for JS Objects is in HTTP calls, but we will get to that later.
 
-JS object properties can be accessed like this: `sport["type"]` or `sport.type`.  This would return "College Football".  To access a property of a sub-object, we can do `sport["ball"]["shape"]`!
+Object properties can be accessed like this: `team["type"]` or `team.type`. This would return `"College Football"`. To access a property of a sub-object, we can do something like this: `team["rival"]["name"]` or `team.rival.name`!
 
 ### Equality
 
-Equality in JS can get a little tricky since variables are not strongly-typed.  There are two types of equal signs in JS. `==` (double equals) is used to compare equality **and ignore** type. `===` (triple equals) is used to compare equality **and** type.  If that makes no sense, check out the examples below.  A good rule of thumb is to always use `===`!
+Equality in JS can get a little tricky because variables are not strongly-typed. There are two equality operators in JS. `==` (double equals) is used to compare values and **not** types (if the values are the same, return `true`). `===` (triple equals) is used to compare values **and** types (if the values *and* types are the same, return `true`). If that doesn't make sense,check out the examples below. A good rule of thumb is to always use `===`!
 
 * `"2" == 2` => true
 * `"2" === 2` => false
@@ -92,7 +97,7 @@ Equality in JS can get a little tricky since variables are not strongly-typed.  
 
 ### Control Structure
 
-Conditional Structures are very similar to what you may be used to in other languages.  The code snippets show examples of a few if structures.
+JS control structures are very similar to those in other programming languages. The code snippets below show examples of a few if statements. When the `condition` in parentheses is `true`, that code block runs. Otherwise, it checks the `condition` of the next code block.
 
 ```javascript
 // if statement
@@ -123,7 +128,7 @@ if (condition) {
 
 #### For Loops
 
-These For loops act the same as For loops in Java and other languages.
+JS for loops are also very similar to those in other programming languages.
 
 ```javascript
 for (var i = 0; i < 10; i++){
@@ -131,9 +136,9 @@ for (var i = 0; i < 10; i++){
 }
 ```
 
-#### For In Loops
+#### For...in Loops
 
-For-In loops are for iterating through the properties of an object.  For example, if we have the following object:
+For...in loops are used to iterate over the properties of an object. For example, if we have the following object:
 
 ```javascript
 var team = {
@@ -153,9 +158,9 @@ for (p in team) {
 
 That code snippet would print "Ohio State" and "Bucks" to the console.
 
-#### For Of Loops
+#### For...of Loops
 
-For-Of loops are for iterating over arrays.  For example, if we have the following array:
+For-of loops are for iterating over arrays. For example, if we have the following array:
 
 ```javascript
 var teams = ["Michigan", "Ohio State", "Rutgers"]
@@ -173,7 +178,7 @@ That code snippet would print "Michigan", "Ohio State", and "Rutgers" to the con
 
 #### While Loops
 
-While loops work the same way as they do in other languages, so this will be brief.  The syntax for while loops looks like this:
+While loops are the same as in other programming languages, so this will be brief. The syntax for while loops looks like this:
 
 ```javascript
 while (condition) {
@@ -183,7 +188,7 @@ while (condition) {
 
 ### Functions
 
-Functions in JS are quite simple.  You do not need to provide the return type or types of the parameters as you may need to in other languages.  Functions will look something like the following.
+Functions in JS are quite simple. You do not need to provide the return type or parameter types as you may in other programming languages. Functions will look something like this:
 
 ```javascript
 function myFunction(param1, param2) {
