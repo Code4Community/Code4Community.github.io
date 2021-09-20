@@ -23,6 +23,8 @@ By: [Max Gruber](https://github.com/maxdg99)
 
 Static webpages are great! Just as you saw in the HTML and CSS tutorial, we can make a pretty cool website with just HTML and CSS. However, as previously mentioned, those websites are *static*. What if we want *dynamic* webpages? What if we want users to be able to *interact* with our webpages? This is where JavaScript (JS) comes into the picture.
 
+### Overview
+
 JavaScript is the programming language of the web. It allows us to react to user input from mice, keyboards, or other devices. Although knowledge of Java (or any other [procedural](https://en.m.wikipedia.org/wiki/Procedural_programming) programming language) will make it easier for you to learn JavaScript, it should be noted that **Java and JavaScript are *not* the same**. Now, with that out of the way, let's learn some JS!
 
 ## Syntax
@@ -99,25 +101,25 @@ JS control structures are very similar to those in other programming languages. 
 ```javascript
 // if statement
 if (condition) {
-
+    ...
 }
 
 // if-else statement
 if (condition) {
-
+    ...
 } else {
-
+    ...
 }
 
 // Chained if-else statements
 if (condition) {
-
+    ...
 } else if (condition) {
-
+    ...
 } else if (condition) {
-
+    ...
 } else {
-
+    ...
 }
 ```
 
@@ -129,7 +131,7 @@ JS for loops are also very similar to those in other programming languages.
 
 ```javascript
 for (var i = 0; i < 10; i++){
-
+    ...
 }
 ```
 
