@@ -4,10 +4,18 @@ title: JavaScript Tutorial
 permalink: /tutorials/js
 content_style: github_markdown
 ---
+<style>
+    h1 {
+        margin-top: 0 !important;
+    }
+    img {
+        box-shadow: 0 5px 15px grey;
+    }
+</style>
 
 # JavaScript Tutorial
 
-By: [Max Gruber](https://github.com/maxdg99)
+By: [Max Gruber](https://github.com/maxdg99) and [Adam Lis](https://github.com/adambricelis)
 
 ## Before we get started
 * Complete the [HTML and CSS tutorial](./html-css)
@@ -198,11 +206,34 @@ function myFunction(param1, param2) {
 
 ## Phaser
 
-Phaser is a JavaScript library for building games. We've used it for [Brutus Ball](https://github.com/Code4Community/brutus-ball) and [Cats and Mice](https://github.com/Code4Community/cats-and-mice). Your project group will probably use it as well! To get some hands-on time with JavaScript, you're going to complete the "Making your first Phaser 3 game" tutorial.
+Phaser is a JavaScript library for building games. We've used it for [Brutus Ball](https://github.com/Code4Community/brutus-ball) and [Cats and Mice](https://github.com/Code4Community/cats-and-mice). Your project group will probably use it as well! To get some hands-on time with JavaScript, you're going to complete the "Making your first Phaser 3 game" tutorial. We'll need to take care of a couple things before you get started on that...
 
-Before you get started on that, install the latest version of [Python](https://www.python.org/). We'll use Python's built-in web server when we're developing games using Phaser. You can learn more about using Python's simple HTTP server [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server).
+### Install Python
 
-Once Python is installed, get started on the [Phaser 3 tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1). Good luck!
+1. Download the installer for the latest version of [Python](https://www.python.org/)
+1. Run the installer
+1. Check the "Add Python to PATH" box (if you're on Windows)
+
+    ![](../images/tutorials/js/add-python-to-path.png)
+
+1. Complete the installation process
+
+### Run a Python Web Server
+
+We'll use Python's built-in web server when we're developing games using Phaser. You can learn more about using Python's simple HTTP server [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server), but I'll walk you through the basics.
+
+1. Open a Phaser project in VS Code
+1. Open a new terminal in VS Code (Terminal > New Terminal)
+1. Run the following command in the terminal:
+    * Windows: `python -m http.server`
+    * macOS or Linux: `python3 -m http.server`
+1. Open this page in your web browser: [http://localhost:8000](http://localhost:8000)
+
+You'll take these steps whenever you want to look at a Phaser project in your web browser.
+
+### Complete the Phaser Tutorial
+
+Now, you're ready for the [Phaser 3 tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1)! These extra steps covered [Phaser's Getting Started Guide](https://phaser.io/tutorials/getting-started-phaser3), so you don't need to worry about that. Good luck!
 
 ## Conclusion
 
