@@ -22,6 +22,10 @@ footer {
     top: 100vh;
 }
 
+footer .icons {
+    margin-bottom: 0.75rem;
+}
+
 /* UPDATE THIS BREAKPOINT WHEN ADDING/REMOVING NAVBAR ITEMS */
 @media screen and (max-width: 699px) {
     #desktop-navigation-links, #desktop-github-icon {
