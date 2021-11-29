@@ -46,5 +46,11 @@
         "name": "Alek Kundla",
         "role": "Project Leader",  
         "email": "kundla.9@osu.edu"
+    },
+    {
+        "img": "leaders/tassos_manganaris.png",
+        "name": "Tassos Manganaris",
+        "role": "Project Leader",  
+        "email": "manganaris.2@osu.edu"
     }
 ]
