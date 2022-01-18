@@ -89,7 +89,7 @@ Once you have done this get to the last page where you can click "Install", and 
 
 ## Part 7: Let Us Know Your Availability
 
-Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1sB_6yL7rx1-0chFmpYwMmmUff-o6aS_IIy9-mXVpEt8/edit?usp=sharing){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
+Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1rEIumGNqivGk3i-FMfSvhwPMrUOjj8cF-YCZvYxKveY/edit?usp=sharing){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
 
 # Feedback
 
