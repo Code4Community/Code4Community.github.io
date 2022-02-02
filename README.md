@@ -8,3 +8,6 @@ This is the Code 4 Community website.
 1. Navigate to the root directory of your local repository
 1. Run the site: `bundle exec jekyll serve`
 1. Open the URL shown in your terminal
+
+## Contribution Policy
+This project is closed to outside contributions.
