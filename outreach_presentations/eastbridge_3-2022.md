@@ -9,3 +9,4 @@ content_style: github_markdown
 
 ## Resources
 * [Grasshopper Hack](https://hourofcode.com/grasshopperhack)
+* [Presentation](https://docs.google.com/presentation/d/1QkePXUBG4-aYHJvjL-TMsN257Ph2w0cp6dm2ek-rwqA/edit?usp=sharing)
