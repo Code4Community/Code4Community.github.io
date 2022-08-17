@@ -1,44 +1,44 @@
 [
     {
-        "img": "leaders/max_gruber.jpg",
-        "name": "Max Gruber",
-        "role": "President",
-        "email": "gruber.173@osu.edu"
-    },
-    {
-        "img": "leaders/adam_lis.jpg",
-        "name": "Adam Lis",
-        "role": "Vice President",
-        "email": "lis.22@osu.edu"
-    },
-    {
         "img": "leaders/mackenzie_scott.jpeg",
         "name": "Mackenzie Scott",
-        "role": "Treasurer",
+        "role": "President",
         "email": "scott.2275@osu.edu"
     },
     {
         "img": "leaders/margot_hare.jpg",
         "name": "Margot Hare",
-        "role": "Outreach Coordinator",
+        "role": "Vice President",
         "email": "hare.98@osu.edu"
+    },
+    {
+        "img": "",
+        "name": "Jessie Kong",
+        "role": "Treasurer",
+        "email": "kong.449@osu.edu"
     },
     {
         "img": "leaders/meghana_malur.jpg",
         "name": "Meghana Malur",
-        "role": "Outreach Coordinator",
+        "role": "Financial Coordinator",
         "email": "malur.1@osu.edu"
-    },
-    {
-        "img": "leaders/alek_kundla.jfif",
-        "name": "Alek Kundla",
-        "role": "Project Leader",  
-        "email": "kundla.9@osu.edu"
     },
     {
         "img": "leaders/tassos_manganaris.png",
         "name": "Tassos Manganaris",
         "role": "Project Leader",  
         "email": "manganaris.2@osu.edu"
+    },
+    {
+        "img": "",
+        "name": "Carter Scheatzle",
+        "role": "Project Leader",  
+        "email": "scheatzle.13@osu.edu"
+    },
+    {
+        "img": "",
+        "name": "Kevin Lewis",
+        "role": "Project Leader",  
+        "email": "Lewis.3164@osu.edu"
     }
 ]
