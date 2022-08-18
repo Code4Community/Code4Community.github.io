@@ -27,7 +27,7 @@ Once you reach this page click sign-up and follow the prompts to enter your emai
 
 ## Part 2: Add yourself to the C4C Github
 
-Next, fill out this [survey](https://docs.google.com/forms/d/e/1FAIpQLSdQWdiVJvrZl-Xe8PHy7OmbkejtYxj2b-Np_5OuLCScHE9e-w/viewform?usp=sf_link){:target="blank" rel="noopener"}, and we will add you to the GitHub organization.
+Next, fill out this [survey](https://docs.google.com/forms/d/e/1FAIpQLSc1UhMCNPLf8UFIZNWGejdYw5gboy5ZeGCNtZ8TLsjk7hkq4g/viewform?usp=sf_link){:target="blank" rel="noopener"}, and we will add you to the GitHub organization.
 
 ## Part 3: Install Modern Browser 
 
@@ -87,7 +87,7 @@ Once you have done this get to the last page where you can click "Install", and 
 
 ## Part 7: Let Us Know Your Availability
 
-Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1rEIumGNqivGk3i-FMfSvhwPMrUOjj8cF-YCZvYxKveY/edit?usp=sharing){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
+Before moving on to the next tutorial, please give us your [availability](https://docs.google.com/spreadsheets/d/1-9V21QWwOeyOZSZrStyUaVXlnBDWThLVYykJiH2L7r4/edit#gid=0){:target="blank" rel="noopener"} so we can schedule our outreach events at times when you will be able to participate.
 
 # Feedback
 
