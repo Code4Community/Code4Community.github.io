@@ -1,0 +1,85 @@
+/* body {
+    overflow: hidden;
+} */
+
+#navbar {
+    border-bottom: 6px solid #bb0000; 
+}
+
+#brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#run-button {
+    font-family: 'Oswald', sans-serif;
+}
+
+#buckeye-logo {
+    width: 75px;
+    vertical-align: middle;
+}
+
+#flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1
+}
+
+/* Syntax Highlighting  */
+/* These classes are defined in visuals.js */
+.cm-control {
+    color: #8338ec;
+}
+
+.cm-condition {
+    color: #ff006e;
+}
+
+.cm-statement {
+    color:#fb5607;
+}
+
+.cm-digits {
+    color: #3a86ff;
+}
+
+/* .CodeMirror {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+} */
+
+#alert {
+    position: fixed;
+    bottom: 5px;
+    left: 2%;
+    width: 96%;
+    z-index: 10000;
+}
+
+.alert-success, #close {
+    -webkit-animation: cssAnimation 2s forwards; 
+    animation: cssAnimation 2s forwards;
+}
+
+li {
+    display: table;
+    margin: 0 auto;
+}
+
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
