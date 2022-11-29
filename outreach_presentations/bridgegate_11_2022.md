@@ -1,15 +1,15 @@
 ---
 layout: page
-title: East Bridge Academy of Excellence
-permalink: /eastbridge2022
+title: Bridge Gate Elementary
+permalink: /bridgegate2022
 content_style: github_markdown
 ---
 
-# East Bridge Academy of Excellence
+# Bridge Gate Elementary
 
 ## Resources
 * [Buckeye Catcher](https://c4cosu.com/buckeye-catch-em/)
-* [Presentation](https://docs.google.com/presentation/d/1gKlst36pxr_Zi9uQ2Y5HzGfClnidCAn-Tg1abzCp9bc/edit?usp=sharing)
+* [Presentation](https://docs.google.com/presentation/d/1vCKrDwG0jQ1lg7NC17be-sp_TjkGV9IxwKzsNEEiMWA/edit?usp=sharing)
 
 ## Functions
 
