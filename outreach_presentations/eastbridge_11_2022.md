@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Eastbridge Academy of Excellence
+title: East Bridge Academy of Excellence
 permalink: /eastbridge2022
 content_style: github_markdown
 ---
 
-# Eastbridge Academy of Excellence
+# East Bridge Academy of Excellence
 
 ## Resources
 * [Buckeye Catcher](https://c4cosu.com/buckeye-catch-em/)
