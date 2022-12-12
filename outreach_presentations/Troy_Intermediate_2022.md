@@ -10,6 +10,7 @@ content_style: github_markdown
 ## Resources
 * [Buckeye Catcher](https://c4cosu.com/buckeye-catch-em/)
 * [Presentation](https://docs.google.com/presentation/d/18zgf1zw2Vxfub0V8PpbH3V2freMi6SbY9exvRGb4008/edit?usp=sharing)
+* [Zoom](https://osu.zoom.us/j/97519648710?pwd=VWZDaE9ONUJEeUFYaUtTb29PZm9Udz09)
 
 ## Functions
 
