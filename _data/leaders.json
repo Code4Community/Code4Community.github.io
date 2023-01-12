@@ -40,5 +40,11 @@
         "name": "Kevin Lewis",
         "role": "Project Leader",  
         "email": "Lewis.3164@osu.edu"
+    },
+    {
+        "img": "leaders/jose_nieves_diaz.jpeg",
+        "name": "Jose Nieves-Diaz",
+        "role": "Outreach Coordinator",  
+        "email": "nieves-diaz.1@osu.edu"
     }
 ]
