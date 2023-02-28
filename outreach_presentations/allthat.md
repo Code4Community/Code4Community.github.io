@@ -5,7 +5,7 @@ permalink: /allthat
 content_style: github_markdown
 ---
 
-# East Bridge Academy of Excellence
+# All THAT
 
 ## Resources
 * [Buckeye Catcher](https://c4cosu.com/buckeye-catch-em/)
