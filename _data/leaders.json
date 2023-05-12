@@ -1,15 +1,15 @@
 [
     {
-        "img": "leaders/mackenzie_scott.jpeg",
-        "name": "Mackenzie Scott",
-        "role": "President",
-        "email": "scott.2275@osu.edu"
-    },
-    {
         "img": "leaders/margot_hare.jpg",
         "name": "Margot Hare",
-        "role": "Vice President",
+        "role": "President",
         "email": "hare.98@osu.edu"
+    },
+    {
+        "img": "leaders/kevin_lewis.png",
+        "name": "Kevin Lewis",
+        "role": "Vice President",
+        "email": "lewis.3164@osu.edu"
     },
     {
         "img": "leaders/Jessie_kong.JPG", 
