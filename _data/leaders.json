@@ -18,33 +18,33 @@
         "email": "kong.449@osu.edu"
     },
     {
-        "img": "leaders/meghana_malur.jpg",
-        "name": "Meghana Malur",
-        "role": "Financial Coordinator",
-        "email": "malur.1@osu.edu"
-    },
-    {
-        "img": "leaders/tassos_manganaris.png",
-        "name": "Tassos Manganaris",
-        "role": "Project Leader",  
-        "email": "manganaris.2@osu.edu"
-    },
-    {
-        "img": "leaders/Carter_Scheatzle.jpg",
-        "name": "Carter Scheatzle",
-        "role": "Project Leader",  
-        "email": "scheatzle.13@osu.edu"
-    },
-    {
-        "img": "leaders/kevin_lewis.png",
-        "name": "Kevin Lewis",
-        "role": "Project Leader",  
-        "email": "Lewis.3164@osu.edu"
-    },
-    {
         "img": "leaders/jose_nieves_diaz.jpeg",
         "name": "Jose Nieves-Diaz",
         "role": "Outreach Coordinator",  
         "email": "nieves-diaz.1@osu.edu"
+    },
+    {
+        "img": "leaders/nick_cech.jpg",
+        "name": "Nicholas Cech",
+        "role": "Financial Coordinator",
+        "email": "cech.25@osu.edu"
+    },
+    {
+        "img": "leaders/meghana_malur.png",
+        "name": "Meghana Malur",
+        "role": "Marketing Chair",  
+        "email": "malur.1@osu.edu"
+    },
+    {
+        "img": "leaders/Carter_Scheatzle.jpg",
+        "name": "Anutam Srinivasan",
+        "role": "Project Leader",  
+        "email": "srinivasan.268@osu.edu"
+    },
+    {
+        "img": "leaders/kevin_lewis.png",
+        "name": "Sriram SaiGanesh",
+        "role": "Project Leader",  
+        "email": "saiganesh.3@osu.edu"
     }
 ]
