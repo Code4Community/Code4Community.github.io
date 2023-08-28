@@ -37,7 +37,7 @@
     },
     {
         "img": "leaders/Carter_Scheatzle.jpg",
-        "nane": "Carter Scheatzle",
+        "name": "Carter Scheatzle",
         "role": "Project Leader",
         "email": "scheatzle.13@osu.edu"
     },
@@ -49,7 +49,7 @@
     },
     {
         "img": "leaders/sriram.jpg",
-        "name": "Sriram SaiGanesh",
+        "name": "Sriram Sai Ganesh",
         "role": "Project Leader",  
         "email": "saiganesh.3@osu.edu"
     }
