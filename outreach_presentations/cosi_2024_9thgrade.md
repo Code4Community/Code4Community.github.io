@@ -104,7 +104,7 @@ content_style: github_markdown
 * Now, our player will move up the field as long as they are still below the enemy
 
 ## Week 2
-[Week 2 Presentation](https://docs.google.com/presentation/d/1DBO-XVy1Kyxz7SQqQ9sVhvYCB2W-UUzoj7wjToru5LM/edit?usp=sharing)
+[Week 2 Presentation](https://docs.google.com/presentation/d/1IbV-URAUd8VOwdEHujsdZ5MG2gQg_0G8FoONdeSkv3A/edit?usp=sharing)
 
 [HTML and CSS Tutorial](https://c4cosu.com/tutorials/html-css)
 
@@ -159,7 +159,7 @@ content_style: github_markdown
 
 ## Week 3
 
-[Week 3 Presentation](https://docs.google.com/presentation/d/1IbV-URAUd8VOwdEHujsdZ5MG2gQg_0G8FoONdeSkv3A/edit?usp=sharing)
+[Week 3 Presentation](https://docs.google.com/presentation/d/1DBO-XVy1Kyxz7SQqQ9sVhvYCB2W-UUzoj7wjToru5LM/edit?usp=sharing)
 
 [Bootstrap Setup](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
