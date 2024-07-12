@@ -1,45 +1,27 @@
 [
     {
-        "img": "leaders/margot_hare.jpg",
-        "name": "Margot Hare",
-        "role": "President",
-        "email": "hare.98@osu.edu"
-    },
-    {
         "img": "leaders/kevin_lewis.png",
         "name": "Kevin Lewis",
-        "role": "Vice President",
+        "role": "President",
         "email": "lewis.3164@osu.edu"
     },
     {
-        "img": "leaders/Jessie_kong.JPG", 
-        "name": "Jessie Kong",
+        "img": "leaders/Wyatt_Lindsey.jpg",
+        "name": "Wyatt Lindsey",
+        "role": "Vice President",
+        "email": "lindsey.388@osu.edu"
+    },
+    {
+        "img": "leaders/nick_cech.jpg",
+        "name": "Nicholas Cech",
         "role": "Treasurer",
-        "email": "kong.449@osu.edu"
+        "email": "cech.25@osu.edu"
     },
     {
         "img": "leaders/leah_salomone.jpeg",
         "name": "Leah Salomone",
         "role": "Outreach Coordinator",  
         "email": "salomone.18@osu.edu"
-    },
-    {
-        "img": "leaders/nick_cech.jpg",
-        "name": "Nicholas Cech",
-        "role": "Financial Coordinator",
-        "email": "cech.25@osu.edu"
-    },
-    {
-        "img": "leaders/meghana_malur.jpg",
-        "name": "Meghana Malur",
-        "role": "Marketing Chair",  
-        "email": "malur.1@osu.edu"
-    },
-    {
-        "img": "leaders/Carter_Scheatzle.jpg",
-        "name": "Carter Scheatzle",
-        "role": "Project Leader",
-        "email": "scheatzle.13@osu.edu"
     },
     {
         "img": "leaders/anutam_srinivasan.jpg",
@@ -58,5 +40,17 @@
         "name": "Yordi Mamo",
         "role": "Project Leader",
         "email": "mamo.17@osu.edu"
+    },
+    {
+        "img": "leaders/Nicole_Futoryansky.jpg",
+        "name": "Nicole Futoryansky",
+        "role": "Project Leader",
+        "email": "futoryansky.2@osu.edu"
+    },
+    {
+        "img": "leaders/Casey_Bartman.jpg",
+        "name": "Casey Bartman",
+        "role": "Project Leader",
+        "email": "bartman.26@osu.edu"
     }
 ]
