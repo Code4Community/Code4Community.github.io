@@ -1,21 +1,21 @@
 [
     {
-        "img": "leaders/kevin_lewis.png",
-        "name": "Kevin Lewis",
-        "role": "President",
-        "email": "lewis.3164@osu.edu"
-    },
-    {
-        "img": "leaders/Wyatt_Lindsey.jpg",
+        "img": "leaders/Wyatt_Lindsey.jpeg",
         "name": "Wyatt Lindsey",
-        "role": "Vice President",
+        "role": "President",
         "email": "lindsey.388@osu.edu"
     },
     {
-        "img": "leaders/nick_cech.jpg",
-        "name": "Nicholas Cech",
+        "img": "leaders/Nicole_Futoryansky.jpg",
+        "name": "Nicole Futoryansky",
+        "role": "Vice President",
+        "email": "futoryansky.2@osu.edu"
+    },
+    {
+        "img": "leaders/Nithin_Seelan.JPG",
+        "name": "Nithin Seelan",
         "role": "Treasurer",
-        "email": "cech.25@osu.edu"
+        "email": "seelan.2@osu.edu"
     },
     {
         "img": "leaders/leah_salomone.jpeg",
@@ -24,33 +24,39 @@
         "email": "salomone.18@osu.edu"
     },
     {
-        "img": "leaders/anutam_srinivasan.jpg",
-        "name": "Anutam Srinivasan",
-        "role": "Project Leader",  
-        "email": "srinivasan.268@osu.edu"
+        "img": "leaders/Grace_Metz.JPG",
+        "name": "Grace Metz",
+        "role": "Outreach Coordinator",  
+        "email": "metz.403@osu.edu"
     },
     {
-        "img": "leaders/sriram.jpg",
-        "name": "Sriram Sai Ganesh",
-        "role": "Project Leader",  
-        "email": "saiganesh.3@osu.edu"
+        "img": "",
+        "name": "Daniel Tran",
+        "role": "Fundraising Coordinator",  
+        "email": ""
     },
     {
-        "img": "leaders/yordi_mamo.jpg",
-        "name": "Yordi Mamo",
+        "img": "leaders/Ava_Scheerer.jpeg",
+        "name": "Ava Scheerer",
+        "role": "Social Media Coordinator",
+        "email": "scheerer.11@osu.edu"
+    },
+    {
+        "img": "",
+        "name": "David Stuckey",
         "role": "Project Leader",
-        "email": "mamo.17@osu.edu"
-    },
-    {
-        "img": "leaders/Nicole_Futoryansky.jpg",
-        "name": "Nicole Futoryansky",
-        "role": "Project Leader",
-        "email": "futoryansky.2@osu.edu"
+        "email": "Stuckey.116@osu.edu"
     },
     {
         "img": "leaders/Casey_Bartman.jpg",
         "name": "Casey Bartman",
         "role": "Project Leader",
         "email": "bartman.26@osu.edu"
+    },
+	{
+        "img": "leaders/Sharva_Deodhar.jpeg",
+        "name": "Sharva Deodhar",
+        "role": "Project Leader",
+        "email": "deodhar.12@osu.edu"
     }
 ]
