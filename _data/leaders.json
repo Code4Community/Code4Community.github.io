@@ -33,7 +33,7 @@
         "img": "leaders/Daniel_Tran.jpeg",
         "name": "Daniel Tran",
         "role": "Fundraising Coordinator",  
-        "email": ""
+        "email": "tran.1127@osu.edu"
     },
     {
         "img": "leaders/Ava_Scheerer.jpeg",
@@ -42,7 +42,7 @@
         "email": "scheerer.11@osu.edu"
     },
     {
-        "img": "",
+        "img": "leaders/David_Stuckey.jpeg",
         "name": "David Stuckey",
         "role": "Project Leader",
         "email": "Stuckey.116@osu.edu"
@@ -58,5 +58,11 @@
         "name": "Sharva Deodhar",
         "role": "Project Leader",
         "email": "deodhar.12@osu.edu"
+    }
+	{
+        "img": "leaders/Lily_Scheerer.jpg",
+        "name": "Lily Scheerer",
+        "role": "Project Leader",
+        "email": "scheerer.12"
     }
 ]
